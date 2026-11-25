@@ -396,6 +396,15 @@
    "sources": [
     "cnbc_top"
    ]
+  },
+  {
+   "id": "e-93",
+   "key": "Michael Burry Is More Long Than Short After Dumping Nasdaq Puts - Bloomberg",
+   "ts": "2026-11-25T20:31:00Z",
+   "seq": 93,
+   "sources": [
+    "bloomberg_gn"
+   ]
   }
  ]
 }
