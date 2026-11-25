@@ -38,7 +38,7 @@ Each line starts with ⚠️. Date/time line: run `python3 scripts/jdate.py <pub
 (Jalali date + Tehran time, UTC+3:30). Digits in the date/time and importance lines are Persian (۰-۹).
 
 ```
-⚠️ تاریخ خبر: <خروجی jdate.py، مثل ۴ آذر : ساعت ۲۰:۵۳ به وقت تهران>
+⚠️ تاریخ خبر: <خروجی jdate.py> ({{age:<published UTC>}})
 
 ⚠️ لاین خبری <کریپتو | فارکس | بورس آمریکا | کلان | کالا>
 
@@ -49,10 +49,10 @@ Each line starts with ⚠️. Date/time line: run `python3 scripts/jdate.py <pub
 
 ⚠️ توضیح ساده بات : <توضیح ساده: چرا مهم است و چه اثری روی بازار دارد>
 
-⚠️ سیگنال : <دارایی/شاخص + جهت: صعودی | نزولی | خنثی — دلیل کوتاه>
+⚠️ سیگنال : <دارایی/شاخص + جهت: صعودی | نزولی | خنثی — دلیل کوتاه — اطمینان: کم|متوسط|زیاد>
 ⚠️ مهلت ورود : <تا چه رویداد/ساعتی (UTC) اعتبار دارد؛ یا «سیگنال معاملاتی ندارد»>
 
-⚠️ قیمت هنگام خبر : <دارایی> {{price:SYMBOL}}
+⚠️ قیمت هنگام خبر : <دارایی> {{price:SYMBOL@<published UTC>}}
 
 
 منابع : <منبع۱ | منبع۲ | ...>
@@ -68,6 +68,31 @@ Updates start with a first line `🔄 به‌روزرسانی :` before the same
 `{{price:SYMBOL}}` uses Yahoo symbols (filled in at send time): BTC-USD, ETH-USD, XRP-USD, SOL-USD,
 EURUSD=X, GBPUSD=X, USDJPY=X, DX-Y.NYB, GC=F (gold), CL=F (oil), ^GSPC, ^IXIC, or a stock ticker.
 Summaries are written in our own words — never copy article text.
+
+## Trading-safety rules (the user trades on these messages — avoid causing losses)
+1. **Freshness.** In the date line, after the Tehran time, add ` ({{age:<published UTC>}})` — the sender
+   replaces it with «ارسال n دقیقه بعد از انتشار» (and «⚠️ خبر کهنه است» if > 30 min).
+   News older than ~20 min when analysed: say in «مهلت ورود» that it is probably already priced in.
+2. **Price line.** Always `{{price:SYMBOL@<published UTC>}}` — the sender prints the price at news time,
+   the price now and the % move since the news, and warns when most of the move has already happened.
+3. **Signal discipline.** The signal line ends with `— اطمینان: کم | متوسط | زیاد`.
+   * single-source, unconfirmed, rumour or analyst opinion → never «زیاد»; prefer «خنثی/احتیاط».
+   * official/confirmed (Fed, SEC, company filing, ≥ 2 tier-3 sources) → may be «زیاد».
+   * never write buy/sell instructions, leverage, entry/stop levels — only direction, reason, confidence.
+   * conflicting news in the last hour (e.g. selloff then rebound) → mention it and lower confidence.
+4. **Market hours.** Crypto 24/7. Forex: closed Fri 22:00 → Sun 22:00 UTC. US stocks: 14:30–21:00 UTC
+   (pre-market from 09:00, after-hours to 01:00). US holidays: market CLOSED Thu 26 Nov 2026 (Thanksgiving),
+   early close Fri 27 Nov 2026 at 18:00 UTC; closed 25 Dec 2026, 1 Jan 2027. When the market is closed,
+   «مهلت ورود» must say from when the signal can act (e.g. «بازار سهام تا جمعه ۱۴:۳۰ UTC بسته است»).
+5. **Scheduled data.** If a high-impact release (CPI, NFP, FOMC, PCE, GDP) is due within 60 min,
+   say so in «مهلت ورود» — it can reverse the signal.
+6. **No fabrication.** If only a headline is available, say «فقط تیتر در دسترس است» in «متن خبر»;
+   never invent figures, quotes or reasons.
+
+## Round report (each round, in chat)
+`python3 scripts/round_stats.py <previous round time UTC> <analysed> <sent>` → one Persian line:
+sources checked · items received · items in Library after filtering · analysed & sent.
+Store this round's time in `cursor.json` as `last_round_at`.
 
 ## Message object
 ```json

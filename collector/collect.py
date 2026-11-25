@@ -145,10 +145,19 @@ def fetch(src: dict, status: dict) -> tuple[dict, list, str | None]:
         headers["If-None-Match"] = st["etag"]
     if st.get("last_modified"):
         headers["If-Modified-Since"] = st["last_modified"]
-    try:
-        r = requests.get(src["url"], headers=headers, timeout=TIMEOUT)
-    except requests.RequestException as ex:
-        return src, [], f"network: {type(ex).__name__}"
+    r = None
+    for attempt in range(3):
+        try:
+            r = requests.get(src["url"], headers=headers, timeout=TIMEOUT)
+        except requests.RequestException as ex:
+            if attempt == 2:
+                return src, [], f"network: {type(ex).__name__}"
+            time.sleep(3 * (attempt + 1))
+            continue
+        if r.status_code in (429, 500, 502, 503, 504) and attempt < 2:
+            time.sleep(4 * (attempt + 1))
+            continue
+        break
     if r.status_code == 304:
         return src, [], None
     if r.status_code >= 400:
@@ -185,11 +194,23 @@ def main() -> int:
     seen["titles"] = {k: v for k, v in seen["titles"].items() if t0 - v < memory}
     seen["recent"] = [r for r in seen["recent"] if t0 - r["ts"] < memory]
 
+    gn = [s for s in sources if "news.google.com" in s["url"]]
+    other = [s for s in sources if s not in gn]
+
+    def fetch_gn_sequential():
+        out = []
+        for i, s in enumerate(gn):
+            if i:
+                time.sleep(2.5)
+            out.append(fetch(s, status))
+        return out
+
     with ThreadPoolExecutor(max_workers=16) as pool:
-        results = list(pool.map(lambda s: fetch(s, status), sources))
+        gn_future = pool.submit(fetch_gn_sequential)
+        results = list(pool.map(lambda s: fetch(s, status), other)) + gn_future.result()
 
     new_items, dropped = [], []
-    stats = {"sources_ok": 0, "sources_failed": 0, "entries": 0, "new": 0, "dropped": 0}
+    stats = {"sources_total": len(sources), "sources_ok": 0, "sources_failed": 0, "entries": 0, "unseen": 0, "new": 0, "dropped": 0}
 
     def drop(src, title, url, reason, detail=""):
         dropped.append({"ts": iso(t0), "source": src["id"], "title": (title or "")[:200],
@@ -234,6 +255,7 @@ def main() -> int:
                 continue
             if already:
                 continue  # silently: seen before (not logged, would be noise)
+            stats["unseen"] += 1
             if not title:
                 drop(src, title, link, "no_title")
                 continue
@@ -328,6 +350,14 @@ def main() -> int:
     seen["recent"] = seen["recent"][-6000:]
     save_json(SEEN_FILE, seen)
     status["_last_run"] = {"at": iso(t0), "duration_s": round(now_ts() - t0, 1), **stats}
+    runs_file = DATA / "runs.jsonl"
+    runs = [json.loads(l) for l in runs_file.read_text(encoding="utf-8").splitlines() if l.strip()] \
+        if runs_file.exists() else []
+    runs = [x for x in runs if x["at"] >= iso(t0 - 48 * 3600)]
+    runs.append({**status["_last_run"], "seq_last": seen["seq"],
+                 "failed": sorted(k for k, v in status.items()
+                                  if not k.startswith("_") and v.get("last_checked") == iso(t0) and v.get("last_error"))})
+    runs_file.write_text("".join(json.dumps(x, ensure_ascii=False) + "\n" for x in runs), encoding="utf-8")
     save_json(STATUS_FILE, status)
 
     print(json.dumps(status["_last_run"]))

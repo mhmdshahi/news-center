@@ -11,7 +11,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 6
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -25,4 +25,4 @@ jobs:
         run: python collector/collect.py
       - name: Commit library
         run: |
-          scripts/commit_push.sh "collect $(date -u +%H:%M)Z" data/inbox.jsonl data/seen.json data/sources_status.json data/dropped.jsonl
+          scripts/commit_push.sh "collect $(date -u +%H:%M)Z" data/inbox.jsonl data/seen.json data/sources_status.json data/dropped.jsonl data/runs.jsonl

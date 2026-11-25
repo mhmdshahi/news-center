@@ -27,7 +27,8 @@ SENT = ROOT / "data" / "sent.json"
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
 API = f"https://api.telegram.org/bot{TOKEN}"
-PRICE_RE = re.compile(r"\{\{price:([A-Za-z0-9=^.\-]+)\}\}")
+PRICE_RE = re.compile(r"\{\{price:([A-Za-z0-9=^.\-]+)(?:@([0-9T:\-]+Z))?\}\}")
+AGE_RE = re.compile(r"\{\{age:([0-9T:\-]+Z)\}\}")
 SPACING_S = 3.2  # stay under ~20 messages/minute per group
 MAX_LEN = 4000
 
@@ -53,12 +54,18 @@ def _decimals(symbol: str, p: float) -> int:
     return 2
 
 
-def price(symbol: str) -> str:
-    """Latest Yahoo Finance price from the newest 1-minute candle (incl. pre/post market),
-    with its UTC time and % change vs previous close. Old data is labelled, never passed off as live."""
-    if symbol in _price_cache:
-        return _price_cache[symbol]
-    out = "نامشخص (Yahoo در دسترس نبود)"
+MOVE_WARN = {"fx": 0.25, "crypto": 1.5, "default": 1.0}  # % move since news that means "already priced in"
+
+
+def _klass(symbol: str) -> str:
+    if symbol.endswith("=X") or symbol == "DX-Y.NYB":
+        return "fx"
+    if symbol.endswith("-USD"):
+        return "crypto"
+    return "default"
+
+
+def _chart(symbol: str):
     for attempt in range(3):
         try:
             r = requests.get(
@@ -66,30 +73,59 @@ def price(symbol: str) -> str:
                 params={"interval": "1m", "range": "1d", "includePrePost": "true"},
                 headers={"User-Agent": "Mozilla/5.0"}, timeout=12)
             res = r.json()["chart"]["result"][0]
-            meta = res["meta"]
             pts = [(t, c) for t, c in zip(res.get("timestamp") or [], res["indicators"]["quote"][0]["close"])
                    if c is not None]
-            if pts:
-                t, p = pts[-1]
-            else:
-                p, t = meta["regularMarketPrice"], meta["regularMarketTime"]
-            prev = meta.get("chartPreviousClose") or meta.get("previousClose")
-            age_min = (time.time() - t) / 60
-            hhmm = datetime.fromtimestamp(t, tz=timezone.utc).strftime("%H:%M")
-            txt = f"{p:,.{_decimals(symbol, p)}f}"
-            if prev:
-                txt += f" ({(p / prev - 1) * 100:+.2f}%)"
-            if age_min > STALE_MIN:
-                txt += f" — آخرین معامله {hhmm} UTC (بازار بسته یا کم‌معامله)"
-            else:
-                txt += f" — Yahoo، {hhmm} UTC"
-            out = txt
-            break
-        except Exception as ex:  # noqa: BLE001 — price is optional
+            return res["meta"], pts
+        except Exception as ex:  # noqa: BLE001
             print(f"price {symbol} attempt {attempt + 1} failed: {ex}", file=sys.stderr)
             time.sleep(2)
-    _price_cache[symbol] = out
+    return None, []
+
+
+def price(symbol: str, at_iso: str | None = None) -> str:
+    """Accurate Yahoo price. With at_iso: price at news time AND now, plus the move in between
+    (warns when most of the move has probably already happened). Old data is always labelled."""
+    key = f"{symbol}@{at_iso}"
+    if key in _price_cache:
+        return _price_cache[key]
+    meta, pts = _chart(symbol)
+    if not meta:
+        out = "نامشخص (Yahoo در دسترس نبود)"
+    else:
+        if pts:
+            t, p = pts[-1]
+        else:
+            p, t = meta["regularMarketPrice"], meta["regularMarketTime"]
+        d = _decimals(symbol, p)
+        prev = meta.get("chartPreviousClose") or meta.get("previousClose")
+        now_txt = f"{p:,.{d}f}" + (f" ({(p / prev - 1) * 100:+.2f}% روزانه)" if prev else "")
+        hhmm = datetime.fromtimestamp(t, tz=timezone.utc).strftime("%H:%M")
+        stale = (time.time() - t) / 60 > STALE_MIN
+        out = None
+        if at_iso and pts:
+            at = datetime.fromisoformat(at_iso.replace("Z", "+00:00")).timestamp()
+            before = [(tt, c) for tt, c in pts if tt <= at]
+            if before and at - before[-1][0] < 30 * 60:
+                t0, p0 = before[-1]
+                move = (p / p0 - 1) * 100
+                h0 = datetime.fromtimestamp(t0, tz=timezone.utc).strftime("%H:%M")
+                out = (f"{p0:,.{d}f} (ساعت خبر، {h0} UTC) ← الان {now_txt} ({hhmm} UTC)؛ "
+                       f"حرکت از زمان خبر: {move:+.2f}%")
+                if abs(move) >= MOVE_WARN[_klass(symbol)]:
+                    out += " ⚠️ بخش زیادی از حرکت احتمالاً انجام شده"
+        if out is None:
+            out = f"{now_txt} ({hhmm} UTC، هنگام ارسال)"
+        if stale:
+            out += " — بازار بسته یا کم‌معامله؛ آخرین معامله " + hhmm + " UTC"
+    _price_cache[key] = out
     return out
+
+
+def age(published_iso: str) -> str:
+    mins = (time.time() - datetime.fromisoformat(published_iso.replace("Z", "+00:00")).timestamp()) / 60
+    n = max(0, round(mins))
+    txt = f"ارسال {n} دقیقه بعد از انتشار".translate(str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹"))
+    return txt + (" ⚠️ خبر کهنه است" if n > 30 else "")
 
 
 def send(text: str, reply_to: int | None) -> int | None:
@@ -146,7 +182,8 @@ def main() -> int:
     print(f"{len(pending)} pending of {len(outbox)}")
     failures = 0
     for i, m in enumerate(pending):
-        text = PRICE_RE.sub(lambda mo: price(mo.group(1)), m["text"])
+        text = PRICE_RE.sub(lambda mo: price(mo.group(1), mo.group(2)), m["text"])
+        text = AGE_RE.sub(lambda mo: age(mo.group(1)), text)
         reply_to = sent["events"].get(m.get("reply_to_event") or "")
         mid = send(text, reply_to)
         if mid is None:
