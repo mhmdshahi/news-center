@@ -44,6 +44,51 @@
    "sources": [
     "defiant"
    ]
+  },
+  {
+   "id": "e-8",
+   "key": "Watch Nasdaq 100 Tumbles in ‘Sell First’ Mode - Bloomberg",
+   "ts": "2026-11-25T18:57:30Z",
+   "seq": 8,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-7",
+   "key": "Watch Netflix to Buy Radford Studio Center for $380 Million - Bloomberg",
+   "ts": "2026-11-25T18:57:30Z",
+   "seq": 7,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-12",
+   "key": "Bithumb Confirms Wider Exposure in October Data Leak",
+   "ts": "2026-11-25T18:57:30Z",
+   "seq": 12,
+   "sources": [
+    "defiant"
+   ]
+  },
+  {
+   "id": "e-13",
+   "key": "Coinbase Wallet lets U.S. users receive paychecks in USDC",
+   "ts": "2026-11-25T18:57:30Z",
+   "seq": 13,
+   "sources": [
+    "cryptonews"
+   ]
+  },
+  {
+   "id": "e-9",
+   "key": "Klarna Expands Global Reach With European Shopping Tool, Canadian Virtual Card Ahead Of Black Friday",
+   "ts": "2026-11-25T18:57:30Z",
+   "seq": 9,
+   "sources": [
+    "benzinga"
+   ]
   }
  ]
 }

@@ -1,7 +1,9 @@
 {
- "last_seq": 6,
- "updated": "2026-11-25T18:48:00Z",
+ "last_seq": 13,
+ "updated": "2026-11-25T18:57:30Z",
  "skipped": {
-  "1": "law-firm solicitation (junk)"
+  "1": "law-firm solicitation (junk)",
+  "10": "listicle (quant ratings), not news",
+  "11": "consumer shopping story, not market news"
  }
 }

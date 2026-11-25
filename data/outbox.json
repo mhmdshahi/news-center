@@ -54,6 +54,61 @@
    ],
    "importance": 2,
    "text": "📅 18:46 UTC · کریپتو · اهمیت 2/5 · ⚠️ تأییدنشده\n📰 گزارش: تتر از برخی قربانیان هک برای آزادسازی USDT مسدودشده ۲۰٪ کارمزد خواسته است\n💡 به نقل از بلومبرگ؛ تتر می‌گوید کارمزد هزینهٔ صدور مجدد و حقوقی را پوشش می‌دهد. اثر مستقیم بر قیمت ندارد ولی برای اعتبار تتر منفی است.\n🔗 The Defiant: https://thedefiant.io/news/hacks/tether-sought-20-fees-from-some-hack-victims-bloomberg"
+  },
+  {
+   "id": "m-8",
+   "event_id": "e-8",
+   "reply_to_event": null,
+   "created": "2026-11-25T18:57:30Z",
+   "seqs": [
+    8
+   ],
+   "importance": 3,
+   "text": "📅 18:45 UTC | 13:45 نیویورک\n📰 بورس آمریکا | نزدک ۱۰۰ با حالت «اول بفروش» سقوط کرد\n⚠️ اهمیت: 3/5 · ✅ تأییدشده\n📝 بلومبرگ گزارش می‌دهد شاخص نزدک ۱۰۰ امروز با فشار فروش سنگین روبه‌روست و معامله‌گران پیش از هر تحلیلی ابتدا موقعیت‌ها را می‌فروشند.\n💡 ادامهٔ فروش سهام فناوری و هوش مصنوعی؛ نشانهٔ ریسک‌گریزی گسترده در بازار پیش از تعطیلات شکرگزاری.\n📉 سیگنال: نزدک نزولی کوتاه‌مدت — مومنتوم فروش\n⏳ مهلت ورود: کوتاه‌مدت (امروز)\n💲 قیمت: نزدک {{price:^IXIC}}\n🔗 Bloomberg: https://news.google.com/rss/articles/CBMihwFBVV95cUxQWGpTTGowUWNJaEFHLU5LX3VNZTh6M1Uxb0hLQl9MSVdVQWEzVXVRUXphVHBaUXRKdDN3RHRrODVRM3JWeW1zRVlpaDgzMnZLenZrTzh1WldjT040Y2dsVW5pRDRSOVk3QjhTRUxMejY4dmNISlB0aVY4WDNOZ2xLcjVJTXJWMW8?oc=5"
+  },
+  {
+   "id": "m-7",
+   "event_id": "e-7",
+   "reply_to_event": null,
+   "created": "2026-11-25T18:57:30Z",
+   "seqs": [
+    7
+   ],
+   "importance": 2,
+   "text": "📅 18:41 UTC · بورس آمریکا · اهمیت 2/5 · ✅\n📰 نتفلیکس استودیو Radford Studio Center را ۳۸۰ میلیون دلار می‌خرد\n💡 خرید زیرساخت تولید محتوا؛ مبلغ نسبت به ارزش نتفلیکس کوچک است و اثر قیمتی محدودی دارد.\n🔗 Bloomberg: https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQTV4T25xSmRXb0kwc1dHZ2tYQ0hmXzQ0dFN3Y0ZqUnpYaUc4akNlNlczYUZleG8yWWVHUVJDRzhPU3dMMjFsSmhfbTJMMTZkT2VJR2Rfa0oydktDUDRJcnlFX2lERlRfREJLRnVMQXFIT0ptZS1qeWR2YUNMNnIzSTlzc2FENEJpMW5sSWlvZllNT01hNFhkUTVObGliYWhaX082eVVtM0lLVzQ?oc=5"
+  },
+  {
+   "id": "m-12",
+   "event_id": "e-12",
+   "reply_to_event": null,
+   "created": "2026-11-25T18:57:30Z",
+   "seqs": [
+    12
+   ],
+   "importance": 2,
+   "text": "📅 18:53 UTC · کریپتو · اهمیت 2/5 · ⚠️ تأییدنشده\n📰 صرافی بیتامب ابعاد بزرگ‌تر نشت اطلاعات مهرماه را تأیید کرد\n💡 مدارک هویتی، شماره حساب بانکی و آدرس کیف‌پول برخی کاربران افشا شده؛ برای اعتماد به صرافی منفی است، اثر مستقیم بر قیمت بازار ندارد.\n🔗 The Defiant: https://thedefiant.io/news/security/bithumb-confirms-wider-exposure-in-october-data-leak"
+  },
+  {
+   "id": "m-13",
+   "event_id": "e-13",
+   "reply_to_event": null,
+   "created": "2026-11-25T18:57:30Z",
+   "seqs": [
+    13
+   ],
+   "importance": 2,
+   "text": "📅 18:54 UTC · کریپتو · اهمیت 2/5 · ⚠️ تأییدنشده\n📰 کیف‌پول کوین‌بیس امکان دریافت حقوق به‌صورت USDC را برای کاربران آمریکایی فعال کرد\n💡 واریز مستقیم حقوق روی شبکهٔ Base بدون کارمزد کوین‌بیس؛ برای پذیرش استیبل‌کوین‌ها و شبکهٔ Base مثبت است.\n🔗 crypto.news: https://crypto.news/coinbase-wallet-usdc-paycheck-direct-deposit/"
+  },
+  {
+   "id": "m-9",
+   "event_id": "e-9",
+   "reply_to_event": null,
+   "created": "2026-11-25T18:57:30Z",
+   "seqs": [
+    9
+   ],
+   "importance": 1,
+   "text": "📅 18:50 UTC · بورس آمریکا · اهمیت 1/5 · ⚠️ تأییدنشده\n📰 کلارنا (KLAR) ابزار مقایسهٔ قیمت را در اروپا گسترش داد و کارت مجازی در کانادا راه انداخت\n💡 توسعهٔ عادی محصول پیش از بلک‌فرایدی؛ اثر قیمتی کمی دارد.\n🔗 Benzinga: https://www.benzinga.com/markets/tech/26/11/63647243/klarna-expands-global-reach-with-european-shopping-tool-canadian-virtual-card-ahead-of-black-friday"
   }
  ]
 }
