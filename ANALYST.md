@@ -55,14 +55,13 @@ Each line starts with ⚠️. Date/time line: run `python3 scripts/jdate.py <pub
 ⚠️ قیمت هنگام خبر : <دارایی> {{price:SYMBOL@<published UTC>}}
 
 
-منابع : <منبع۱ | منبع۲ | ...>
-<لینک منبع‌ها، هر کدام در یک خط>
+منابع : [[<نام منبع۱>|<لینک۱>]] | [[<نام منبع۲>|<لینک۲>]]
 ```
 Importance scale (0–100) and label: ۰–۲۰ کم · ۲۱–۴۰ معمولی · ۴۱–۶۰ مهم · ۶۱–۸۰ بسیار مهم · ۸۱–۱۰۰ حیاتی
 (100 ≈ Fed rate decision / major hack / ETF approval; 30–40 ≈ a strategist opinion or mid-size company news).
 Event key words (single source, analyst opinion, report, official) go in the parenthesis at the end of «متن خبر».
 The 💲-equivalent line «قیمت هنگام خبر» always names the asset of the signal (for non-tradable news: the closest market,
-e.g. SPY/S&P 500 or BTC); never put prices elsewhere. Sources line lists every source name that carried the item.
+e.g. SPY/S&P 500 or BTC); never put prices elsewhere. Sources line lists every source that carried the item as [[name|url]] — the sender turns each name into a clickable link (no bare URLs in the message).
 Updates start with a first line `🔄 به‌روزرسانی :` before the same format.
 `دسته` ∈ کریپتو، فارکس، بورس آمریکا، کلان، کالا.
 `{{price:SYMBOL}}` uses Yahoo symbols (filled in at send time): BTC-USD, ETH-USD, XRP-USD, SOL-USD,

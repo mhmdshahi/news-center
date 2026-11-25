@@ -31,6 +31,7 @@ TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
 API = f"https://api.telegram.org/bot{TOKEN}"
 PRICE_RE = re.compile(r"\{\{price:([A-Za-z0-9=^.\-]+)(?:@([0-9T:\-]+Z))?\}\}")
+LINK_RE = re.compile(r"\[\[([^\]|]+)\|(https?://[^\]\s]+)\]\]")
 AGE_RE = re.compile(r"\{\{age:([0-9T:\-]+Z)\}\}")
 SPACING_S = 3.2  # stay under ~20 messages/minute per group
 MAX_LEN = 4000
@@ -141,8 +142,26 @@ def age(published_iso: str) -> str:
     return txt + (" ⚠️ خبر کهنه است" if n > 30 else "")
 
 
+def to_html(text: str) -> str:
+    """Escape for Telegram HTML and turn [[name|url]] into a clickable source name."""
+    links = []
+
+    def keep(mo):
+        links.append((mo.group(1).strip(), mo.group(2)))
+        return f"\x00{len(links) - 1}\x00"
+
+    t = LINK_RE.sub(keep, text)
+    t = t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    for i, (name, url) in enumerate(links):
+        name = name.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        url = url.replace("&", "&amp;").replace('"', "&quot;")
+        t = t.replace(f"\x00{i}\x00", f'<a href="{url}">{name}</a>')
+    return t
+
+
 def send(text: str, reply_to: int | None) -> int | None:
-    payload = {"chat_id": CHAT_ID, "text": text[:MAX_LEN], "disable_web_page_preview": True}
+    payload = {"chat_id": CHAT_ID, "text": to_html(text)[:MAX_LEN], "parse_mode": "HTML",
+               "disable_web_page_preview": True}
     if reply_to:
         payload["reply_parameters"] = {"message_id": reply_to, "allow_sending_without_reply": True}
     for attempt in range(5):
