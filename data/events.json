@@ -772,6 +772,33 @@
    "sources": [
     "defiant"
    ]
+  },
+  {
+   "id": "e-222-u1",
+   "key": "Taiwan says it is confident of keeping previously agreed tariffs with US",
+   "ts": "2026-11-25T23:50:00Z",
+   "seq": 252,
+   "sources": [
+    "inv_economy"
+   ]
+  },
+  {
+   "id": "e-222-u2",
+   "key": "For Trump, doubling down on tariffs is about power, not popularity - Reuters",
+   "ts": "2026-11-25T23:50:00Z",
+   "seq": 253,
+   "sources": [
+    "reuters_gn"
+   ]
+  },
+  {
+   "id": "e-222-u3",
+   "key": "New Trump tariffs would likely increase sugar prices in the US",
+   "ts": "2026-11-25T23:50:00Z",
+   "seq": 254,
+   "sources": [
+    "inv_commod"
+   ]
   }
  ]
 }
