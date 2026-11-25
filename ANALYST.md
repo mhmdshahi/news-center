@@ -32,23 +32,38 @@ Nothing old, nothing duplicated.
    (`data/outbox.json data/cursor.json data/events.json`). Push triggers the sender.
 
 ## Message format
-EVERY message uses the full format below, whatever its importance (importance is only the label in the ⚠️ line).
-No compact/short variants. Every field is mandatory; when a field does not apply, still write it
-(e.g. «سیگنال: ندارد — اثر مستقیم بر بازار ندارد»).
+EVERY message uses the user-approved format below (user's own sample, 2026-11-25). Whatever the importance,
+all fields are mandatory; when a field does not apply, still write it (e.g. «سیگنال : ندارد — اثر مستقیم بر بازار ندارد»).
+Each line starts with ⚠️. Date/time line: run `python3 scripts/jdate.py <published UTC>` and paste its output
+(Jalali date + Tehran time, UTC+3:30). Digits in the date/time and importance lines are Persian (۰-۹).
+
 ```
-📅 HH:MM UTC | HH:MM نیویورک
-📰 <دسته> | <تیتر فارسی>
-⚠️ اهمیت: n/5 · ✅ تأییدشده | ⚠️ تأییدنشده
-📝 <خلاصهٔ خبر در ۲–۳ جمله>
-💡 <توضیح ساده: چرا مهم است>
-📈/📉 سیگنال: <دارایی> <صعودی/نزولی/خنثی> — <دلیل کوتاه>
-⏳ مهلت ورود: <کوتاه/میان‌مدت، یا «سیگنال معاملاتی ندارد»>
-💲 قیمت: <دارایی> {{price:SYMBOL}}
-🔗 <نام منبع(ها)>: <لینک>
+⚠️ تاریخ خبر: <خروجی jdate.py، مثل ۴ آذر : ساعت ۲۰:۵۳ به وقت تهران>
+
+⚠️ لاین خبری <کریپتو | فارکس | بورس آمریکا | کلان | کالا>
+
+⚠️ تیتر خبر : <تیتر فارسی> (<دارایی‌ها/تیکرها>)
+⚠️ درجه اهمیت : <n> از ۱۰۰ ( <برچسب> )
+
+⚠️ متن خبر : <خلاصه ۲–۳ جمله با کلمات خودمان، با ذکر منبع اصلی> (<تک‌منبعی | چندمنبعی | تأییدشده | تأییدنشده؛ نظر تحلیلگر | گزارش | رسمی>)
+
+⚠️ توضیح ساده بات : <توضیح ساده: چرا مهم است و چه اثری روی بازار دارد>
+
+⚠️ سیگنال : <دارایی/شاخص + جهت: صعودی | نزولی | خنثی — دلیل کوتاه>
+⚠️ مهلت ورود : <تا چه رویداد/ساعتی (UTC) اعتبار دارد؛ یا «سیگنال معاملاتی ندارد»>
+
+⚠️ قیمت هنگام خبر : <دارایی> {{price:SYMBOL}}
+
+
+منابع : <منبع۱ | منبع۲ | ...>
+<لینک منبع‌ها، هر کدام در یک خط>
 ```
-The 💲 line always names the asset of the signal (for non-tradable news: the closest market, e.g. S&P 500 / BTC).
-Do not put prices anywhere except the 💲 line.
-Updates start with `🔄 به‌روزرسانی:`.
+Importance scale (0–100) and label: ۰–۲۰ کم · ۲۱–۴۰ معمولی · ۴۱–۶۰ مهم · ۶۱–۸۰ بسیار مهم · ۸۱–۱۰۰ حیاتی
+(100 ≈ Fed rate decision / major hack / ETF approval; 30–40 ≈ a strategist opinion or mid-size company news).
+Event key words (single source, analyst opinion, report, official) go in the parenthesis at the end of «متن خبر».
+The 💲-equivalent line «قیمت هنگام خبر» always names the asset of the signal (for non-tradable news: the closest market,
+e.g. SPY/S&P 500 or BTC); never put prices elsewhere. Sources line lists every source name that carried the item.
+Updates start with a first line `🔄 به‌روزرسانی :` before the same format.
 `دسته` ∈ کریپتو، فارکس، بورس آمریکا، کلان، کالا.
 `{{price:SYMBOL}}` uses Yahoo symbols (filled in at send time): BTC-USD, ETH-USD, XRP-USD, SOL-USD,
 EURUSD=X, GBPUSD=X, USDJPY=X, DX-Y.NYB, GC=F (gold), CL=F (oil), ^GSPC, ^IXIC, or a stock ticker.
