@@ -289,6 +289,51 @@
    "sources": [
     "cnbc_top"
    ]
+  },
+  {
+   "id": "e-53",
+   "key": "Bitcoin miners hit by hashrate hijacking attack exploiting unencrypted connections",
+   "ts": "2026-11-25T19:41:00Z",
+   "seq": 53,
+   "sources": [
+    "theblock"
+   ]
+  },
+  {
+   "id": "e-55",
+   "key": "Watch Oil Flows in Hormuz Strait 'Forever Altered,' Says Tom Kloza - Bloomberg",
+   "ts": "2026-11-25T19:41:00Z",
+   "seq": 55,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-51",
+   "key": "Is Pinterst preparing for a sale? Shares gain ground on executive pay protections",
+   "ts": "2026-11-25T19:41:00Z",
+   "seq": 51,
+   "sources": [
+    "sa_currents"
+   ]
+  },
+  {
+   "id": "e-54",
+   "key": "Micron, Sandisk lead technology stocks with attractive valuations after Q3 earnings",
+   "ts": "2026-11-25T19:41:00Z",
+   "seq": 54,
+   "sources": [
+    "sa_currents"
+   ]
+  },
+  {
+   "id": "e-52",
+   "key": "Haedal opens Sui lending vault to deposits from 15 chains",
+   "ts": "2026-11-25T19:41:00Z",
+   "seq": 52,
+   "sources": [
+    "cryptonews"
+   ]
   }
  ]
 }
