@@ -309,7 +309,8 @@
    "seq": 53,
    "sources": [
     "theblock",
-    "decrypt"
+    "decrypt",
+    "cointelegraph"
    ]
   },
   {
@@ -499,6 +500,24 @@
    "seq": 130,
    "sources": [
     "cointelegraph"
+   ]
+  },
+  {
+   "id": "e-137",
+   "key": "JPMorgan Sees $450 Billion AI Debt Blitz in 2027 Before Plateau - Bloomberg",
+   "ts": "2026-11-25T21:29:00Z",
+   "seq": 137,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-134",
+   "key": "Li Auto earnings analysis: questions answered and next catalysts - Yahoo Finance",
+   "ts": "2026-11-25T21:29:00Z",
+   "seq": 134,
+   "sources": [
+    "yahoo"
    ]
   }
  ]
