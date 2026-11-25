@@ -1,6 +1,6 @@
 {
- "last_seq": 73,
- "updated": "2026-11-25T20:00:00Z",
+ "last_seq": 79,
+ "updated": "2026-11-25T20:06:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -22,7 +22,13 @@
   "66": "Yahoo auto-generated mover/quote page, no news",
   "67": "Yahoo auto-generated mover/quote page, no news",
   "68": "Yahoo auto-generated mover/quote page, no news",
-  "69": "Yahoo auto-generated mover/quote page, no news"
+  "69": "Yahoo auto-generated mover/quote page, no news",
+  "74": "option chart page",
+  "75": "option chart page",
+  "76": "routine annual Fed/agency threshold notice",
+  "77": "routine annual Fed/agency threshold notice",
+  "78": "bank branch PR, irrelevant",
+  "79": "duplicate e-16"
  },
- "last_round_at": "2026-11-25T20:00:00Z"
+ "last_round_at": "2026-11-25T20:06:00Z"
 }
