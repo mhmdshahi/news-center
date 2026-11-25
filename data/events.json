@@ -164,7 +164,8 @@
    "sources": [
     "investinglive",
     "sa_currents",
-    "yahoo"
+    "yahoo",
+    "bloomberg_gn"
    ]
   },
   {
@@ -518,6 +519,15 @@
    "seq": 134,
    "sources": [
     "yahoo"
+   ]
+  },
+  {
+   "id": "e-145",
+   "key": "Tether Expands Latin American Push With Investment in Argentine Fintech Lemon",
+   "ts": "2026-11-25T21:36:00Z",
+   "seq": 145,
+   "sources": [
+    "bitcoincom"
    ]
   }
  ]
