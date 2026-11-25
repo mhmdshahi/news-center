@@ -329,6 +329,28 @@ def main() -> int:
             st["initialized"] = True
             st["initialized_at"] = iso(t0)
 
+    # enrich headline-only items with the article's own description (og:description / meta description)
+    def enrich(it):
+        if len(it["summary"]) >= 80 or "news.google.com" in it["url"]:
+            return
+        try:
+            r = requests.get(it["url"], headers={"User-Agent": UA}, timeout=8)
+            if r.status_code != 200:
+                return
+            html = r.text[:200000]
+            m = (re.search(r'<meta[^>]+property=["\']og:description["\'][^>]+content=["\']([^"\']{40,})', html, re.I)
+                 or re.search(r'<meta[^>]+name=["\']description["\'][^>]+content=["\']([^"\']{40,})', html, re.I))
+            if m:
+                it["summary"] = strip_html(m.group(1))[:600]
+                it["summary_from"] = "article_meta"
+        except requests.RequestException:
+            pass
+
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        list(pool.map(enrich, new_items[:20]))
+    for it in new_items:
+        it["headline_only"] = len(it["summary"]) < 40 or strip_html(it["summary"]).lower().startswith(it["title"].lower()[:40])
+
     # write outputs
     new_items.sort(key=lambda x: x["published"])
     for i, it in enumerate(new_items):  # keep seq in chronological order

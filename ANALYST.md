@@ -86,7 +86,12 @@ Summaries are written in our own words — never copy article text.
    «مهلت ورود» must say from when the signal can act (e.g. «بازار سهام تا جمعه ۱۴:۳۰ UTC بسته است»).
 5. **Scheduled data.** If a high-impact release (CPI, NFP, FOMC, PCE, GDP) is due within 60 min,
    say so in «مهلت ورود» — it can reverse the signal.
-6. **No fabrication.** If only a headline is available, say «فقط تیتر در دسترس است» in «متن خبر»;
+6. **Accuracy first, every card.** Use the item's summary (collector adds the article's own description
+   when the feed has none). If `headline_only` is true, write «فقط تیتر در دسترس است» and keep the signal
+   «خنثی» with «اطمینان: کم» unless the headline itself is an official, unambiguous fact (e.g. a rate decision).
+   Cross-check against other items and events of the last hours; mention contradictions. Never shorten
+   or simplify the analysis to save time — quality is fixed regardless of volume.
+7. **No fabrication.** If only a headline is available, say «فقط تیتر در دسترس است» in «متن خبر»;
    never invent figures, quotes or reasons.
 
 ## Round report (each round, in chat)

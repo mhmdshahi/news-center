@@ -23,6 +23,11 @@ jobs:
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: python collector/collect.py
+      - name: Stall alert (analysis stopped?)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scripts/stall_alert.py || true
       - name: Commit library
         run: |
-          scripts/commit_push.sh "collect $(date -u +%H:%M)Z" data/inbox.jsonl data/seen.json data/sources_status.json data/dropped.jsonl data/runs.jsonl
+          scripts/commit_push.sh "collect $(date -u +%H:%M)Z" data/inbox.jsonl data/seen.json data/sources_status.json data/dropped.jsonl data/runs.jsonl data/alert.json
