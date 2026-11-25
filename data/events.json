@@ -197,7 +197,10 @@
    "seq": 30,
    "sources": [
     "sa_currents",
-    "bloomberg_gn"
+    "bloomberg_gn",
+    "inv_economy",
+    "bloomberg_gn",
+    "mw_top"
    ]
   },
   {
@@ -333,6 +336,15 @@
    "seq": 52,
    "sources": [
     "cryptonews"
+   ]
+  },
+  {
+   "id": "e-62",
+   "key": "Nvidia is heading for its first ‘death cross’ since March 2025 as stock continues to struggle",
+   "ts": "2026-11-25T19:47:00Z",
+   "seq": 62,
+   "sources": [
+    "mw_top"
    ]
   }
  ]

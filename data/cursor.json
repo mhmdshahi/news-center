@@ -1,6 +1,6 @@
 {
- "last_seq": 55,
- "updated": "2026-11-25T19:41:00Z",
+ "last_seq": 62,
+ "updated": "2026-11-25T19:47:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -14,7 +14,9 @@
   "46": "1Password breach, not market",
   "47": "CIBC Abu Dhabi expansion (German PR), marginal",
   "49": "duplicate of e-29",
-  "50": "option chart page"
+  "50": "option chart page",
+  "56": "dup e-30 (merged into update m-59)",
+  "58": "dup e-30 Beige Book"
  },
- "last_round_at": "2026-11-25T19:41:00Z"
+ "last_round_at": "2026-11-25T19:47:00Z"
 }
