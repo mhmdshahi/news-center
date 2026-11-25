@@ -1,0 +1,107 @@
+# News Center — layer-1 filter rules (code, no AI)
+
+freshness:
+  max_age_minutes: 45          # older than this (by publish time) -> dropped as "old"
+  future_tolerance_minutes: 10 # publish time this far in the future -> use first-seen time instead
+  memory_hours: 72             # how long seen URLs / titles are remembered
+
+similarity:
+  title_threshold: 85          # token-sort similarity (0-100) at/above which titles are duplicates
+  numbers_must_match: true     # same wording but different numbers -> NOT a duplicate
+
+# Titles (or feed tags) matching any of these are dropped as junk/promotional.
+blacklist:
+  - '\bprice prediction\b'
+  - '\bpredicts?\b.*\bprice\b.*\b20(2[6-9]|3\d)\b'
+  - '\bsponsored\b'
+  - '\bpromo(tion)? code\b'
+  - '\bbonus code\b'
+  - '\bgiveaway\b'
+  - '\bpresale\b'
+  - '\bpre-sale\b'
+  - '\bbest (crypto|coins?|altcoins?|stocks?) to buy\b'
+  - '\b(top|best) \d+ (crypto|coins?|altcoins?|meme ?coins?|stocks?)\b'
+  - '\bcasino\b'
+  - '\bsports? ?bet'
+  - '\bhow to buy\b'
+  - '\bwebinar\b'
+  - '\bjoin us\b'
+  - '\bpodcast\b'
+  - '\bnewsletter\b'
+  - '\bcrossword\b'
+  - '\bhoroscope\b'
+  - '\blaw firm\b.*\b(investigat|class action|reminds|encourages)'
+  - '\bclass action\b'
+  - '\bshareholder (alert|rights)\b'
+  - '\bdeadline alert\b'
+  - '\bannounces? (the )?(date|timing) (of|for) (its )?(first|second|third|fourth)'
+  - '\bconference call\b.*\b(to (host|discuss)|schedule)'
+  - '\bto (present|participate) at\b.*\bconference\b'
+
+blacklist_tags:
+  - 'sponsored'
+  - 'press release'
+  - 'partner content'
+  - 'paid'
+
+# For sources with filter: keywords — at least one must match (title or summary).
+keywords:
+  - '\b(stocks?|equit(y|ies)|shares|wall street|s&p ?500|nasdaq|dow( jones)?|russell|vix|ipo|earnings|guidance|revenue|eps|buyback|dividend|downgrade|upgrade|price target)\b'
+  - '\b(fed|federal reserve|fomc|powell|rate (cut|hike)|interest rates?|treasur(y|ies)|bond yields?|yields?|inflation|cpi|pce|ppi|gdp|jobs report|payrolls|nfp|unemployment|jobless claims|retail sales|ism|pmi|recession|tariffs?)\b'
+  - '\b(dollar|euro|yen|yuan|sterling|pound|franc|loonie|aussie|forex|fx|currenc(y|ies)|ecb|boj|boe|bank of (japan|england|canada)|rba|snb|lagarde|ueda|bailey)\b'
+  - '\b(oil|crude|brent|wti|opec|gold|silver|copper|natural gas|commodit(y|ies))\b'
+  - '\b(bitcoin|btc|ethereum|ether|eth|crypto|cryptocurrenc(y|ies)|stablecoins?|xrp|solana|sol|binance|coinbase|blockchain|etfs?|tether|usdc|defi|token)\b'
+  - '\b(sec|cftc|regulators?|antitrust|sanctions?)\b'
+  - '\b(nvidia|apple|microsoft|amazon|alphabet|google|meta|tesla|broadcom|amd|intel|tsmc|oracle|netflix|jpmorgan|goldman|berkshire|palantir|microstrategy|strategy inc)\b'
+  - '\b(merger|acquisition|acquire[sd]?|takeover|bankruptcy|chapter 11|layoffs?|default|downgrade[sd]?)\b'
+
+# For sources with filter: ticker — the release must name an exchange ticker (or match keywords above).
+ticker_pattern: '\((NYSE|NASDAQ|Nasdaq|NYSE American|NYSE Arca|Cboe)[^)]{0,20}?:\s*[A-Z][A-Z.\-]{0,6}\)'
+
+# For sources with filter: watchlist — SEC 8-K filers that are posted (company name contains any of these).
+watchlist:
+  - NVIDIA
+  - APPLE INC
+  - MICROSOFT
+  - AMAZON COM
+  - ALPHABET
+  - META PLATFORMS
+  - TESLA
+  - BROADCOM
+  - ADVANCED MICRO DEVICES
+  - INTEL CORP
+  - ORACLE CORP
+  - NETFLIX
+  - JPMORGAN
+  - GOLDMAN SACHS
+  - BANK OF AMERICA
+  - CITIGROUP
+  - WELLS FARGO
+  - MORGAN STANLEY
+  - BERKSHIRE HATHAWAY
+  - PALANTIR
+  - STRATEGY INC
+  - MICROSTRATEGY
+  - COINBASE
+  - ROBINHOOD
+  - BLOCK, INC
+  - MARATHON DIGITAL
+  - MARA HOLDINGS
+  - RIOT PLATFORMS
+  - CLEANSPARK
+  - EXXON MOBIL
+  - CHEVRON
+  - WALMART
+  - COSTCO
+  - UNITEDHEALTH
+  - ELI LILLY
+  - VISA INC
+  - MASTERCARD
+  - SALESFORCE
+  - ADOBE
+  - QUALCOMM
+  - MICRON TECHNOLOGY
+  - SUPER MICRO COMPUTER
+  - COREWEAVE
+  - BOEING
+  - CIRCLE INTERNET

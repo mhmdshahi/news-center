@@ -1,0 +1,68 @@
+# News Center — RSS sources
+# tier: 3 = official / top-tier, 2 = reputable, 1 = fast but needs confirmation
+# category: crypto | forex | stocks | macro | general
+# filter: all       -> every item is relevant (dedicated market source)
+#         keywords  -> item must match market keywords (config/rules.yaml)
+#         ticker    -> press release must name an NYSE/Nasdaq ticker or match keywords
+#         watchlist -> SEC filings: company must be on the watchlist
+# enabled: false -> skipped
+
+sources:
+  # ── Central banks & official statistics ─────────────────────────
+  - {id: fed_press,     name: "Federal Reserve – Press",    tier: 3, category: macro,  filter: all, url: "https://www.federalreserve.gov/feeds/press_all.xml"}
+  - {id: fed_speeches,  name: "Federal Reserve – Speeches", tier: 3, category: macro,  filter: all, url: "https://www.federalreserve.gov/feeds/speeches.xml"}
+  - {id: ecb,           name: "ECB",                        tier: 3, category: forex,  filter: all, url: "https://www.ecb.europa.eu/rss/press.html"}
+  - {id: boe,           name: "Bank of England",            tier: 3, category: forex,  filter: all, url: "https://www.bankofengland.co.uk/rss/news"}
+  - {id: boj,           name: "Bank of Japan",              tier: 3, category: forex,  filter: all, url: "https://www.boj.or.jp/en/rss/whatsnew.xml"}
+  - {id: boc,           name: "Bank of Canada",             tier: 3, category: forex,  filter: all, url: "https://www.bankofcanada.ca/feed/"}
+  - {id: rba,           name: "Reserve Bank of Australia",  tier: 3, category: forex,  filter: all, url: "https://www.rba.gov.au/rss/rss-cb-media-releases.xml"}
+  - {id: snb,           name: "Swiss National Bank",        tier: 3, category: forex,  filter: all, url: "https://www.snb.ch/public/en/rss/pressrel"}
+  - {id: bls,           name: "BLS",                        tier: 3, category: macro,  filter: all, url: "https://www.bls.gov/feed/bls_latest.rss"}
+  - {id: bea,           name: "BEA",                        tier: 3, category: macro,  filter: all, url: "https://apps.bea.gov/rss/rss.xml"}
+  - {id: treasury,      name: "US Treasury",                tier: 3, category: macro,  filter: keywords, url: "https://home.treasury.gov/news/press-releases/feed"}
+  - {id: cftc,          name: "CFTC",                       tier: 3, category: macro,  filter: all, url: "https://www.cftc.gov/RSS/RSSGP/rssgp.xml"}
+  - {id: sec_press,     name: "SEC – Press releases",       tier: 3, category: stocks, filter: all, url: "https://www.sec.gov/news/pressreleases.rss"}
+  - {id: sec_8k,        name: "SEC – 8-K filings",          tier: 3, category: stocks, filter: watchlist, url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=8-K&company=&dateb=&owner=include&start=0&count=100&output=atom"}
+
+  # ── Major financial newswires (headlines) ───────────────────────
+  - {id: reuters_gn,    name: "Reuters (via Google News)",   tier: 3, category: general, filter: keywords, url: "https://news.google.com/rss/search?q=site:reuters.com+when:1h&hl=en-US&gl=US&ceid=US:en"}
+  - {id: bloomberg_gn,  name: "Bloomberg (via Google News)", tier: 3, category: general, filter: keywords, url: "https://news.google.com/rss/search?q=site:bloomberg.com+when:1h&hl=en-US&gl=US&ceid=US:en"}
+  - {id: wsj_markets,   name: "WSJ – Markets",              tier: 3, category: general, filter: keywords, url: "https://feeds.a.dj.com/rss/RSSMarketsMain.xml"}
+  - {id: ft_markets,    name: "Financial Times – Markets",  tier: 3, category: general, filter: keywords, url: "https://www.ft.com/markets?format=rss"}
+  - {id: cnbc_top,      name: "CNBC – Top News",            tier: 2, category: general, filter: keywords, url: "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114"}
+  - {id: cnbc_markets,  name: "CNBC – Markets",             tier: 2, category: general, filter: keywords, url: "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15839069"}
+  - {id: mw_top,        name: "MarketWatch – Top",          tier: 2, category: general, filter: keywords, url: "https://feeds.content.dowjones.io/public/rss/mw_topstories"}
+  - {id: mw_pulse,      name: "MarketWatch – Market Pulse", tier: 2, category: general, filter: keywords, url: "https://feeds.content.dowjones.io/public/rss/mw_marketpulse"}
+  - {id: yahoo,         name: "Yahoo Finance",              tier: 2, category: general, filter: keywords, url: "https://finance.yahoo.com/news/rssindex"}
+  - {id: nasdaq,        name: "Nasdaq.com – Markets",       tier: 2, category: stocks,  filter: keywords, url: "https://www.nasdaq.com/feed/rssoutbound?category=Markets"}
+  - {id: inv_economy,   name: "Investing.com – Economy",    tier: 2, category: macro,   filter: keywords, url: "https://www.investing.com/rss/news_14.rss"}
+  - {id: kitco,         name: "Kitco",                      tier: 2, category: forex,   filter: keywords, url: "https://www.kitco.com/rss/KitcoNews.xml"}
+
+  # ── Forex ───────────────────────────────────────────────────────
+  - {id: investinglive, name: "InvestingLive (ex-ForexLive)", tier: 3, category: forex, filter: all,      url: "https://investinglive.com/feed/"}
+  - {id: fxstreet,      name: "FXStreet",                   tier: 2, category: forex,   filter: all,      url: "https://www.fxstreet.com/rss/news"}
+  - {id: inv_forex,     name: "Investing.com – Forex",      tier: 2, category: forex,   filter: all,      url: "https://www.investing.com/rss/news_1.rss"}
+  - {id: inv_commod,    name: "Investing.com – Commodities", tier: 2, category: forex,  filter: keywords, url: "https://www.investing.com/rss/news_11.rss"}
+
+  # ── US stocks ───────────────────────────────────────────────────
+  - {id: businesswire,  name: "Business Wire",              tier: 3, category: stocks,  filter: ticker,   url: "https://feed.businesswire.com/rss/home/?rss=G1QFDERJXkJeEFpRWQ=="}
+  - {id: prnewswire,    name: "PR Newswire",                tier: 3, category: stocks,  filter: ticker,   url: "https://www.prnewswire.com/rss/news-releases-list.rss"}
+  - {id: globenewswire, name: "GlobeNewswire",              tier: 3, category: stocks,  filter: ticker,   url: "https://www.globenewswire.com/RssFeed/orgclass/1/feedTitle/GlobeNewswire%20-%20News%20about%20Public%20Companies"}
+  - {id: benzinga,      name: "Benzinga",                   tier: 2, category: stocks,  filter: keywords, url: "https://www.benzinga.com/feed"}
+  - {id: sa_currents,   name: "Seeking Alpha – Market Currents", tier: 2, category: stocks, filter: keywords, url: "https://seekingalpha.com/market_currents.xml"}
+
+  # ── Crypto ──────────────────────────────────────────────────────
+  - {id: coindesk,      name: "CoinDesk",                   tier: 3, category: crypto,  filter: all, url: "https://www.coindesk.com/arc/outboundfeeds/rss/"}
+  - {id: theblock,      name: "The Block",                  tier: 3, category: crypto,  filter: all, url: "https://www.theblock.co/rss.xml"}
+  - {id: blockworks,    name: "Blockworks",                 tier: 3, category: crypto,  filter: all, url: "https://blockworks.co/feed"}
+  - {id: dlnews,        name: "DL News",                    tier: 3, category: crypto,  filter: all, url: "https://www.dlnews.com/arc/outboundfeeds/rss/"}
+  - {id: cointelegraph, name: "Cointelegraph",              tier: 2, category: crypto,  filter: all, url: "https://cointelegraph.com/rss"}
+  - {id: decrypt,       name: "Decrypt",                    tier: 2, category: crypto,  filter: all, url: "https://decrypt.co/feed"}
+  - {id: btcmag,        name: "Bitcoin Magazine",           tier: 2, category: crypto,  filter: all, url: "https://bitcoinmagazine.com/.rss/full/"}
+  - {id: defiant,       name: "The Defiant",                tier: 2, category: crypto,  filter: all, url: "https://thedefiant.io/api/feed"}
+  - {id: cryptoslate,   name: "CryptoSlate",                tier: 2, category: crypto,  filter: all, url: "https://cryptoslate.com/feed/"}
+  - {id: cryptonews,    name: "crypto.news",                tier: 1, category: crypto,  filter: all, url: "https://crypto.news/feed/"}
+  - {id: bitcoincom,    name: "Bitcoin.com News",           tier: 1, category: crypto,  filter: all, url: "https://news.bitcoin.com/feed/"}
+  - {id: bitcoinist,    name: "Bitcoinist",                 tier: 1, category: crypto,  filter: all, url: "https://bitcoinist.com/feed/"}
+  - {id: coinbase_blog, name: "Coinbase Blog",              tier: 3, category: crypto,  filter: all, url: "https://www.coinbase.com/blog/rss.xml"}
+  - {id: kraken_blog,   name: "Kraken Blog",                tier: 3, category: crypto,  filter: all, url: "https://blog.kraken.com/feed"}
