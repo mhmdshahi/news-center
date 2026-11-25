@@ -1,6 +1,6 @@
 {
- "last_seq": 62,
- "updated": "2026-11-25T19:47:00Z",
+ "last_seq": 64,
+ "updated": "2026-11-25T19:54:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -16,7 +16,8 @@
   "49": "duplicate of e-29",
   "50": "option chart page",
   "56": "dup e-30 (merged into update m-59)",
-  "58": "dup e-30 Beige Book"
+  "58": "dup e-30 Beige Book",
+  "63": "Yahoo quote page"
  },
- "last_round_at": "2026-11-25T19:47:00Z"
+ "last_round_at": "2026-11-25T19:54:00Z"
 }
