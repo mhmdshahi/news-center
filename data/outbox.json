@@ -175,6 +175,74 @@
    ],
    "importance": 1,
    "text": "📅 19:00 UTC · بورس آمریکا · اهمیت 1/5 · ✅\n📰 Suburban Propane (SPH) گزارش سالانهٔ 10-K سال مالی منتهی به ۲۶ سپتامبر را ثبت کرد\n💡 گزارش سالانهٔ معمول؛ برای معامله‌گران SPH قابل بررسی است، اثر بازاری عمومی ندارد.\n🔗 PR Newswire: https://www.prnewswire.com/news-releases/suburban-propane-partners-lp-annual-report-available-online-302949866.html"
+  },
+  {
+   "id": "m-24",
+   "event_id": "e-16-u1",
+   "reply_to_event": "e-16",
+   "created": "2026-11-25T19:11:00Z",
+   "seqs": [
+    22,
+    24
+   ],
+   "importance": 4,
+   "text": "🔄 به‌روزرسانی: تأیید رسمی\n📅 18:57 UTC | 13:57 نیویورک\n📰 بورس آمریکا | S&P رتبهٔ انویدیا را رسماً در «CreditWatch منفی» گذاشت\n⚠️ اهمیت: 4/5 · ✅ تأییدشده (رویترز و بلومبرگ)\n📝 رویترز و بلومبرگ تأیید کردند که S&P Global به‌دلیل افزایش ریسک مدیریتی و حاکمیت شرکتی، رتبهٔ انویدیا را در دیده‌بانی منفی قرار داده و احتمال کاهش رتبه وجود دارد.\n💡 خبر قبلی که فقط یک منبع داشت حالا تأیید شد. هنوز رتبه کاهش نیافته، ولی بازار سهام هوش مصنوعی به هر خبر منفی حساس است.\n📉 سیگنال: NVDA نزولی کوتاه‌مدت (ملایم) — خبر منفی تأییدشده روی سهمی تحت فشار\n⏳ مهلت ورود: کوتاه‌مدت؛ اگر خریدار بودی مراقب ریزش بیشتر باش\n💲 قیمت: NVDA {{price:NVDA}}\n🔗 Reuters: https://news.google.com/rss/articles/CBMiwwFBVV95cUxQamtqRVI0MHhzRTB5Tk1wMDNXRGhEYi1zVzFJT3hBMFNzUmt1RWptQnpTNWR1QTllclluaW50Z0tmSWVIbW5DWXJoaVJlblRoN2puUGFjbEtkOTZ6VUk5ZGEtLU9vYnJOMm53Tm5Idzg0dzNJSlRXVEI1b2xIQ1BBaVVuQmthNFlremtLRnNFY2RWdjNGcHNPV3ZrQ2JOTGhNMTdKbWpfWGtRMjBEekpJS0lmejFMSUxUakFYS1FvUnVxckk?oc=5\n🔗 Bloomberg: https://news.google.com/rss/articles/CBMitgFBVV95cUxOODhZc1ZaTjRJWFV2emVDd3pSLXljRGVsRXRaSGVTalU5TzFGRVNKdkYweHI5WkdnRGlRZ1c2Z2RuaHZrX1h4dlZzTXFxbkVRdnR4VUp6eFI4YWxmQ21FZUdwMWhlUHI0Q21TSGpxc2trdjFKd1Y0UW9SRTUxdVhFRkt1RVh2R0JuZDFRZG9JTDJRYzlHN1lSVHoxQUJUVU04V1JFSG1rM1pUZjFvQW00em1VWXQ4UQ?oc=5"
+  },
+  {
+   "id": "m-23",
+   "event_id": "e-23",
+   "reply_to_event": null,
+   "created": "2026-11-25T19:11:00Z",
+   "seqs": [
+    23
+   ],
+   "importance": 3,
+   "text": "📅 18:56 UTC | 13:56 نیویورک\n📰 بورس آمریکا | بازار سهام با بازگشت بزرگ از افت‌های امروز جان گرفت\n⚠️ اهمیت: 3/5 · ✅ تأییدشده (InvestingLive)\n📝 InvestingLive می‌نویسد بازار پس از افت‌های اولیهٔ امروز بازگشت بزرگی داشته است. دوشنبه مایک ویلسون از مورگان استنلی توصیهٔ «اضافه‌وزن حداکثری» روی سهام جهانی داده و گفته بود چرخهٔ سرمایه‌گذاری هوش مصنوعی دست‌نخورده است؛ این توصیه صبح امروز اشتباه به نظر می‌رسید، ولی حالا موجه‌تر شده است.\n💡 جهت بازار نسبت به ساعت‌های قبل عوض شده است: فروش صبح با خرید جایگزین شد و ریسک‌گریزی کمتر شده. هنوز نوسان بالاست.\n📈 سیگنال: S&P 500 صعودی کوتاه‌مدت — بازگشت خریداران پس از افت صبح\n⏳ مهلت ورود: کوتاه‌مدت (امروز)؛ مراقب نوسان بعد از ۲۰:۰۰ UTC باش\n💲 قیمت: S&P 500 {{price:^GSPC}}\n🔗 InvestingLive: https://investinglive.com/stocks/stock-markets-mount-a-huge-comeback/"
+  },
+  {
+   "id": "m-26",
+   "event_id": "e-5-u1",
+   "reply_to_event": "e-5",
+   "created": "2026-11-25T19:11:00Z",
+   "seqs": [
+    26,
+    27
+   ],
+   "importance": 4,
+   "text": "🔄 به‌روزرسانی: جزئیات تعرفه‌های جدید\n📅 19:05 UTC | 14:05 نیویورک\n📰 کلان | آمریکا تعرفهٔ جدید علیه ۱۴ شریک تجاری پیشنهاد داد؛ اتحادیهٔ اروپا مخالفت کرد\n⚠️ اهمیت: 4/5 · ✅ تأییدشده (Investing.com و The Defiant)\n📝 طرح پیشنهادی دولت آمریکا ۱۴ شریک تجاری را به‌خاطر نگرانی از مازاد ظرفیت تولید هدف گرفته و ظاهراً شامل ۲۰٪ برای چین است. اتحادیهٔ اروپا یافتهٔ آمریکا دربارهٔ مازاد ظرفیت را رد کرد و گفت هر تعرفه باید در سقف ۱۵٪ توافق‌شده بماند. شنیدن نظرات عمومی برای ۲۵ ژانویه تعیین شده است.\n💡 این هنوز پیشنهاد است، نه تعرفهٔ اجراشده؛ ولی تنش تجاری با اروپا و چین می‌تواند دلار را تقویت و سهام را تحت فشار بگذارد.\n📉 سیگنال: EUR/USD نزولی ملایم — ریسک تنش تجاری و دلار قوی‌تر\n⏳ مهلت ورود: میان‌مدت؛ تا جلسهٔ ۲۵ ژانویه خبرها ادامه دارد\n💲 قیمت: EUR/USD {{price:EURUSD=X}}\n🔗 Investing.com: https://www.investing.com/news/economy-news/trump-admin-proposes-new-tariffs-on-14-trading-partners-20-on-china--report-5050709\n🔗 The Defiant: https://thedefiant.io/news/markets/eu-rejects-us-overcapacity-finding-defends-15-tariff-cap"
+  },
+  {
+   "id": "m-25",
+   "event_id": "e-25",
+   "reply_to_event": null,
+   "created": "2026-11-25T19:11:00Z",
+   "seqs": [
+    25
+   ],
+   "importance": 2,
+   "text": "📅 19:01 UTC | 14:01 نیویورک\n📰 بورس آمریکا | کوروییو با قرارداد تراشهٔ متا وام ۴.۵ میلیارد دلاری را عرضه می‌کند\n⚠️ اهمیت: 2/5 · ⚠️ تأییدنشده (گزارش، فقط Seeking Alpha)\n📝 به گزارشی که Seeking Alpha نقل کرده، شرکت CoreWeave برای فروش وام ۴.۵ میلیارد دلاری از قرارداد تراشه‌اش با متا به‌عنوان پشتوانه استفاده می‌کند.\n💡 تأمین مالی با پشتوانهٔ قرارداد مشتری بزرگ یعنی دسترسی به سرمایه؛ ولی بدهی بیشتر ریسک مالی شرکت را هم بالا می‌برد.\n📈 سیگنال: CRWV خنثی — هم نقدینگی بیشتر، هم بدهی بیشتر\n⏳ مهلت ورود: سیگنال معاملاتی قطعی ندارد؛ منتظر تأیید رسمی بمان\n💲 قیمت: CRWV {{price:CRWV}}\n🔗 Seeking Alpha: https://seekingalpha.com/news/4676672-coreweave-taps-meta-chip-deal-to-back-45b-loan-sale-report?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "id": "m-28",
+   "event_id": "e-28",
+   "reply_to_event": null,
+   "created": "2026-11-25T19:11:00Z",
+   "seqs": [
+    28
+   ],
+   "importance": 2,
+   "text": "📅 19:05 UTC | 14:05 نیویورک\n📰 کریپتو | لایحهٔ ذخیرهٔ ملی بیت‌کوین آمریکا به فهرست رسمی مجلس نمایندگان رسید\n⚠️ اهمیت: 2/5 · ⚠️ تأییدنشده (فقط The Defiant)\n📝 به گزارش The Defiant، این لایحه وارد «Union Calendar» مجلس نمایندگان شده است. بند ۵ آن می‌گوید بیت‌کوین‌های ذخیره‌شدهٔ فدرال باید ۲۰ سال از زمان تصویب نگه داشته شوند. رأی‌گیری هنوز انجام نشده است.\n💡 رسیدن به فهرست فقط یک مرحلهٔ رویه‌ای است و تصویب نیست؛ ولی نشان می‌دهد موضوع ذخیرهٔ بیت‌کوین هنوز زنده است.\n📈 سیگنال: BTC خنثی — اثر فوری ندارد؛ برای بلندمدت مثبت اگر لایحه رأی بیاورد\n⏳ مهلت ورود: سیگنال معاملاتی کوتاه‌مدت ندارد\n💲 قیمت: BTC {{price:BTC-USD}}\n🔗 The Defiant: https://thedefiant.io/news/regulation/us-bitcoin-reserve-bill-reaches-house-union-calendar"
+  },
+  {
+   "id": "m-29",
+   "event_id": "e-29",
+   "reply_to_event": null,
+   "created": "2026-11-25T19:11:00Z",
+   "seqs": [
+    29
+   ],
+   "importance": 2,
+   "text": "📅 19:05 UTC | 14:05 نیویورک\n📰 کریپتو | فیدلیتی برای صندوق اسپات چین‌لینک (LINK) در نزدک درخواست ثبت داد\n⚠️ اهمیت: 2/5 · ⚠️ تأییدنشده (فقط The Defiant)\n📝 به گزارش The Defiant، فیدلیتی درخواست ثبت صندوقی را داده که LINK را مستقیم نگه می‌دارد و استیک نمی‌کند. گری‌اسکیل و بایتوایز قبلاً چنین محصولی دارند. این ثبت درخواست است، نه عرضهٔ نهایی.\n💡 ورود مدیر دارایی بزرگی مثل فیدلیتی نشانهٔ تقاضای نهادی برای LINK است؛ ولی تا تأیید و عرضه اثر محدود است.\n📈 سیگنال: LINK صعودی ملایم — تقاضای نهادی احتمالی\n⏳ مهلت ورود: کوتاه‌مدت؛ اغلب خبر ثبت درخواست زود قیمت‌گذاری می‌شود\n💲 قیمت: LINK {{price:LINK-USD}}\n🔗 The Defiant: https://thedefiant.io/converge/tradfi-and-fintech/fidelity-files-for-spot-chainlink-fund-on-nasdaq"
   }
  ]
 }

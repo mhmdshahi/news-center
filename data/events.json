@@ -6,8 +6,11 @@
    "ts": "2026-11-25T18:48:00Z",
    "seq": 5,
    "sources": [
-    "reuters_gn"
-   ]
+    "reuters_gn",
+    "inv_economy",
+    "defiant"
+   ],
+   "note": "update: 14 partners, EU rejects, hearing Jan 25"
   },
   {
    "id": "e-4",
@@ -96,8 +99,11 @@
    "ts": "2026-11-25T19:03:00Z",
    "seq": 16,
    "sources": [
-    "defiant"
-   ]
+    "defiant",
+    "reuters_gn",
+    "bloomberg_gn"
+   ],
+   "confirmed": true
   },
   {
    "id": "e-18",
@@ -142,6 +148,42 @@
    "seq": 17,
    "sources": [
     "prnewswire"
+   ]
+  },
+  {
+   "id": "e-23",
+   "key": "Stock markets mount a huge comeback",
+   "ts": "2026-11-25T19:11:00Z",
+   "seq": 23,
+   "sources": [
+    "investinglive"
+   ]
+  },
+  {
+   "id": "e-25",
+   "key": "CoreWeave taps Meta chip deal to back $4.5B loan sale: report",
+   "ts": "2026-11-25T19:11:00Z",
+   "seq": 25,
+   "sources": [
+    "sa_currents"
+   ]
+  },
+  {
+   "id": "e-28",
+   "key": "US Bitcoin Reserve Bill Reaches House Union Calendar",
+   "ts": "2026-11-25T19:11:00Z",
+   "seq": 28,
+   "sources": [
+    "defiant"
+   ]
+  },
+  {
+   "id": "e-29",
+   "key": "Fidelity Files for Spot Chainlink Fund on Nasdaq",
+   "ts": "2026-11-25T19:11:00Z",
+   "seq": 29,
+   "sources": [
+    "defiant"
    ]
   }
  ]
