@@ -565,6 +565,24 @@
    "sources": [
     "reuters_gn"
    ]
+  },
+  {
+   "id": "e-171",
+   "key": "Palo Alto Networks Stock Slides After the Close: What's Happening?",
+   "ts": "2026-11-25T22:02:00Z",
+   "seq": 171,
+   "sources": [
+    "benzinga"
+   ]
+  },
+  {
+   "id": "e-169",
+   "key": "Switzerland clears 57 jurisdictions for crypto tax data sharing",
+   "ts": "2026-11-25T22:02:00Z",
+   "seq": 169,
+   "sources": [
+    "cointelegraph"
+   ]
   }
  ]
 }
