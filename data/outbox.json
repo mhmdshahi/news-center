@@ -1,1 +1,59 @@
-{"messages": []}
+{
+ "messages": [
+  {
+   "id": "m-5",
+   "event_id": "e-5",
+   "reply_to_event": null,
+   "created": "2026-11-25T18:48:00Z",
+   "seqs": [
+    5
+   ],
+   "importance": 4,
+   "text": "📅 18:06 UTC | 13:06 نیویورک\n📰 کلان | ترامپ تعرفه‌های تازه‌ای علیه «ظرفیت مازاد تولید» اعلام کرد\n⚠️ اهمیت: 4/5 · ✅ تأییدشده\n📝 به گزارش رویترز، ترامپ بستهٔ جدیدی از تعرفه‌ها را برای مقابله با مازاد ظرفیت کارخانه‌ای کشورهای دیگر رونمایی کرد؛ آن هم با وجود شکست در انتخابات میان‌دوره‌ای.\n💡 تعرفهٔ جدید یعنی ریسک تورم بیشتر و فشار بر تجارت جهانی؛ بازار معمولاً با فروش سهام و تقویت دلار واکنش نشان می‌دهد.\n📉 سیگنال: S&P 500 نزولی کوتاه‌مدت — ریسک‌گریزی و نگرانی تورمی\n⏳ مهلت ورود: کوتاه‌مدت (امروز)\n💲 قیمت: S&P 500 {{price:^GSPC}}\n🔗 Reuters: https://news.google.com/rss/articles/CBMivgFBVV95cUxOcjZ1MUw5RG5fdk0tUjNTRFNIRzl5amR0VklFSzdTOUlUS2hxNWk5aV9xcm5VWmQtZGRkdXVKMWZ3Um5qZHluSFp4MGNIdHNETlZPck1RcmJmUC1oZHFtWFdYT29PbkdjUU1IbjQyWE9GRFJZdXFwTVFRMEtDcl81bXpDS3RHSHNka3VSbGlHNmNFV09uMTE1aExBRVkxUldZUmpwX3hYdGduS1BJcW1QRlY4ZjdyYkZyWTI0dVBB?oc=5"
+  },
+  {
+   "id": "m-4",
+   "event_id": "e-4",
+   "reply_to_event": null,
+   "created": "2026-11-25T18:48:00Z",
+   "seqs": [
+    4
+   ],
+   "importance": 4,
+   "text": "📅 18:35 UTC | 13:35 نیویورک\n📰 کالا | طلا به پایین‌ترین سطح بیش از یک سال اخیر رسید\n⚠️ اهمیت: 4/5 · ✅ تأییدشده\n📝 به گزارش CNBC، طلا پس از دادهٔ تورمی قوی آمریکا به کف بیش از یک‌ساله سقوط کرد؛ داده‌ها نگرانی از ادامهٔ مسیر افزایش نرخ بهرهٔ فدرال رزرو را بیشتر کرد.\n💡 تورم بالاتر = احتمال نرخ بهرهٔ بالاتر = دلار قوی‌تر؛ طلا که سود ندارد در این شرایط جذابیتش را از دست می‌دهد.\n📉 سیگنال: طلا نزولی — فشار نرخ بهره و دلار\n⏳ مهلت ورود: کوتاه تا میان‌مدت\n💲 قیمت: طلا {{price:GC=F}}\n🔗 CNBC: https://www.cnbc.com/2026/11/25/gold-metals-federal-reserve-inflation.html"
+  },
+  {
+   "id": "m-2",
+   "event_id": "e-2",
+   "reply_to_event": null,
+   "created": "2026-11-25T18:48:00Z",
+   "seqs": [
+    2
+   ],
+   "importance": 3,
+   "text": "📅 18:32 UTC | 13:32 نیویورک\n📰 بورس آمریکا | بازگشت جنسن هوانگ به انویدیا، دعوای واشنگتن بر سر دسترسی چین به تراشه را داغ کرد\n⚠️ اهمیت: 3/5 · ✅ تأییدشده\n📝 رویترز گزارش داد بازگشت هوانگ به انویدیا بحث سیاسی در واشنگتن دربارهٔ محدودیت صادرات تراشه به چین را دوباره شعله‌ور کرده است (فعلاً فقط تیتر در دسترس است).\n💡 هر سخت‌گیری تازه روی فروش به چین، بخشی از درآمد انویدیا را تهدید می‌کند.\n📉 سیگنال: NVDA خنثی رو به منفی — ریسک مقرراتی\n⏳ مهلت ورود: سیگنال معاملاتی قطعی ندارد\n💲 قیمت: NVDA {{price:NVDA}}\n🔗 Reuters: https://news.google.com/rss/articles/CBMixgFBVV95cUxNV3BLV01MMXl1a2FaazhNYWFseVlPZ2g0ZnBwdnI5aFdkV1pHR19QdzZQWDk4YlJMOFZtZk9PbVlwbmU1WXpXWjFHaHVfX3c0SVd5WHFRM0s3eW9EcUE1S1RTYUFxLXBvQmthZFFNYkFNRy1EeHNyM2gyT0prRzNPWEVPaGVGMFo2c1E1eTljc212bU5qY3EtdnlDN01WSTdnRjZOYkZKdW1lcmttSlcwazFrSFlidExMay1iTHlXaW1TQVBIUVE?oc=5"
+  },
+  {
+   "id": "m-3",
+   "event_id": "e-3",
+   "reply_to_event": null,
+   "created": "2026-11-25T18:48:00Z",
+   "seqs": [
+    3
+   ],
+   "importance": 3,
+   "text": "📅 18:35 UTC | 13:35 نیویورک\n📰 بورس آمریکا | افت Anthropic، شرط‌های بزرگ وال‌استریت روی سود آیندهٔ هوش مصنوعی را به چالش کشید\n⚠️ اهمیت: 3/5 · ✅ تأییدشده\n📝 به گزارش رویترز، افت ارزش Anthropic پرسش‌ها دربارهٔ ارزش‌گذاری‌های بالای شرکت‌های هوش مصنوعی و انتظار سود آینده را تشدید کرده است (فعلاً فقط تیتر در دسترس است).\n💡 هم‌راستا با فروش اخیر سهام هوش مصنوعی؛ نشانهٔ کاهش اشتهای ریسک در این بخش.\n📉 سیگنال: نزدک نزولی کوتاه‌مدت — فشار بر سهام هوش مصنوعی\n⏳ مهلت ورود: کوتاه‌مدت\n💲 قیمت: نزدک {{price:^IXIC}}\n🔗 Reuters: https://news.google.com/rss/articles/CBMirgFBVV95cUxOZE1sRHlKd3Y1aUpqaUVpeFQ3QjFmX191blVmM1gyS0hidW81RjFjSXJjQndnODAwQU9qb3VkYkJfZ3ppYzdBQ1J5cTRUaDMzamxvZVNsYzB6RUpiVzd2RlhxV2hKaDRjTFdhamRKZ3g3MXZDY1c5c3NMalpmc09aQ3JnNGEyQTR5NG85OW9VTEE1NW9md1VKdFYxeTlnbWNjd25UcjVwamhDX1pIaXc?oc=5"
+  },
+  {
+   "id": "m-6",
+   "event_id": "e-6",
+   "reply_to_event": null,
+   "created": "2026-11-25T18:48:00Z",
+   "seqs": [
+    6
+   ],
+   "importance": 2,
+   "text": "📅 18:46 UTC · کریپتو · اهمیت 2/5 · ⚠️ تأییدنشده\n📰 گزارش: تتر از برخی قربانیان هک برای آزادسازی USDT مسدودشده ۲۰٪ کارمزد خواسته است\n💡 به نقل از بلومبرگ؛ تتر می‌گوید کارمزد هزینهٔ صدور مجدد و حقوقی را پوشش می‌دهد. اثر مستقیم بر قیمت ندارد ولی برای اعتبار تتر منفی است.\n🔗 The Defiant: https://thedefiant.io/news/hacks/tether-sought-20-fees-from-some-hack-victims-bloomberg"
+  }
+ ]
+}

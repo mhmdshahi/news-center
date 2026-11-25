@@ -1,1 +1,7 @@
-{"last_seq": 0, "updated": null}
+{
+ "last_seq": 6,
+ "updated": "2026-11-25T18:48:00Z",
+ "skipped": {
+  "1": "law-firm solicitation (junk)"
+ }
+}
