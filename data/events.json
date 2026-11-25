@@ -547,6 +547,15 @@
    "sources": [
     "reuters_gn"
    ]
+  },
+  {
+   "id": "e-160",
+   "key": "Australia’s Hot Inflation Leaves Central Bank in a Bind - Bloomberg",
+   "ts": "2026-11-25T21:48:00Z",
+   "seq": 160,
+   "sources": [
+    "bloomberg_gn"
+   ]
   }
  ]
 }
