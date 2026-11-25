@@ -799,6 +799,24 @@
    "sources": [
     "inv_commod"
    ]
+  },
+  {
+   "id": "e-264",
+   "key": "Asia-Pacific markets set for subdued open as investors weigh fresh U.S. tariffs",
+   "ts": "2026-11-25T23:57:00Z",
+   "seq": 264,
+   "sources": [
+    "cnbc_top"
+   ]
+  },
+  {
+   "id": "e-265",
+   "key": "Banco Macro Announces Results for the Third Quarter of 2026",
+   "ts": "2026-11-25T23:57:00Z",
+   "seq": 265,
+   "sources": [
+    "prnewswire"
+   ]
   }
  ]
 }

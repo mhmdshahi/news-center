@@ -1,6 +1,6 @@
 {
- "last_seq": 254,
- "updated": "2026-11-25T23:50:00Z",
+ "last_seq": 265,
+ "updated": "2026-11-25T23:57:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -136,7 +136,16 @@
   "248": "Yahoo/Kitco page, forecast or section page, no news",
   "249": "Yahoo/Kitco page, forecast or section page, no news",
   "250": "Yahoo/Kitco page, forecast or section page, no news",
-  "251": "Yahoo/Kitco page, forecast or section page, no news"
+  "251": "Yahoo/Kitco page, forecast or section page, no news",
+  "255": "Yahoo stock forecast page, no news",
+  "256": "Yahoo stock forecast page, no news",
+  "257": "Yahoo stock forecast page, no news",
+  "258": "Yahoo stock forecast page, no news",
+  "259": "Yahoo stock forecast page, no news",
+  "260": "Yahoo stock forecast page, no news",
+  "261": "Yahoo stock forecast page, no news",
+  "262": "Yahoo stock forecast page, no news",
+  "263": "Yahoo stock forecast page, no news"
  },
- "last_round_at": "2026-11-25T23:50:00Z"
+ "last_round_at": "2026-11-25T23:57:00Z"
 }
