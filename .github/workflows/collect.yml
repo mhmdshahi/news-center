@@ -24,4 +24,5 @@ jobs:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: python collector/collect.py
       - name: Commit library
-        run: scripts/commit_push.sh "collect: $(date -u +%H:%M)Z" data/inbox.jsonl data/seen.json data/sources_status.json data/dropped.jsonl
+        run: |
+          scripts/commit_push.sh "collect $(date -u +%H:%M)Z" data/inbox.jsonl data/seen.json data/sources_status.json data/dropped.jsonl
