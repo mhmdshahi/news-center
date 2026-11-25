@@ -1,6 +1,6 @@
 {
- "last_seq": 123,
- "updated": "2026-11-25T21:09:00Z",
+ "last_seq": 129,
+ "updated": "2026-11-25T21:16:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -56,7 +56,8 @@
   "119": "SA question piece, no content",
   "121": "earnings-date PR microcap",
   "122": "microcap NYSE notice",
-  "123": "preferred stock redemption, marginal"
+  "123": "preferred stock redemption, marginal",
+  "127": "microcap EPS line"
  },
- "last_round_at": "2026-11-25T21:09:00Z"
+ "last_round_at": "2026-11-25T21:16:00Z"
 }
