@@ -1,6 +1,6 @@
 {
- "last_seq": 204,
- "updated": "2026-11-25T22:53:00Z",
+ "last_seq": 210,
+ "updated": "2026-11-25T23:05:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -101,7 +101,9 @@
   "194": "Yahoo quote page",
   "197": "dup e-23 wrap",
   "200": "duplicate of e-198 (German PR, Bitmine dividend)",
-  "202": "microcap Nasdaq deficiency notice (Scilex), not market-relevant"
+  "202": "microcap Nasdaq deficiency notice (Scilex), not market-relevant",
+  "205": "microcap earnings call highlights (MustGrow), headline only",
+  "206": "Yahoo option chart page"
  },
- "last_round_at": "2026-11-25T22:53:00Z"
+ "last_round_at": "2026-11-25T23:05:00Z"
 }
