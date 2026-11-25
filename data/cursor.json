@@ -1,6 +1,6 @@
 {
- "last_seq": 87,
- "updated": "2026-11-25T20:19:00Z",
+ "last_seq": 92,
+ "updated": "2026-11-25T20:25:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -31,7 +31,12 @@
   "79": "duplicate e-16",
   "80": "dup e-16/e-5",
   "81": "cybersecurity tool story, not market",
-  "83": "dup e-29"
+  "83": "dup e-29",
+  "88": "Yahoo/Kitco quote page, not news",
+  "89": "Yahoo/Kitco quote page, not news",
+  "90": "Yahoo/Kitco quote page, not news",
+  "91": "Yahoo/Kitco quote page, not news",
+  "92": "dup e-5 tariffs (Bloomberg video)"
  },
- "last_round_at": "2026-11-25T20:19:00Z"
+ "last_round_at": "2026-11-25T20:25:00Z"
 }
