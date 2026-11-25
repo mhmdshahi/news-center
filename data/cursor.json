@@ -1,6 +1,6 @@
 {
- "last_seq": 114,
- "updated": "2026-11-25T20:56:00Z",
+ "last_seq": 118,
+ "updated": "2026-11-25T21:02:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -51,7 +51,8 @@
   "110": "dup e-5 tariffs",
   "112": "dup e-30 Beige Book",
   "113": "law-firm solicitation (junk)",
-  "114": "JFK records podcast, not market"
+  "114": "JFK records podcast, not market",
+  "116": "small-bank dividend, marginal"
  },
- "last_round_at": "2026-11-25T20:56:00Z"
+ "last_round_at": "2026-11-25T21:02:00Z"
 }

@@ -446,6 +446,33 @@
    "sources": [
     "bloomberg_gn"
    ]
+  },
+  {
+   "id": "e-118",
+   "key": "Bitcoin Needs to Return to 'Original Narrative' to Hit $100,000, Bloomberg Analyst Says",
+   "ts": "2026-11-25T21:02:00Z",
+   "seq": 118,
+   "sources": [
+    "benzinga"
+   ]
+  },
+  {
+   "id": "e-115",
+   "key": "AI story not 'broken' despite stock pullback, investor says - Reuters",
+   "ts": "2026-11-25T21:02:00Z",
+   "seq": 115,
+   "sources": [
+    "reuters_gn"
+   ]
+  },
+  {
+   "id": "e-117",
+   "key": "Slate Grocery REIT Unitholders Approve Acquisition by Brixmor and Everview - Business Wire",
+   "ts": "2026-11-25T21:02:00Z",
+   "seq": 117,
+   "sources": [
+    "businesswire"
+   ]
   }
  ]
 }
