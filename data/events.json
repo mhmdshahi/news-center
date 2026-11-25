@@ -185,6 +185,24 @@
    "sources": [
     "defiant"
    ]
+  },
+  {
+   "id": "e-30",
+   "key": "U.S. economy chugs along, as most Fed districts report some rate of growth: Beige Book",
+   "ts": "2026-11-25T19:17:00Z",
+   "seq": 30,
+   "sources": [
+    "sa_currents"
+   ]
+  },
+  {
+   "id": "e-31",
+   "key": "Bitcoin miners' AI pivot fails to yield results amid broader tech, crypto rout",
+   "ts": "2026-11-25T19:17:00Z",
+   "seq": 31,
+   "sources": [
+    "sa_currents"
+   ]
   }
  ]
 }
