@@ -205,7 +205,8 @@
     "bloomberg_gn",
     "inv_economy",
     "bloomberg_gn",
-    "mw_top"
+    "mw_top",
+    "yahoo"
    ]
   },
   {
@@ -402,6 +403,33 @@
    "key": "Michael Burry Is More Long Than Short After Dumping Nasdaq Puts - Bloomberg",
    "ts": "2026-11-25T20:31:00Z",
    "seq": 93,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-101",
+   "key": "Swift highlights Chainlink as 17 banks use its ledger",
+   "ts": "2026-11-25T20:37:00Z",
+   "seq": 101,
+   "sources": [
+    "cryptonews"
+   ]
+  },
+  {
+   "id": "e-97",
+   "key": "Oil Edges Lower as Expanding Supply Vies With Hormuz Attacks - Bloomberg",
+   "ts": "2026-11-25T20:37:00Z",
+   "seq": 97,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-100",
+   "key": "Stock Movers: HP Inc., Nutanix, Deere - Bloomberg",
+   "ts": "2026-11-25T20:37:00Z",
+   "seq": 100,
    "sources": [
     "bloomberg_gn"
    ]

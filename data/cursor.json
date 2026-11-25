@@ -1,6 +1,6 @@
 {
- "last_seq": 95,
- "updated": "2026-11-25T20:31:00Z",
+ "last_seq": 102,
+ "updated": "2026-11-25T20:37:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -38,7 +38,9 @@
   "91": "Yahoo/Kitco quote page, not news",
   "92": "dup e-5 tariffs (Bloomberg video)",
   "94": "CNBC Investing Club promo",
-  "95": "small-bank dividend PR"
+  "95": "small-bank dividend PR",
+  "96": "dup e-30 Beige Book",
+  "98": "microcap PR, irrelevant"
  },
- "last_round_at": "2026-11-25T20:31:00Z"
+ "last_round_at": "2026-11-25T20:37:00Z"
 }
