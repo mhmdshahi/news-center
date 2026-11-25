@@ -637,6 +637,24 @@
    "sources": [
     "decrypt"
    ]
+  },
+  {
+   "id": "e-201",
+   "key": "Bitcoin has fallen so far that its original Rainbow Chart has run out of colors",
+   "ts": "2026-11-25T22:47:00Z",
+   "seq": 201,
+   "sources": [
+    "cryptoslate"
+   ]
+  },
+  {
+   "id": "e-203",
+   "key": "Pump.fun Plans 'Block0' Fee on New Launches From Dec. 4",
+   "ts": "2026-11-25T22:47:00Z",
+   "seq": 203,
+   "sources": [
+    "defiant"
+   ]
   }
  ]
 }
