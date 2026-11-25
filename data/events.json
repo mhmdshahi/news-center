@@ -718,6 +718,33 @@
    "sources": [
     "bloomberg_gn"
    ]
+  },
+  {
+   "id": "e-97-u1",
+   "key": "Oil Holds Two-Day Gain as Mideast Tensions Fuel Market Jitters - Bloomberg",
+   "ts": "2026-11-25T23:25:00Z",
+   "seq": 219,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-220",
+   "key": "Pentagon considered invoking wartime law to reinstate Nvidia's Huang: WaPo",
+   "ts": "2026-11-25T23:25:00Z",
+   "seq": 220,
+   "sources": [
+    "sa_currents"
+   ]
+  },
+  {
+   "id": "e-221",
+   "key": "LayerZero Opens Canton Coin Bridge to BNB Smart Chain",
+   "ts": "2026-11-25T23:25:00Z",
+   "seq": 221,
+   "sources": [
+    "defiant"
+   ]
   }
  ]
 }

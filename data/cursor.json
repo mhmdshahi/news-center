@@ -1,6 +1,6 @@
 {
- "last_seq": 215,
- "updated": "2026-11-25T23:18:00Z",
+ "last_seq": 221,
+ "updated": "2026-11-25T23:25:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -106,7 +106,10 @@
   "206": "Yahoo option chart page",
   "211": "local Texas layoffs, headline only, not market-relevant",
   "212": "Reuters generic daily roundup, headline only, no extractable market fact",
-  "215": "Reuters stock quote page, no news"
+  "215": "Reuters stock quote page, no news",
+  "216": "Yahoo quote/option/holders page, no news",
+  "217": "Yahoo quote/option/holders page, no news",
+  "218": "Yahoo quote/option/holders page, no news"
  },
- "last_round_at": "2026-11-25T23:18:00Z"
+ "last_round_at": "2026-11-25T23:25:00Z"
 }
