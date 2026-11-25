@@ -32,7 +32,9 @@ Nothing old, nothing duplicated.
    (`data/outbox.json data/cursor.json data/events.json`). Push triggers the sender.
 
 ## Message format
-Full format for importance ≥ 3:
+EVERY message uses the full format below, whatever its importance (importance is only the label in the ⚠️ line).
+No compact/short variants. Every field is mandatory; when a field does not apply, still write it
+(e.g. «سیگنال: ندارد — اثر مستقیم بر بازار ندارد»).
 ```
 📅 HH:MM UTC | HH:MM نیویورک
 📰 <دسته> | <تیتر فارسی>
@@ -44,13 +46,8 @@ Full format for importance ≥ 3:
 💲 قیمت: <دارایی> {{price:SYMBOL}}
 🔗 <نام منبع(ها)>: <لینک>
 ```
-Compact format for importance 1–2:
-```
-📅 HH:MM UTC · <دسته> · اهمیت n/5 · ✅|⚠️
-📰 <تیتر فارسی>
-💡 <یک جمله توضیح/اثر بر بازار>
-🔗 <منبع>: <لینک>
-```
+The 💲 line always names the asset of the signal (for non-tradable news: the closest market, e.g. S&P 500 / BTC).
+Do not put prices anywhere except the 💲 line.
 Updates start with `🔄 به‌روزرسانی:`.
 `دسته` ∈ کریپتو، فارکس، بورس آمریکا، کلان، کالا.
 `{{price:SYMBOL}}` uses Yahoo symbols (filled in at send time): BTC-USD, ETH-USD, XRP-USD, SOL-USD,
