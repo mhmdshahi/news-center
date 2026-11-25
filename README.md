@@ -8,5 +8,5 @@ Free pipeline: **RSS → GitHub Actions collector → Library (`data/`) → Clau
 - `ANALYST.md` — what the Claude analyst does on each run
 - `sender/send.py` — posts `data/outbox.json` to Telegram (`.github/workflows/send.yml`, on push)
 
-Secrets: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID` (optional `SEC_USER_AGENT`, e.g. `NewsCenter you@example.com`).
+Secrets: `TELEGRAM_BOT_TOKEN`, optional `TELEGRAM_CHAT_ID` (default: the private chat of whoever pressed Start in the bot) (optional `SEC_USER_AGENT`, e.g. `NewsCenter you@example.com`).
 Keep the repository **public** so Actions minutes are free.

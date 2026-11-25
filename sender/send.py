@@ -85,10 +85,31 @@ def send(text: str, reply_to: int | None) -> int | None:
     return None
 
 
+def detect_private_chat() -> str:
+    """Fallback when TELEGRAM_CHAT_ID is not set: use the private chat of whoever
+    last pressed Start / messaged the bot (Telegram keeps updates ~24 h)."""
+    try:
+        r = requests.get(f"{API}/getUpdates", params={"limit": 100}, timeout=20).json()
+    except Exception:  # noqa: BLE001
+        return ""
+    for u in reversed(r.get("result", [])):
+        chat = (u.get("message") or {}).get("chat") or {}
+        if chat.get("type") == "private":
+            return str(chat["id"])
+    return ""
+
+
 def main() -> int:
-    if not TOKEN or not CHAT_ID:
-        print("TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID secrets are not set — nothing sent.")
+    global CHAT_ID
+    if not TOKEN:
+        print("TELEGRAM_BOT_TOKEN secret is not set — nothing sent.")
         return 0
+    if not CHAT_ID:
+        CHAT_ID = detect_private_chat()
+        if not CHAT_ID:
+            print("TELEGRAM_CHAT_ID not set and nobody has pressed Start in the bot — nothing sent.")
+            return 0
+        print("using private chat detected from /start (id hidden)")
     outbox = load(OUTBOX, {"messages": []}).get("messages", [])
     sent = load(SENT, {"sent": {}, "events": {}, "failed": {}})
     sent.setdefault("failed", {})
