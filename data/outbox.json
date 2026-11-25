@@ -109,6 +109,72 @@
    ],
    "importance": 1,
    "text": "📅 18:50 UTC · بورس آمریکا · اهمیت 1/5 · ⚠️ تأییدنشده\n📰 کلارنا (KLAR) ابزار مقایسهٔ قیمت را در اروپا گسترش داد و کارت مجازی در کانادا راه انداخت\n💡 توسعهٔ عادی محصول پیش از بلک‌فرایدی؛ اثر قیمتی کمی دارد.\n🔗 Benzinga: https://www.benzinga.com/markets/tech/26/11/63647243/klarna-expands-global-reach-with-european-shopping-tool-canadian-virtual-card-ahead-of-black-friday"
+  },
+  {
+   "id": "m-16",
+   "event_id": "e-16",
+   "reply_to_event": null,
+   "created": "2026-11-25T19:03:00Z",
+   "seqs": [
+    16
+   ],
+   "importance": 3,
+   "text": "📅 18:59 UTC | 13:59 نیویورک\n📰 بورس آمریکا | S&P رتبهٔ اعتباری AA انویدیا را در «دیده‌بانی کاهش» قرار داد\n⚠️ اهمیت: 3/5 · ⚠️ تأییدنشده (فعلاً یک منبع)\n📝 S&P Global رتبهٔ AA انویدیا را حفظ کرده، اما وضعیت «پایدار» را به «دیده‌بانی منفی» تغییر داده و دلیلش را افزایش ریسک مدیریتی و حاکمیت شرکتی ذکر کرده است.\n💡 رتبه هنوز کاهش نیافته؛ این فقط هشدار است. با این حال در روزی که سهام هوش مصنوعی زیر فشار است، خبر منفی دیگری برای انویدیا محسوب می‌شود.\n📉 سیگنال: NVDA نزولی کوتاه‌مدت (ملایم) — خبر منفی روی سهمی که از قبل تحت فشار است\n⏳ مهلت ورود: کوتاه‌مدت؛ به تأیید خبر از منبع دوم توجه کن\n💲 قیمت: NVDA {{price:NVDA}}\n🔗 The Defiant: https://thedefiant.io/frontier/markets/s-p-puts-nvidia-s-aa-credit-rating-on-downgrade-watch"
+  },
+  {
+   "id": "m-18",
+   "event_id": "e-18",
+   "reply_to_event": null,
+   "created": "2026-11-25T19:03:00Z",
+   "seqs": [
+    18
+   ],
+   "importance": 2,
+   "text": "📅 19:00 UTC | 14:00 نیویورک\n📰 کریپتو | کلین‌اسپارک برای تأمین مالی توسعهٔ هوش مصنوعی بیت‌کوین می‌فروشد؛ زیان سالانه نزدیک ۱ میلیارد دلار\n⚠️ اهمیت: 2/5 · ⚠️ تأییدنشده (فعلاً یک منبع)\n📝 به گزارش CryptoSlate، این ماینر برای تأمین نقدینگی و خرید احتمالی شرکت‌ها بیت‌کوین می‌فروشد و زیانش به حدود یک میلیارد دلار در سال رسیده است. فشار قیمت بیت‌کوین، وام گرفتن با وثیقهٔ بیت‌کوین را هم برای شرکت سخت‌تر کرده است.\n💡 فروش ذخایر ماینرها فشار عرضه ایجاد می‌کند؛ نشانهٔ سختی وضع ماینرها در قیمت‌های پایین.\n📉 سیگنال: BTC نزولی ملایم — فشار عرضهٔ ماینرها\n⏳ مهلت ورود: کوتاه‌مدت\n💲 قیمت: BTC {{price:BTC-USD}}\n🔗 CryptoSlate: https://cryptoslate.com/cleanspark-is-selling-bitcoin-to-fund-its-ai-expansion-as-annual-losses-approach-1-billion/"
+  },
+  {
+   "id": "m-15",
+   "event_id": "e-15",
+   "reply_to_event": null,
+   "created": "2026-11-25T19:03:00Z",
+   "seqs": [
+    15
+   ],
+   "importance": 2,
+   "text": "📅 18:54 UTC · کریپتو · اهمیت 2/5 · ⚠️ تأییدنشده\n📰 بنیاد اتریوم از الگوریتم Keccak-256 برای مقابله با تهدید کوانتوم و هوش مصنوعی حمایت کرد\n💡 به نقل از Cointelegraph؛ بخشی از ارتقای امنیتی بزرگ شبکه است و اثر قیمتی فوری ندارد. قیمت ETH: {{price:ETH-USD}}\n🔗 Cointelegraph: https://cointelegraph.com/news/ethereum-foundation-keccak-256-counter-quantum-ai-threats?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+  },
+  {
+   "id": "m-20",
+   "event_id": "e-20",
+   "reply_to_event": null,
+   "created": "2026-11-25T19:03:00Z",
+   "seqs": [
+    20
+   ],
+   "importance": 2,
+   "text": "📅 19:01 UTC · کریپتو · اهمیت 2/5 · ⚠️ تأییدنشده\n📰 کارمزد CoW Swap دو برابر شد؛ حدود ۹۲٪ این رشد از اتریوم بوده است\n💡 فعالیت دیفای روی اتریوم بالا رفته؛ نشانهٔ تقاضای واقعی برای معاملات غیرمتمرکز. قیمت ETH: {{price:ETH-USD}}\n🔗 The Defiant: https://thedefiant.io/news/defi/cow-swap-fees-double-with-ethereum-driving-the-gain"
+  },
+  {
+   "id": "m-14",
+   "event_id": "e-14",
+   "reply_to_event": null,
+   "created": "2026-11-25T19:03:00Z",
+   "seqs": [
+    14
+   ],
+   "importance": 1,
+   "text": "📅 18:54 UTC · بورس آمریکا · اهمیت 1/5 · ⚠️ تأییدنشده\n📰 Pinnacle Bancshares سود نقدی ۰.۲۷ دلاری اعلام کرد\n💡 اعلامیهٔ معمول سود سهام یک بانک کوچک؛ اثر بازاری ندارد.\n🔗 Seeking Alpha: https://seekingalpha.com/news/4676674-pinnacle-bancshares-declares-0_27-dividend?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "id": "m-17",
+   "event_id": "e-17",
+   "reply_to_event": null,
+   "created": "2026-11-25T19:03:00Z",
+   "seqs": [
+    17
+   ],
+   "importance": 1,
+   "text": "📅 19:00 UTC · بورس آمریکا · اهمیت 1/5 · ✅\n📰 Suburban Propane (SPH) گزارش سالانهٔ 10-K سال مالی منتهی به ۲۶ سپتامبر را ثبت کرد\n💡 گزارش سالانهٔ معمول؛ برای معامله‌گران SPH قابل بررسی است، اثر بازاری عمومی ندارد.\n🔗 PR Newswire: https://www.prnewswire.com/news-releases/suburban-propane-partners-lp-annual-report-available-online-302949866.html"
   }
  ]
 }

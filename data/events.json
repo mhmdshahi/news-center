@@ -89,6 +89,60 @@
    "sources": [
     "benzinga"
    ]
+  },
+  {
+   "id": "e-16",
+   "key": "S&P Puts Nvidia's AA Credit Rating on Downgrade Watch",
+   "ts": "2026-11-25T19:03:00Z",
+   "seq": 16,
+   "sources": [
+    "defiant"
+   ]
+  },
+  {
+   "id": "e-18",
+   "key": "CleanSpark is selling Bitcoin to fund its AI expansion as annual losses approach $1 billion",
+   "ts": "2026-11-25T19:03:00Z",
+   "seq": 18,
+   "sources": [
+    "cryptoslate"
+   ]
+  },
+  {
+   "id": "e-15",
+   "key": "Ethereum Foundation backs Keccak-256 to counter quantum, AI threats",
+   "ts": "2026-11-25T19:03:00Z",
+   "seq": 15,
+   "sources": [
+    "cointelegraph"
+   ]
+  },
+  {
+   "id": "e-20",
+   "key": "CoW Swap Fees Double, With Ethereum Driving the Gain",
+   "ts": "2026-11-25T19:03:00Z",
+   "seq": 20,
+   "sources": [
+    "defiant"
+   ]
+  },
+  {
+   "id": "e-14",
+   "key": "Pinnacle Bancshares declares $0.27 dividend",
+   "ts": "2026-11-25T19:03:00Z",
+   "seq": 14,
+   "sources": [
+    "sa_currents"
+   ]
+  },
+  {
+   "id": "e-17",
+   "key": "Suburban Propane Partners, L.P. Annual Report Available Online",
+   "ts": "2026-11-25T19:03:00Z",
+   "seq": 17,
+   "sources": [
+    "prnewswire"
+   ]
   }
  ]
 }
