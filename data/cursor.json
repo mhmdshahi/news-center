@@ -1,6 +1,6 @@
 {
- "last_seq": 221,
- "updated": "2026-11-25T23:25:00Z",
+ "last_seq": 223,
+ "updated": "2026-11-25T23:32:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -109,7 +109,8 @@
   "215": "Reuters stock quote page, no news",
   "216": "Yahoo quote/option/holders page, no news",
   "217": "Yahoo quote/option/holders page, no news",
-  "218": "Yahoo quote/option/holders page, no news"
+  "218": "Yahoo quote/option/holders page, no news",
+  "223": "California king tides, not market-relevant"
  },
- "last_round_at": "2026-11-25T23:25:00Z"
+ "last_round_at": "2026-11-25T23:32:00Z"
 }

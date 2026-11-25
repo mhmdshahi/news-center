@@ -745,6 +745,15 @@
    "sources": [
     "defiant"
    ]
+  },
+  {
+   "id": "e-222",
+   "key": "Macy's Thanksgiving Parade Postponed, US Unveils New Tariffs, More - Bloomberg",
+   "ts": "2026-11-25T23:32:00Z",
+   "seq": 222,
+   "sources": [
+    "bloomberg_gn"
+   ]
   }
  ]
 }
