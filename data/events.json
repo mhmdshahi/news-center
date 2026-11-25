@@ -754,6 +754,24 @@
    "sources": [
     "bloomberg_gn"
    ]
+  },
+  {
+   "id": "e-232",
+   "key": "ANZ Removed From NY Fed List of FX Counterparties in Rare Move - Bloomberg",
+   "ts": "2026-11-25T23:44:00Z",
+   "seq": 232,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-242",
+   "key": "RISC Zero Patch Fixes Critical Proof-Forgery Flaw",
+   "ts": "2026-11-25T23:44:00Z",
+   "seq": 242,
+   "sources": [
+    "defiant"
+   ]
   }
  ]
 }
