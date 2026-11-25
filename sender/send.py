@@ -40,26 +40,54 @@ def load(path: Path, default):
 
 
 _price_cache: dict[str, str] = {}
+STALE_MIN = 20  # last trade older than this -> say so explicitly
+
+
+def _decimals(symbol: str, p: float) -> int:
+    if symbol.endswith("=X"):
+        return 3 if "JPY" in symbol else 5
+    if p < 1:
+        return 5
+    if p < 100:
+        return 3 if symbol.endswith("-USD") else 2
+    return 2
 
 
 def price(symbol: str) -> str:
+    """Latest Yahoo Finance price from the newest 1-minute candle (incl. pre/post market),
+    with its UTC time and % change vs previous close. Old data is labelled, never passed off as live."""
     if symbol in _price_cache:
         return _price_cache[symbol]
-    out = "نامشخص"
-    try:
-        r = requests.get(
-            f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}",
-            params={"interval": "1m", "range": "1d"},
-            headers={"User-Agent": "Mozilla/5.0"}, timeout=10)
-        meta = r.json()["chart"]["result"][0]["meta"]
-        p = meta.get("regularMarketPrice")
-        t = meta.get("regularMarketTime")
-        if p is not None:
-            digits = 5 if p < 10 else (2 if p < 100000 else 0)
-            hhmm = datetime.fromtimestamp(t, tz=timezone.utc).strftime("%H:%M") if t else ""
-            out = f"{p:,.{digits}f} (Yahoo, {hhmm} UTC)"
-    except Exception as ex:  # noqa: BLE001 — price is optional
-        print(f"price {symbol} failed: {ex}", file=sys.stderr)
+    out = "نامشخص (Yahoo در دسترس نبود)"
+    for attempt in range(3):
+        try:
+            r = requests.get(
+                f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}",
+                params={"interval": "1m", "range": "1d", "includePrePost": "true"},
+                headers={"User-Agent": "Mozilla/5.0"}, timeout=12)
+            res = r.json()["chart"]["result"][0]
+            meta = res["meta"]
+            pts = [(t, c) for t, c in zip(res.get("timestamp") or [], res["indicators"]["quote"][0]["close"])
+                   if c is not None]
+            if pts:
+                t, p = pts[-1]
+            else:
+                p, t = meta["regularMarketPrice"], meta["regularMarketTime"]
+            prev = meta.get("chartPreviousClose") or meta.get("previousClose")
+            age_min = (time.time() - t) / 60
+            hhmm = datetime.fromtimestamp(t, tz=timezone.utc).strftime("%H:%M")
+            txt = f"{p:,.{_decimals(symbol, p)}f}"
+            if prev:
+                txt += f" ({(p / prev - 1) * 100:+.2f}%)"
+            if age_min > STALE_MIN:
+                txt += f" — آخرین معامله {hhmm} UTC (بازار بسته یا کم‌معامله)"
+            else:
+                txt += f" — Yahoo، {hhmm} UTC"
+            out = txt
+            break
+        except Exception as ex:  # noqa: BLE001 — price is optional
+            print(f"price {symbol} attempt {attempt + 1} failed: {ex}", file=sys.stderr)
+            time.sleep(2)
     _price_cache[symbol] = out
     return out
 

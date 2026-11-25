@@ -1,0 +1,21 @@
+name: price_test
+on:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests
+      - name: Print prices
+        run: |
+          python - <<'PY'
+          import sys
+          sys.path.insert(0, "sender")
+          import send
+          for s in ["BTC-USD","ETH-USD","EURUSD=X","USDJPY=X","GC=F","CL=F","^GSPC","^IXIC","NVDA","CRWV","LINK-USD","XYZ-NOPE"]:
+              print(s, "=>", send.price(s))
+          PY
