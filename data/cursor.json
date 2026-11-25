@@ -1,11 +1,12 @@
 {
- "last_seq": 31,
- "updated": "2026-11-25T19:17:00Z",
+ "last_seq": 33,
+ "updated": "2026-11-25T19:23:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
   "11": "consumer shopping story, not market news",
   "19": "Character.AI state AG case — not a market item",
   "21": "PhonePe India IPO — outside crypto/forex/US-stocks scope"
- }
+ },
+ "last_round_at": "2026-11-25T19:23:00Z"
 }
