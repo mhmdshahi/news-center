@@ -1,6 +1,6 @@
 {
- "last_seq": 79,
- "updated": "2026-11-25T20:06:00Z",
+ "last_seq": 83,
+ "updated": "2026-11-25T20:13:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -28,7 +28,10 @@
   "76": "routine annual Fed/agency threshold notice",
   "77": "routine annual Fed/agency threshold notice",
   "78": "bank branch PR, irrelevant",
-  "79": "duplicate e-16"
+  "79": "duplicate e-16",
+  "80": "dup e-16/e-5",
+  "81": "cybersecurity tool story, not market",
+  "83": "dup e-29"
  },
- "last_round_at": "2026-11-25T20:06:00Z"
+ "last_round_at": "2026-11-25T20:13:00Z"
 }

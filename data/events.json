@@ -104,7 +104,8 @@
     "reuters_gn",
     "bloomberg_gn",
     "bloomberg_gn",
-    "sa_currents"
+    "sa_currents",
+    "bloomberg_gn"
    ],
    "confirmed": true
   },
@@ -189,7 +190,8 @@
    "seq": 29,
    "sources": [
     "defiant",
-    "theblock"
+    "theblock",
+    "cryptonews"
    ]
   },
   {
@@ -356,6 +358,15 @@
    "seq": 73,
    "sources": [
     "cnbc_top"
+   ]
+  },
+  {
+   "id": "e-82",
+   "key": "Sky’s Rune Pursues stUSDS Deal as Withdrawal Squeeze Persists",
+   "ts": "2026-11-25T20:13:00Z",
+   "seq": 82,
+   "sources": [
+    "defiant"
    ]
   }
  ]
