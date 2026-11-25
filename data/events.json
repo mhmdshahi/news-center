@@ -158,7 +158,8 @@
    "ts": "2026-11-25T19:11:00Z",
    "seq": 23,
    "sources": [
-    "investinglive"
+    "investinglive",
+    "sa_currents"
    ]
   },
   {
@@ -185,7 +186,8 @@
    "ts": "2026-11-25T19:11:00Z",
    "seq": 29,
    "sources": [
-    "defiant"
+    "defiant",
+    "theblock"
    ]
   },
   {
@@ -259,6 +261,33 @@
    "seq": 35,
    "sources": [
     "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-45",
+   "key": "Nvidia to Pay $290 Million to Settle Long-Running Crypto Mining Revenue Lawsuit",
+   "ts": "2026-11-25T19:34:00Z",
+   "seq": 45,
+   "sources": [
+    "decrypt"
+   ]
+  },
+  {
+   "id": "e-48",
+   "key": "Bit Digital Sells Nearly 30,000 ETH to Slash Galaxy Debt by $50 Million",
+   "ts": "2026-11-25T19:34:00Z",
+   "seq": 48,
+   "sources": [
+    "bitcoincom"
+   ]
+  },
+  {
+   "id": "e-42",
+   "key": "Bullish hopes spring as traders bet against a higher VIX: Options Action Live",
+   "ts": "2026-11-25T19:34:00Z",
+   "seq": 42,
+   "sources": [
+    "cnbc_top"
    ]
   }
  ]

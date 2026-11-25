@@ -1,6 +1,6 @@
 {
- "last_seq": 40,
- "updated": "2026-11-25T19:23:00Z",
+ "last_seq": 49,
+ "updated": "2026-11-25T19:34:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -8,7 +8,12 @@
   "19": "Character.AI state AG case — not a market item",
   "21": "PhonePe India IPO — outside crypto/forex/US-stocks scope",
   "37": "dup e-30/e-16",
-  "39": "quote page"
+  "39": "quote page",
+  "41": "option chart page",
+  "44": "animal health M&A, out of scope",
+  "46": "1Password breach, not market",
+  "47": "CIBC Abu Dhabi expansion (German PR), marginal",
+  "49": "duplicate of e-29"
  },
- "last_round_at": "2026-11-25T19:31:00Z"
+ "last_round_at": "2026-11-25T19:34:00Z"
 }
