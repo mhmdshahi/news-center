@@ -619,6 +619,24 @@
    "sources": [
     "kitco"
    ]
+  },
+  {
+   "id": "e-198",
+   "key": "Bitmine Immersion Technologies kondigt een contant dividend van 0,01 dollar per gewoon aandeel aan",
+   "ts": "2026-11-25T22:41:00Z",
+   "seq": 198,
+   "sources": [
+    "prnewswire"
+   ]
+  },
+  {
+   "id": "e-199",
+   "key": "China's Google Just Released Its Fast New AI Model for Free",
+   "ts": "2026-11-25T22:41:00Z",
+   "seq": 199,
+   "sources": [
+    "decrypt"
+   ]
   }
  ]
 }
