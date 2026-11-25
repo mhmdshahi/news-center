@@ -9,3 +9,4 @@
 {"at": "2026-11-25T20:05:15Z", "duration_s": 17.0, "sources_total": 44, "sources_ok": 44, "sources_failed": 0, "entries": 744, "unseen": 35, "new": 6, "dropped": 29, "seq_last": 79, "failed": []}
 {"at": "2026-11-25T20:11:50Z", "duration_s": 16.9, "sources_total": 44, "sources_ok": 44, "sources_failed": 0, "entries": 895, "unseen": 38, "new": 4, "dropped": 34, "seq_last": 83, "failed": []}
 {"at": "2026-11-25T20:18:03Z", "duration_s": 16.4, "sources_total": 44, "sources_ok": 44, "sources_failed": 0, "entries": 697, "unseen": 33, "new": 4, "dropped": 29, "seq_last": 87, "failed": []}
+{"at": "2026-11-25T20:24:13Z", "duration_s": 16.8, "sources_total": 44, "sources_ok": 44, "sources_failed": 0, "entries": 703, "unseen": 32, "new": 5, "dropped": 27, "seq_last": 92, "failed": []}
