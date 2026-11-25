@@ -1,6 +1,6 @@
 {
- "last_seq": 129,
- "updated": "2026-11-25T21:16:00Z",
+ "last_seq": 133,
+ "updated": "2026-11-25T21:22:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -57,7 +57,10 @@
   "121": "earnings-date PR microcap",
   "122": "microcap NYSE notice",
   "123": "preferred stock redemption, marginal",
-  "127": "microcap EPS line"
+  "127": "microcap EPS line",
+  "131": "inducement grants PR, irrelevant",
+  "132": "Neuralink FDA, private co.",
+  "133": "1Password breach follow-up, not market"
  },
- "last_round_at": "2026-11-25T21:16:00Z"
+ "last_round_at": "2026-11-25T21:22:00Z"
 }
