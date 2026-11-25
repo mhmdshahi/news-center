@@ -9,6 +9,7 @@
     "reuters_gn",
     "inv_economy",
     "defiant",
+    "bloomberg_gn",
     "bloomberg_gn"
    ],
    "note": "update: 14 partners, EU rejects, hearing Jan 25"
@@ -162,7 +163,8 @@
    "seq": 23,
    "sources": [
     "investinglive",
-    "sa_currents"
+    "sa_currents",
+    "yahoo"
    ]
   },
   {
@@ -305,7 +307,8 @@
    "ts": "2026-11-25T19:41:00Z",
    "seq": 53,
    "sources": [
-    "theblock"
+    "theblock",
+    "decrypt"
    ]
   },
   {
