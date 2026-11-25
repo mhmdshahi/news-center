@@ -27,7 +27,8 @@
    "ts": "2026-11-25T18:48:00Z",
    "seq": 2,
    "sources": [
-    "reuters_gn"
+    "reuters_gn",
+    "bloomberg_gn"
    ]
   },
   {
@@ -101,6 +102,7 @@
    "sources": [
     "defiant",
     "reuters_gn",
+    "bloomberg_gn",
     "bloomberg_gn"
    ],
    "confirmed": true
@@ -192,7 +194,8 @@
    "ts": "2026-11-25T19:17:00Z",
    "seq": 30,
    "sources": [
-    "sa_currents"
+    "sa_currents",
+    "bloomberg_gn"
    ]
   },
   {
@@ -218,6 +221,42 @@
    "key": "Big Take: Anthropic’s IPO Could Reshape Philanthropy - Bloomberg",
    "ts": "2026-11-25T19:23:00Z",
    "seq": 33,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-36",
+   "key": "Bitcoin slips as Nasdaq surges: Is leverage taking over?",
+   "ts": "2026-11-25T19:31:00Z",
+   "seq": 36,
+   "sources": [
+    "cryptonews"
+   ]
+  },
+  {
+   "id": "e-34",
+   "key": "Why Nvidia's 'Jensen put' failed to stop the AI trade meltdown - Yahoo Finance",
+   "ts": "2026-11-25T19:31:00Z",
+   "seq": 34,
+   "sources": [
+    "yahoo"
+   ]
+  },
+  {
+   "id": "e-38",
+   "key": "OPEC blames EU for COP31 collapse - Reuters",
+   "ts": "2026-11-25T19:31:00Z",
+   "seq": 38,
+   "sources": [
+    "reuters_gn"
+   ]
+  },
+  {
+   "id": "e-35",
+   "key": "Russian Inflation Hits One-Year High in October as War Escalates - Bloomberg",
+   "ts": "2026-11-25T19:31:00Z",
+   "seq": 35,
    "sources": [
     "bloomberg_gn"
    ]
