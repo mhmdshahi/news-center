@@ -208,7 +208,8 @@
     "inv_economy",
     "bloomberg_gn",
     "mw_top",
-    "yahoo"
+    "yahoo",
+    "inv_economy"
    ]
   },
   {
@@ -433,6 +434,15 @@
    "key": "Stock Movers: HP Inc., Nutanix, Deere - Bloomberg",
    "ts": "2026-11-25T20:37:00Z",
    "seq": 100,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-111",
+   "key": "Nasdaq 100 Enters Bear Market Territory as AI Angst Fuels Losses - Bloomberg",
+   "ts": "2026-11-25T20:49:00Z",
+   "seq": 111,
    "sources": [
     "bloomberg_gn"
    ]
