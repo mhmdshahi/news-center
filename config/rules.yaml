@@ -30,7 +30,9 @@ blacklist:
   - '\bnewsletter\b'
   - '\bcrossword\b'
   - '\bhoroscope\b'
-  - '\blaw firm\b.*\b(investigat|class action|reminds|encourages)'
+  - '\blaw firm\b'
+  - '\b(rosen|pomerantz|levi ?& ?korsinsky|bragar|faruqi|bernstein liebhard|kessler topaz|glancy|schall|gross law|portnoy|bronstein|robbins geller|hagens berman|kirby mcinerney)\b'
+  - '\b(investors? who (lost|purchased)|losses? (in|on) .* (investment|stock))\b'
   - '\bclass action\b'
   - '\bshareholder (alert|rights)\b'
   - '\bdeadline alert\b'
@@ -53,6 +55,7 @@ keywords:
   - '\b(bitcoin|btc|ethereum|ether|eth|crypto|cryptocurrenc(y|ies)|stablecoins?|xrp|solana|sol|binance|coinbase|blockchain|etfs?|tether|usdc|defi|token)\b'
   - '\b(sec|cftc|regulators?|antitrust|sanctions?)\b'
   - '\b(nvidia|apple|microsoft|amazon|alphabet|google|meta|tesla|broadcom|amd|intel|tsmc|oracle|netflix|jpmorgan|goldman|berkshire|palantir|microstrategy|strategy inc)\b'
+  - '\b(overweight|underweight|equal weight|outperform|underperform|neutral rating|initiat(es|ed) coverage|resumed at|reiterat(es|ed))\b'
   - '\b(merger|acquisition|acquire[sd]?|takeover|bankruptcy|chapter 11|layoffs?|default|downgrade[sd]?)\b'
 
 # For sources with filter: ticker — the release must name an exchange ticker (or match keywords above).

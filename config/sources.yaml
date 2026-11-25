@@ -33,7 +33,7 @@ sources:
   - {id: cnbc_markets,  name: "CNBC – Markets",             tier: 2, category: general, filter: keywords, url: "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15839069"}
   - {id: mw_top,        name: "MarketWatch – Top",          tier: 2, category: general, filter: keywords, url: "https://feeds.content.dowjones.io/public/rss/mw_topstories"}
   - {id: mw_pulse,      name: "MarketWatch – Market Pulse", tier: 2, category: general, filter: keywords, url: "https://feeds.content.dowjones.io/public/rss/mw_marketpulse"}
-  - {id: yahoo,         name: "Yahoo Finance",              tier: 2, category: general, filter: keywords, url: "https://finance.yahoo.com/rss/topstories"}
+  - {id: yahoo,         name: "Yahoo Finance (via Google News)",              tier: 2, category: general, filter: keywords, url: "https://news.google.com/rss/search?q=site:finance.yahoo.com+when:1h&hl=en-US&gl=US&ceid=US:en"}
   - {id: nasdaq,        name: "Nasdaq.com – Markets (via Google News)",       tier: 2, category: stocks,  filter: keywords, url: "https://news.google.com/rss/search?q=site:nasdaq.com/articles+when:1h&hl=en-US&gl=US&ceid=US:en"}
   - {id: inv_economy,   name: "Investing.com – Economy",    tier: 2, category: macro,   filter: keywords, url: "https://www.investing.com/rss/news_14.rss"}
   - {id: kitco,         name: "Kitco (via Google News)",                      tier: 2, category: forex,   filter: keywords, url: "https://news.google.com/rss/search?q=site:kitco.com+when:1h&hl=en-US&gl=US&ceid=US:en"}
