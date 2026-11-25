@@ -368,6 +368,33 @@
    "sources": [
     "defiant"
    ]
+  },
+  {
+   "id": "e-86",
+   "key": "Ripple’s latest banking partnership opens another route to XRP adoption in Turkey",
+   "ts": "2026-11-25T20:19:00Z",
+   "seq": 86,
+   "sources": [
+    "cryptoslate"
+   ]
+  },
+  {
+   "id": "e-84",
+   "key": "Canadian dollar hits 2-week high as AI stock selloff deepens - Kitco",
+   "ts": "2026-11-25T20:19:00Z",
+   "seq": 84,
+   "sources": [
+    "kitco"
+   ]
+  },
+  {
+   "id": "e-85",
+   "key": "SpaceX, Musk pledge to donate a share each to active Trump Accounts",
+   "ts": "2026-11-25T20:19:00Z",
+   "seq": 85,
+   "sources": [
+    "cnbc_top"
+   ]
   }
  ]
 }
