@@ -1,6 +1,6 @@
 {
- "last_seq": 210,
- "updated": "2026-11-25T23:05:00Z",
+ "last_seq": 214,
+ "updated": "2026-11-25T23:12:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -103,7 +103,9 @@
   "200": "duplicate of e-198 (German PR, Bitmine dividend)",
   "202": "microcap Nasdaq deficiency notice (Scilex), not market-relevant",
   "205": "microcap earnings call highlights (MustGrow), headline only",
-  "206": "Yahoo option chart page"
+  "206": "Yahoo option chart page",
+  "211": "local Texas layoffs, headline only, not market-relevant",
+  "212": "Reuters generic daily roundup, headline only, no extractable market fact"
  },
- "last_round_at": "2026-11-25T23:05:00Z"
+ "last_round_at": "2026-11-25T23:12:00Z"
 }

@@ -700,6 +700,24 @@
    "sources": [
     "investinglive"
    ]
+  },
+  {
+   "id": "e-213",
+   "key": "Top 7 Signs to Watch That Could Signal a Bitcoin Price Reversal",
+   "ts": "2026-11-25T23:12:00Z",
+   "seq": 213,
+   "sources": [
+    "bitcoincom"
+   ]
+  },
+  {
+   "id": "e-214",
+   "key": "Bloomberg Businessweek Daily: Nasdaq Bounces Back - Bloomberg",
+   "ts": "2026-11-25T23:12:00Z",
+   "seq": 214,
+   "sources": [
+    "bloomberg_gn"
+   ]
   }
  ]
 }
