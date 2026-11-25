@@ -15,10 +15,13 @@ import os
 import re
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
+from jdate import g2j, MONTHS, DIG  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTBOX = ROOT / "data" / "outbox.json"
@@ -38,6 +41,17 @@ def load(path: Path, default):
         return json.loads(path.read_text(encoding="utf-8"))
     except (FileNotFoundError, json.JSONDecodeError):
         return default
+
+
+
+TEHRAN = timezone(timedelta(hours=3, minutes=30))
+
+
+def teh(ts: float) -> str:
+    """Unix ts -> «۴ آذر ساعت ۲۲:۳۶ تهران» (Jalali date, Tehran time, Persian digits)."""
+    t = datetime.fromtimestamp(ts, tz=TEHRAN)
+    _, jm, jd = g2j(t.year, t.month, t.day)
+    return f"{jd} {MONTHS[jm - 1]} ساعت {t:%H:%M} تهران".translate(DIG)
 
 
 _price_cache: dict[str, str] = {}
@@ -99,7 +113,7 @@ def price(symbol: str, at_iso: str | None = None) -> str:
         d = _decimals(symbol, p)
         prev = meta.get("chartPreviousClose") or meta.get("previousClose")
         now_txt = f"{p:,.{d}f}" + (f" ({(p / prev - 1) * 100:+.2f}% روزانه)" if prev else "")
-        hhmm = datetime.fromtimestamp(t, tz=timezone.utc).strftime("%H:%M")
+        hhmm = teh(t)
         stale = (time.time() - t) / 60 > STALE_MIN
         out = None
         if at_iso and pts:
@@ -108,15 +122,14 @@ def price(symbol: str, at_iso: str | None = None) -> str:
             if before and at - before[-1][0] < 30 * 60:
                 t0, p0 = before[-1]
                 move = (p / p0 - 1) * 100
-                h0 = datetime.fromtimestamp(t0, tz=timezone.utc).strftime("%H:%M")
-                out = (f"{p0:,.{d}f} (ساعت خبر، {h0} UTC) ← الان {now_txt} ({hhmm} UTC)؛ "
+                out = (f"{p0:,.{d}f} (زمان خبر، {teh(t0)}) ← هنگام ارسال {now_txt} ({hhmm})؛ "
                        f"حرکت از زمان خبر: {move:+.2f}%")
                 if abs(move) >= MOVE_WARN[_klass(symbol)]:
                     out += " ⚠️ بخش زیادی از حرکت احتمالاً انجام شده"
         if out is None:
-            out = f"{now_txt} ({hhmm} UTC، هنگام ارسال)"
+            out = f"{now_txt} (هنگام ارسال، {hhmm})"
         if stale:
-            out += " — بازار بسته یا کم‌معامله؛ آخرین معامله " + hhmm + " UTC"
+            out += " — بازار بسته یا کم‌معامله؛ آخرین معامله " + hhmm
     _price_cache[key] = out
     return out
 
