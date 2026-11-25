@@ -349,7 +349,7 @@ def main() -> int:
     with ThreadPoolExecutor(max_workers=8) as pool:
         list(pool.map(enrich, new_items[:20]))
     for it in new_items:
-        it["headline_only"] = len(it["summary"]) < 40 or strip_html(it["summary"]).lower().startswith(it["title"].lower()[:40])
+        it["headline_only"] = "news.google.com" in it["url"] or len(it["summary"]) < 40 or strip_html(it["summary"]).lower().startswith(it["title"].lower()[:40])
 
     # write outputs
     new_items.sort(key=lambda x: x["published"])
