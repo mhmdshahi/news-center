@@ -1,6 +1,6 @@
 {
- "last_seq": 163,
- "updated": "2026-11-25T21:48:00Z",
+ "last_seq": 167,
+ "updated": "2026-11-25T21:56:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -80,7 +80,9 @@
   "156": "Yahoo option/quote page",
   "157": "Yahoo option/quote page",
   "159": "AI tech story, not market",
-  "161": "microcap Venezuela mining PR"
+  "161": "microcap Venezuela mining PR",
+  "164": "Oslo-listed airline, out of scope",
+  "166": "Bloomberg movers list, names only (dup of m-100 type)"
  },
- "last_round_at": "2026-11-25T21:48:00Z"
+ "last_round_at": "2026-11-25T21:56:00Z"
 }
