@@ -1893,6 +1893,56 @@
    "sources": [
     "bloomberg_gn"
    ]
+  },
+  {
+   "id": "e-838",
+   "key": "What are the main events for today?",
+   "ts": "2026-11-26T08:05:00Z",
+   "seq": 838,
+   "code": 1048,
+   "sources": [
+    "investinglive"
+   ]
+  },
+  {
+   "id": "e-839",
+   "key": "UK's Tullow to beat annual production target as new Ghana wells outperform - Reuters",
+   "ts": "2026-11-26T08:05:00Z",
+   "seq": 839,
+   "code": 1049,
+   "sources": [
+    "reuters_gn"
+   ]
+  },
+  {
+   "id": "e-18-u1",
+   "key": "What CleanSpark’s $6.6 billion lease changes for its Bitcoin business",
+   "ts": "2026-11-26T08:05:00Z",
+   "seq": 840,
+   "code": 1050,
+   "sources": [
+    "cryptonews"
+   ]
+  },
+  {
+   "id": "e-841",
+   "key": "Samsung C&T moves $180M through Citi’s blockchain-based deposit token service in six months",
+   "ts": "2026-11-26T08:05:00Z",
+   "seq": 841,
+   "code": 1051,
+   "sources": [
+    "cryptonews"
+   ]
+  },
+  {
+   "id": "e-803-u1",
+   "key": "$7 billion of bitcoin options expire Friday, and the biggest bets look starkly different from Octobe",
+   "ts": "2026-11-26T08:05:00Z",
+   "seq": 842,
+   "code": 1052,
+   "sources": [
+    "coindesk"
+   ]
   }
  ]
 }
