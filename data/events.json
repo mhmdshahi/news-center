@@ -1428,7 +1428,8 @@
    "seq": 737,
    "code": 1001,
    "sources": [
-    "coindesk"
+    "coindesk",
+    "cryptonews"
    ]
   },
   {
@@ -2072,6 +2073,36 @@
    "code": 1065,
    "sources": [
     "theblock"
+   ]
+  },
+  {
+   "id": "e-876-u1",
+   "key": "European stock market open: Stocks surge after stunning Wall Street turnaround",
+   "ts": "2026-11-26T09:05:00Z",
+   "seq": 898,
+   "code": 1066,
+   "sources": [
+    "investinglive"
+   ]
+  },
+  {
+   "id": "e-425-u2",
+   "key": "Gold remains caught between forced liquidations and hawkish Fed bets. What could trigger a reversal?",
+   "ts": "2026-11-26T09:05:00Z",
+   "seq": 902,
+   "code": 1067,
+   "sources": [
+    "investinglive"
+   ]
+  },
+  {
+   "id": "e-903",
+   "key": "Watch Midcaps Hiding 'Historic' AI Bargain: JPMorgan's Leccubarri - Bloomberg.com",
+   "ts": "2026-11-26T09:05:00Z",
+   "seq": 903,
+   "code": 1068,
+   "sources": [
+    "bloomberg_gn"
    ]
   }
  ]
