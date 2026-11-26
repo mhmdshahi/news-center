@@ -817,6 +817,42 @@
    "sources": [
     "prnewswire"
    ]
+  },
+  {
+   "id": "e-266",
+   "key": "From Tokyo suburbs to the Australian outback, data centre pushback is a growing AI risk",
+   "ts": "2026-11-26T00:03:00Z",
+   "seq": 266,
+   "sources": [
+    "investinglive"
+   ]
+  },
+  {
+   "id": "e-97-u2",
+   "key": "Projectile explodes near tanker 50 nautical miles off Dubai as Gulf shipping attacks mount",
+   "ts": "2026-11-26T00:03:00Z",
+   "seq": 267,
+   "sources": [
+    "investinglive"
+   ]
+  },
+  {
+   "id": "e-268",
+   "key": "Citi says fear is extreme, but stocks rose after 13 of 14 past VIX spikes to 40",
+   "ts": "2026-11-26T00:03:00Z",
+   "seq": 268,
+   "sources": [
+    "investinglive"
+   ]
+  },
+  {
+   "id": "e-111-u1",
+   "key": "Nasdaq, S&P 500 end down, but well off lows as investors buy bargains - Reuters",
+   "ts": "2026-11-26T00:03:00Z",
+   "seq": 271,
+   "sources": [
+    "reuters_gn"
+   ]
   }
  ]
 }
