@@ -1883,6 +1883,16 @@
    "sources": [
     "sa_currents"
    ]
+  },
+  {
+   "id": "e-836",
+   "key": "Watch China Tech Stocks Rebound From Record Slump - Bloomberg.com",
+   "ts": "2026-11-26T07:59:00Z",
+   "seq": 836,
+   "code": 1047,
+   "sources": [
+    "bloomberg_gn"
+   ]
   }
  ]
 }
