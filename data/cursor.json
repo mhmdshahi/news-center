@@ -1,6 +1,6 @@
 {
- "last_seq": 692,
- "updated": "2026-11-26T03:44:00Z",
+ "last_seq": 694,
+ "updated": "2026-11-26T03:50:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -532,5 +532,5 @@
   "690": "Yahoo insider-transactions page (Indian microcap)",
   "691": "Yahoo transcripts page (German microcap)"
  },
- "last_round_at": "2026-11-26T03:44:00Z"
+ "last_round_at": "2026-11-26T03:50:00Z"
 }

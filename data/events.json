@@ -1203,6 +1203,24 @@
    "sources": [
     "bloomberg_gn"
    ]
+  },
+  {
+   "id": "e-693",
+   "key": "Japan Life Insurers Complicate Yen Fight With Record Low Hedging: JPY/USD - Bloomberg",
+   "ts": "2026-11-26T03:50:00Z",
+   "seq": 693,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-425-u1",
+   "key": "Gold steadies after hitting over 1-year low; Fed outlook in focus - Reuters",
+   "ts": "2026-11-26T03:50:00Z",
+   "seq": 694,
+   "sources": [
+    "reuters_gn"
+   ]
   }
  ]
 }
