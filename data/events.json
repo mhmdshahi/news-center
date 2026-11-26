@@ -1407,7 +1407,8 @@
    "ts": "2026-11-26T05:27:00Z",
    "seq": 734,
    "sources": [
-    "reuters_gn"
+    "reuters_gn",
+    "sa_currents"
    ]
   },
   {
@@ -1658,7 +1659,8 @@
    "seq": 771,
    "code": 1024,
    "sources": [
-    "theblock"
+    "theblock",
+    "defiant"
    ]
   },
   {
@@ -1677,6 +1679,16 @@
    "ts": "2026-11-26T06:40:00Z",
    "seq": 774,
    "code": 1026,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-777",
+   "key": "Turkey’s Traders See Slower Rate Cut Pace as Reserves Shrink - Bloomberg.com",
+   "ts": "2026-11-26T06:46:00Z",
+   "seq": 777,
+   "code": 1027,
    "sources": [
     "bloomberg_gn"
    ]

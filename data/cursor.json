@@ -1,6 +1,6 @@
 {
- "last_seq": 776,
- "updated": "2026-11-26T06:40:00Z",
+ "last_seq": 785,
+ "updated": "2026-11-26T06:46:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -564,8 +564,16 @@
   "767": "duplicate of e-93 (Burry more long after Nasdaq puts)",
   "773": "irrelevant: AI-safety group petition, no market impact",
   "775": "junk: ETF routine dividend declaration, headline-only",
-  "776": "junk: ETF routine dividend declaration"
+  "776": "junk: ETF routine dividend declaration",
+  "778": "junk: Bloomberg ETF fund page",
+  "779": "duplicate of e-734 (Apple pulls MiniMax chatbot)",
+  "780": "junk: ETF routine dividend declaration",
+  "781": "junk: ETF routine dividend declaration",
+  "782": "junk: ETF routine dividend declaration",
+  "783": "junk: ETF routine dividend declaration",
+  "784": "junk: ETF routine dividend declaration",
+  "785": "duplicate of e-771 (BBIT Swiss spot BTC ETF)"
  },
- "last_round_at": "2026-11-26T06:40:00Z",
- "next_code": 1027
+ "last_round_at": "2026-11-26T06:46:00Z",
+ "next_code": 1028
 }
