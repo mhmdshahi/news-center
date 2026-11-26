@@ -881,7 +881,8 @@
    "ts": "2026-11-26T00:29:00Z",
    "seq": 425,
    "sources": [
-    "bloomberg_gn"
+    "bloomberg_gn",
+    "inv_commod"
    ]
   },
   {
