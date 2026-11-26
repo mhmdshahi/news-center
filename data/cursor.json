@@ -1,6 +1,6 @@
 {
- "last_seq": 658,
- "updated": "2026-11-26T02:48:00Z",
+ "last_seq": 665,
+ "updated": "2026-11-26T02:54:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -509,7 +509,13 @@
   "651": "Malaysian retailer IPO, local/not market-relevant",
   "652": "Denny's / Jensen Huang lifestyle fluff, no market impact",
   "653": "Yahoo option page, no news",
-  "658": "Bloomberg roundup headline (parade/tariffs), no details; tariff topic covered by e-222 updates"
+  "658": "Bloomberg roundup headline (parade/tariffs), no details; tariff topic covered by e-222 updates",
+  "659": "Yahoo stock page/valuation/forecast, no news",
+  "660": "Yahoo stock page/valuation/forecast, no news",
+  "662": "Yahoo stock page/valuation/forecast, no news",
+  "664": "Yahoo stock page/valuation/forecast, no news",
+  "665": "Yahoo stock page/valuation/forecast, no news",
+  "661": "duplicate of e-577-u1 (BOJ hawkish member / quick hikes)"
  },
- "last_round_at": "2026-11-26T02:48:00Z"
+ "last_round_at": "2026-11-26T02:54:00Z"
 }

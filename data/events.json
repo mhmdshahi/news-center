@@ -972,7 +972,8 @@
    "ts": "2026-11-26T01:26:00Z",
    "seq": 616,
    "sources": [
-    "inv_economy"
+    "inv_economy",
+    "bloomberg_gn"
    ]
   },
   {
@@ -1081,6 +1082,15 @@
    "seq": 657,
    "sources": [
     "sa_currents"
+   ]
+  },
+  {
+   "id": "e-655-u1",
+   "key": "Rupee to dip on oil rise, AI trade finding tentative footing - Reuters",
+   "ts": "2026-11-26T02:54:00Z",
+   "seq": 663,
+   "sources": [
+    "reuters_gn"
    ]
   }
  ]
