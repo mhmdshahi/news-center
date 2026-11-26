@@ -1,6 +1,6 @@
 {
- "last_seq": 636,
- "updated": "2026-11-26T01:50:00Z",
+ "last_seq": 642,
+ "updated": "2026-11-26T01:57:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -497,7 +497,10 @@
   "632": "Yahoo page",
   "634": "duplicate of e-608 (Asia shares bounce), Reuters headline",
   "635": "Yahoo page",
-  "636": "Yahoo page"
+  "636": "Yahoo page",
+  "637": "Yahoo stock-pick listicle / Zacks microcap, no news",
+  "638": "Yahoo stock-pick listicle / Zacks microcap, no news",
+  "639": "Yahoo stock-pick listicle / Zacks microcap, no news"
  },
- "last_round_at": "2026-11-26T01:50:00Z"
+ "last_round_at": "2026-11-26T01:57:00Z"
 }

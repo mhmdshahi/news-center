@@ -991,6 +991,33 @@
    "sources": [
     "cnbc_top"
    ]
+  },
+  {
+   "id": "e-640",
+   "key": "AI labs likely sitting on cryptography ‘bombshells,’ computer scientist says",
+   "ts": "2026-11-26T01:57:00Z",
+   "seq": 640,
+   "sources": [
+    "cointelegraph"
+   ]
+  },
+  {
+   "id": "e-641",
+   "key": "Dollar steady as sliding yields temper safe-haven bid - Reuters",
+   "ts": "2026-11-26T01:57:00Z",
+   "seq": 641,
+   "sources": [
+    "reuters_gn"
+   ]
+  },
+  {
+   "id": "e-642",
+   "key": "Lido tightens Ethereum staking penalties as operators gain access to larger validators",
+   "ts": "2026-11-26T01:57:00Z",
+   "seq": 642,
+   "sources": [
+    "cryptoslate"
+   ]
   }
  ]
 }
