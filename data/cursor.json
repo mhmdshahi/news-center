@@ -1,6 +1,6 @@
 {
- "last_seq": 650,
- "updated": "2026-11-26T02:16:00Z",
+ "last_seq": 652,
+ "updated": "2026-11-26T02:22:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -505,7 +505,9 @@
   "644": "Yahoo option page, no news",
   "645": "Yahoo option page, no news",
   "648": "Yahoo option page, no news",
-  "650": "duplicate of e-232 (ANZ / NY Fed list)"
+  "650": "duplicate of e-232 (ANZ / NY Fed list)",
+  "651": "Malaysian retailer IPO, local/not market-relevant",
+  "652": "Denny's / Jensen Huang lifestyle fluff, no market impact"
  },
- "last_round_at": "2026-11-26T02:16:00Z"
+ "last_round_at": "2026-11-26T02:22:00Z"
 }
