@@ -30,7 +30,8 @@
    "seq": 2,
    "sources": [
     "reuters_gn",
-    "bloomberg_gn"
+    "bloomberg_gn",
+    "sa_currents"
    ]
   },
   {
@@ -1525,6 +1526,16 @@
    "code": 1011,
    "sources": [
     "cryptonews"
+   ]
+  },
+  {
+   "id": "e-220-u1",
+   "key": "Post: Pentagon Weighed Wartime Law to Pressure Nvidia",
+   "ts": "2026-11-26T06:14:00Z",
+   "seq": 751,
+   "code": 1012,
+   "sources": [
+    "defiant"
    ]
   }
  ]

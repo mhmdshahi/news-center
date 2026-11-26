@@ -1,6 +1,6 @@
 {
- "last_seq": 748,
- "updated": "2026-11-26T06:08:00Z",
+ "last_seq": 752,
+ "updated": "2026-11-26T06:14:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -552,8 +552,11 @@
   "729": "Yahoo quote comparison page",
   "731": "UK age-of-consent opinion piece, irrelevant",
   "736": "duplicate of e-720 (Swiss crypto tax data sharing)",
-  "742": "duplicate of e-565-u1 (BoK hike 3.25%)"
+  "742": "duplicate of e-565-u1 (BoK hike 3.25%)",
+  "749": "junk: Yahoo technical-outlook aggregator, headline-only opinion",
+  "750": "duplicate of seq 196 / e-2 (Moody's rating unchanged after Huang return)",
+  "752": "junk: Yahoo quote/chart page"
  },
- "last_round_at": "2026-11-26T06:08:00Z",
- "next_code": 1012
+ "last_round_at": "2026-11-26T06:14:00Z",
+ "next_code": 1013
 }
