@@ -76,3 +76,4 @@
 {"at": "2026-11-26T03:06:26Z", "duration_s": 257.2, "sources_total": 44, "sources_ok": 36, "sources_failed": 8, "entries": 522, "unseen": 6, "new": 4, "dropped": 2, "seq_last": 675, "failed": ["bloomberg_gn", "businesswire", "kitco", "nasdaq", "reuters_gn", "snb", "treasury", "yahoo"]}
 {"at": "2026-11-26T03:13:08Z", "duration_s": 16.6, "sources_total": 44, "sources_ok": 43, "sources_failed": 1, "entries": 734, "unseen": 27, "new": 6, "dropped": 21, "seq_last": 681, "failed": ["snb"]}
 {"at": "2026-11-26T03:18:35Z", "duration_s": 16.9, "sources_total": 44, "sources_ok": 43, "sources_failed": 1, "entries": 705, "unseen": 13, "new": 1, "dropped": 12, "seq_last": 682, "failed": ["snb"]}
+{"at": "2026-11-26T03:24:42Z", "duration_s": 16.6, "sources_total": 44, "sources_ok": 43, "sources_failed": 1, "entries": 743, "unseen": 15, "new": 4, "dropped": 11, "seq_last": 686, "failed": ["snb"]}
