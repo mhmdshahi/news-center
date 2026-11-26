@@ -1,6 +1,6 @@
 {
- "last_seq": 823,
- "updated": "2026-11-26T07:19:00Z",
+ "last_seq": 827,
+ "updated": "2026-11-26T07:26:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -598,8 +598,10 @@
   "819": "junk: ETF routine dividend declaration",
   "820": "junk: ETF routine dividend declaration",
   "821": "junk: ETF routine dividend declaration",
-  "822": "junk: ETF routine dividend declaration"
+  "822": "junk: ETF routine dividend declaration",
+  "824": "junk: Yahoo option chart page",
+  "826": "junk: ETF routine dividend declaration"
  },
- "last_round_at": "2026-11-26T07:19:00Z",
- "next_code": 1040
+ "last_round_at": "2026-11-26T07:26:00Z",
+ "next_code": 1042
 }

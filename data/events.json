@@ -1813,6 +1813,26 @@
    "sources": [
     "cryptonews"
    ]
+  },
+  {
+   "id": "e-825",
+   "key": "Is the stock market open for Thanksgiving? The answer might surprise you.",
+   "ts": "2026-11-26T07:26:00Z",
+   "seq": 825,
+   "code": 1040,
+   "sources": [
+    "mw_top"
+   ]
+  },
+  {
+   "id": "e-827",
+   "key": "Bitcoin could double by 2032 and UniCredit investors would still make just 65%",
+   "ts": "2026-11-26T07:26:00Z",
+   "seq": 827,
+   "code": 1041,
+   "sources": [
+    "cryptoslate"
+   ]
   }
  ]
 }
