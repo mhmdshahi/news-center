@@ -897,7 +897,8 @@
    "seq": 565,
    "sources": [
     "cnbc_top",
-    "bloomberg_gn"
+    "bloomberg_gn",
+    "inv_economy"
    ]
   },
   {
@@ -952,6 +953,24 @@
    "seq": 601,
    "sources": [
     "defiant"
+   ]
+  },
+  {
+   "id": "e-608",
+   "key": "Stocks advance in Asia after volatile US trading over AI risks",
+   "ts": "2026-11-26T01:26:00Z",
+   "seq": 608,
+   "sources": [
+    "ft_markets"
+   ]
+  },
+  {
+   "id": "e-577-u1",
+   "key": "BOJ’s Tamura signals chance of faster-pace interest rate hikes",
+   "ts": "2026-11-26T01:26:00Z",
+   "seq": 616,
+   "sources": [
+    "inv_economy"
    ]
   }
  ]
