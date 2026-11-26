@@ -1266,6 +1266,24 @@
    "sources": [
     "yahoo"
    ]
+  },
+  {
+   "id": "e-711",
+   "key": "Musk says every child in the US will get two SpaceX shares - Reuters",
+   "ts": "2026-11-26T04:29:00Z",
+   "seq": 711,
+   "sources": [
+    "reuters_gn"
+   ]
+  },
+  {
+   "id": "e-713",
+   "key": "FinVolution reiterates RMB 11.5B-RMB 12.9B revenue guidance, expects landing at lower end amid eleva",
+   "ts": "2026-11-26T04:29:00Z",
+   "seq": 713,
+   "sources": [
+    "sa_currents"
+   ]
   }
  ]
 }
