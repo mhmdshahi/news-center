@@ -898,6 +898,42 @@
    "sources": [
     "cnbc_top"
    ]
+  },
+  {
+   "id": "e-567",
+   "key": "PBOC is expected to set the USD/CNY reference rate at 6.6655 – Reuters estimate",
+   "ts": "2026-11-26T01:07:00Z",
+   "seq": 567,
+   "sources": [
+    "investinglive"
+   ]
+  },
+  {
+   "id": "e-569",
+   "key": "Australia's data centre boom drives the biggest capex jump in years, near mining-boom highs",
+   "ts": "2026-11-26T01:07:00Z",
+   "seq": 569,
+   "sources": [
+    "investinglive"
+   ]
+  },
+  {
+   "id": "e-577",
+   "key": "Speech by Board Member TAMURA in Yamanashi (Economic Activity, Prices, and Monetary Policy in Japan)",
+   "ts": "2026-11-26T01:07:00Z",
+   "seq": 577,
+   "sources": [
+    "boj"
+   ]
+  },
+  {
+   "id": "e-565-u1",
+   "key": "Bank of Korea hikes to 3.25%, sees 4.1% growth in 2027 as chip boom drives economy",
+   "ts": "2026-11-26T01:07:00Z",
+   "seq": 578,
+   "sources": [
+    "investinglive"
+   ]
   }
  ]
 }

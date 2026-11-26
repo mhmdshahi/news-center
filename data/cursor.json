@@ -1,6 +1,6 @@
 {
- "last_seq": 565,
- "updated": "2026-11-26T01:00:00Z",
+ "last_seq": 582,
+ "updated": "2026-11-26T01:07:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -436,7 +436,20 @@
   "561": "Yahoo quote/option/forecast/filings/calendar page, no news",
   "562": "Yahoo quote/option/forecast/filings/calendar page, no news",
   "563": "Yahoo quote/option/forecast/filings/calendar page, no news",
-  "564": "Yahoo quote/option/forecast/filings/calendar page, no news"
+  "564": "Yahoo quote/option/forecast/filings/calendar page, no news",
+  "566": "Yahoo page",
+  "568": "Yahoo page",
+  "570": "Yahoo page",
+  "571": "Yahoo page",
+  "572": "Yahoo page",
+  "573": "Yahoo page",
+  "574": "Yahoo page",
+  "575": "Yahoo page",
+  "576": "duplicate Bloomberg roundup (tariffs already covered in e-222)",
+  "579": "Yahoo page",
+  "580": "Yahoo page",
+  "581": "Yahoo page",
+  "582": "Yahoo page"
  },
- "last_round_at": "2026-11-26T01:00:00Z"
+ "last_round_at": "2026-11-26T01:07:00Z"
 }
