@@ -31,6 +31,19 @@ Nothing old, nothing duplicated.
    `cursor.last_seq`, update `events.json` (drop > 72 h), commit and push
    (`data/outbox.json data/cursor.json data/events.json`). Push triggers the sender.
 
+## Card builder (mandatory since 2026-11-26)
+Write every round with `scripts/card.py` (`Round().card(...)`, then `save(last_seq)`): it assigns the
+news code (cursor.json `next_code`, first = 1000), writes the explicit signal line
+«⚠️ سیگنال : USD/CNH = صعودی ( دلیل ) ( اطمینان: کم )», and stores the structured signal
+(`label, symbol, dir up|down|neutral|none, conf, at`) on the outbox message.
+User request 2026-11-26: be explicit — give صعودی/نزولی whenever the news has a clear directional
+implication for the asset; use خنثی only when it genuinely has none. Confidence rules below still apply.
+
+## 6-hour review («برایند ۶ ساعته»)
+`.github/workflows/review.yml` runs `scripts/review.py` every 6 h: for every card with a صعودی/نزولی signal
+sent in the window, price at news time vs now, % in the signal's direction per news code, plus the overall
+equal-weight %. Neutral / no-signal cards are not scored.
+
 ## Message format
 EVERY message uses the user-approved format below (user's own sample, 2026-11-25). Whatever the importance,
 all fields are mandatory; when a field does not apply, still write it (e.g. «سیگنال : ندارد — اثر مستقیم بر بازار ندارد»).
@@ -38,6 +51,7 @@ Each line starts with ⚠️. Date/time line: run `python3 scripts/jdate.py <pub
 (Jalali date + Tehran time, UTC+3:30). Digits in the date/time and importance lines are Persian (۰-۹).
 
 ```
+⚠️ کد خبر : <کد یکتا، از ۱۰۰۰ به بالا — scripts/card.py خودکار می‌دهد>
 ⚠️ تاریخ خبر: <خروجی jdate.py> ({{age:<published UTC>}})
 
 ⚠️ لاین خبری <کریپتو | فارکس | بورس آمریکا | کلان | کالا>
@@ -49,7 +63,7 @@ Each line starts with ⚠️. Date/time line: run `python3 scripts/jdate.py <pub
 
 ⚠️ توضیح ساده بات : <توضیح ساده: چرا مهم است و چه اثری روی بازار دارد>
 
-⚠️ سیگنال : <دارایی/شاخص + جهت: صعودی | نزولی | خنثی — دلیل کوتاه — اطمینان: کم|متوسط|زیاد>
+⚠️ سیگنال : <نماد> = <صعودی | نزولی | خنثی> ( <دلیل کوتاه> ) ( اطمینان: <کم|متوسط|زیاد> )   — یا: ⚠️ سیگنال : ندارد ( <دلیل> )
 ⚠️ مهلت ورود : <تا چه رویداد/ساعتی (UTC) اعتبار دارد؛ یا «سیگنال معاملاتی ندارد»>
 
 ⚠️ قیمت هنگام خبر : <دارایی> {{price:SYMBOL@<published UTC>}}
