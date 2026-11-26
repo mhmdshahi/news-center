@@ -1,6 +1,6 @@
 {
- "last_seq": 671,
- "updated": "2026-11-26T03:00:00Z",
+ "last_seq": 681,
+ "updated": "2026-11-26T03:15:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -520,7 +520,11 @@
   "667": "Yahoo stock forecast page, no news",
   "668": "Yahoo stock forecast page, no news",
   "669": "Yahoo stock forecast page, no news",
-  "670": "Yahoo stock forecast page, no news"
+  "670": "Yahoo stock forecast page, no news",
+  "672": "duplicate of e-16 (S&P Nvidia rating watch; Moody's already sent)",
+  "673": "duplicate of e-16 (S&P Nvidia rating watch)",
+  "676": "Yahoo option page, no news",
+  "680": "Korean beauty stocks / Amazon rankings, not market-relevant"
  },
- "last_round_at": "2026-11-26T03:00:00Z"
+ "last_round_at": "2026-11-26T03:15:00Z"
 }

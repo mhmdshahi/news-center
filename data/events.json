@@ -107,7 +107,9 @@
     "bloomberg_gn",
     "bloomberg_gn",
     "sa_currents",
-    "bloomberg_gn"
+    "bloomberg_gn",
+    "investinglive",
+    "cnbc_top"
    ],
    "confirmed": true
   },
@@ -1100,6 +1102,60 @@
    "seq": 671,
    "sources": [
     "reuters_gn"
+   ]
+  },
+  {
+   "id": "e-97-u3",
+   "key": "Oil little changed as Hormuz attacks threaten rebound in Gulf crude shipments",
+   "ts": "2026-11-26T03:15:00Z",
+   "seq": 674,
+   "sources": [
+    "inv_commod"
+   ]
+  },
+  {
+   "id": "e-28-u1",
+   "key": "House Committee advances Strategic Bitcoin Reserve bill with narrow path to passage",
+   "ts": "2026-11-26T03:15:00Z",
+   "seq": 675,
+   "sources": [
+    "theblock"
+   ]
+  },
+  {
+   "id": "e-677",
+   "key": "Indian shares set to extend gains on strong foreign flows; US tariffs in focus - Reuters",
+   "ts": "2026-11-26T03:15:00Z",
+   "seq": 677,
+   "sources": [
+    "reuters_gn"
+   ]
+  },
+  {
+   "id": "e-222-u5",
+   "key": "South Korea vows talks to protect its interests after US proposes new tariffs - Reuters",
+   "ts": "2026-11-26T03:15:00Z",
+   "seq": 678,
+   "sources": [
+    "reuters_gn"
+   ]
+  },
+  {
+   "id": "e-679",
+   "key": "Injective activates Veyra upgrade to expand institutional RWA infrastructure",
+   "ts": "2026-11-26T03:15:00Z",
+   "seq": 679,
+   "sources": [
+    "cryptonews"
+   ]
+  },
+  {
+   "id": "e-681",
+   "key": "Kioxia and NVIDIA Collaborate to Expand Effective High-Bandwidth Memory Capacity with SSDs - Busines",
+   "ts": "2026-11-26T03:15:00Z",
+   "seq": 681,
+   "sources": [
+    "businesswire"
    ]
   }
  ]
