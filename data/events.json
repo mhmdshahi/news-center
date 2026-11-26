@@ -1201,7 +1201,8 @@
    "ts": "2026-11-26T03:44:00Z",
    "seq": 692,
    "sources": [
-    "bloomberg_gn"
+    "bloomberg_gn",
+    "reuters_gn"
    ]
   },
   {
@@ -1283,6 +1284,24 @@
    "seq": 713,
    "sources": [
     "sa_currents"
+   ]
+  },
+  {
+   "id": "e-715",
+   "key": "Senate Democrats urge SEC to scrap crypto, tokenized stock exemptions",
+   "ts": "2026-11-26T04:36:00Z",
+   "seq": 715,
+   "sources": [
+    "cointelegraph"
+   ]
+  },
+  {
+   "id": "e-717",
+   "key": "SBI brings Japanese stocks to Solana but investors face a five-day wait to cash out",
+   "ts": "2026-11-26T04:36:00Z",
+   "seq": 717,
+   "sources": [
+    "cryptoslate"
    ]
   }
  ]
