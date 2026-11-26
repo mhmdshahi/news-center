@@ -1,6 +1,6 @@
 {
- "last_seq": 694,
- "updated": "2026-11-26T03:50:00Z",
+ "last_seq": 697,
+ "updated": "2026-11-26T03:57:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -530,7 +530,9 @@
   "687": "Yahoo option page",
   "688": "duplicate of e-425 (gold eases on inflation data)",
   "690": "Yahoo insider-transactions page (Indian microcap)",
-  "691": "Yahoo transcripts page (German microcap)"
+  "691": "Yahoo transcripts page (German microcap)",
+  "695": "Yahoo option page",
+  "697": "duplicate of e-222 (Bloomberg roundup, parade/tariffs)"
  },
- "last_round_at": "2026-11-26T03:50:00Z"
+ "last_round_at": "2026-11-26T03:57:00Z"
 }
