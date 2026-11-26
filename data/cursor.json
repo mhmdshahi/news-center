@@ -1,6 +1,6 @@
 {
- "last_seq": 880,
- "updated": "2026-11-26T08:44:00Z",
+ "last_seq": 889,
+ "updated": "2026-11-26T08:51:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -632,8 +632,17 @@
   "875": "irrelevant: Rwanda central bank (untradable for user)",
   "877": "junk: Yahoo quote page",
   "878": "junk: Yahoo quote page",
-  "879": "roundup headline: Bloomberg stock movers, unnamed"
+  "879": "roundup headline: Bloomberg stock movers, unnamed",
+  "881": "Yahoo quote page",
+  "882": "Zambia inflation, untradable market, headline only",
+  "883": "Netflix/India-Pakistan show, not market",
+  "884": "Yahoo quote page",
+  "885": "Yahoo quote page",
+  "886": "Yahoo quote page",
+  "887": "Bloomberg multi-topic roundup headline, no details",
+  "888": "Yahoo quote page",
+  "889": "Yahoo quote page"
  },
- "last_round_at": "2026-11-26T08:44:00Z",
+ "last_round_at": "2026-11-26T08:51:00Z",
  "next_code": 1063
 }
