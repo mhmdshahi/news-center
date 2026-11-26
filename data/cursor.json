@@ -1,6 +1,6 @@
 {
- "last_seq": 828,
- "updated": "2026-11-26T07:32:00Z",
+ "last_seq": 832,
+ "updated": "2026-11-26T07:39:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -600,8 +600,11 @@
   "821": "junk: ETF routine dividend declaration",
   "822": "junk: ETF routine dividend declaration",
   "824": "junk: Yahoo option chart page",
-  "826": "junk: ETF routine dividend declaration"
+  "826": "junk: ETF routine dividend declaration",
+  "829": "irrelevant: sub-$2M micro private placement",
+  "830": "duplicate/roundup: Asia stocks rise, new US tariffs (e-222 thread)",
+  "831": "roundup headline: market wrap, AI trade optimism (covered by Asia rally update)"
  },
- "last_round_at": "2026-11-26T07:32:00Z",
- "next_code": 1043
+ "last_round_at": "2026-11-26T07:39:00Z",
+ "next_code": 1044
 }

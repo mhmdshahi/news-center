@@ -1843,6 +1843,16 @@
    "sources": [
     "reuters_gn"
    ]
+  },
+  {
+   "id": "e-832",
+   "key": "Coinbase CEO says investors sell Bitcoin for major IPOs before returning to BTC",
+   "ts": "2026-11-26T07:39:00Z",
+   "seq": 832,
+   "code": 1043,
+   "sources": [
+    "cryptonews"
+   ]
   }
  ]
 }
