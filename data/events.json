@@ -1942,7 +1942,8 @@
    "seq": 842,
    "code": 1052,
    "sources": [
-    "coindesk"
+    "coindesk",
+    "bitcoinist"
    ]
   },
   {
@@ -2113,6 +2114,26 @@
    "code": 1069,
    "sources": [
     "inv_forex"
+   ]
+  },
+  {
+   "id": "e-918",
+   "key": "Meta battles political storm in India as Congress party sues, stages protests - Reuters",
+   "ts": "2026-11-26T09:17:00Z",
+   "seq": 918,
+   "code": 1070,
+   "sources": [
+    "reuters_gn"
+   ]
+  },
+  {
+   "id": "e-910-u1",
+   "key": "Hawkish Fed risks deeper market selloff as real yields climb, Brooks warns",
+   "ts": "2026-11-26T09:17:00Z",
+   "seq": 920,
+   "code": 1071,
+   "sources": [
+    "sa_currents"
    ]
   }
  ]

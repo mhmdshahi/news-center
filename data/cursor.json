@@ -1,6 +1,6 @@
 {
- "last_seq": 915,
- "updated": "2026-11-26T09:10:00Z",
+ "last_seq": 920,
+ "updated": "2026-11-26T09:17:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -660,8 +660,11 @@
   "912": "Yahoo quote/option page, no news",
   "913": "Yahoo quote/option page, no news",
   "914": "Yahoo quote/option page, no news",
-  "915": "Yahoo quote/option page, no news"
+  "915": "Yahoo quote/option page, no news",
+  "916": "Yahoo forum page",
+  "917": "Yahoo quote page",
+  "919": "duplicate of e-803-u1 (BTC $7B options expiry)"
  },
- "last_round_at": "2026-11-26T09:10:00Z",
- "next_code": 1070
+ "last_round_at": "2026-11-26T09:17:00Z",
+ "next_code": 1072
 }
