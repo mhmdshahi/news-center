@@ -63,3 +63,4 @@
 {"at": "2026-11-26T01:49:53Z", "duration_s": 16.6, "sources_total": 44, "sources_ok": 43, "sources_failed": 1, "entries": 655, "unseen": 44, "new": 2, "dropped": 42, "seq_last": 636, "failed": ["snb"]}
 {"at": "2026-11-26T01:56:08Z", "duration_s": 16.9, "sources_total": 44, "sources_ok": 43, "sources_failed": 1, "entries": 629, "unseen": 61, "new": 6, "dropped": 55, "seq_last": 642, "failed": ["snb"]}
 {"at": "2026-11-26T01:57:23Z", "duration_s": 16.8, "sources_total": 44, "sources_ok": 42, "sources_failed": 2, "entries": 550, "unseen": 5, "new": 1, "dropped": 4, "seq_last": 643, "failed": ["boj", "snb"]}
+{"at": "2026-11-26T02:02:24Z", "duration_s": 16.6, "sources_total": 44, "sources_ok": 43, "sources_failed": 1, "entries": 670, "unseen": 46, "new": 3, "dropped": 43, "seq_last": 646, "failed": ["snb"]}
