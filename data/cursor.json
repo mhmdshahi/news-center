@@ -1,6 +1,6 @@
 {
- "last_seq": 745,
- "updated": "2026-11-26T06:01:00Z",
+ "last_seq": 748,
+ "updated": "2026-11-26T06:08:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -554,6 +554,6 @@
   "736": "duplicate of e-720 (Swiss crypto tax data sharing)",
   "742": "duplicate of e-565-u1 (BoK hike 3.25%)"
  },
- "last_round_at": "2026-11-26T06:01:00Z",
- "next_code": 1009
+ "last_round_at": "2026-11-26T06:08:00Z",
+ "next_code": 1012
 }

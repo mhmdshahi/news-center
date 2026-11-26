@@ -1496,6 +1496,36 @@
    "sources": [
     "defiant"
    ]
+  },
+  {
+   "id": "e-577-u2",
+   "key": "BOJ policymaker Tamura hints at faster rate hikes, keeps December in focus",
+   "ts": "2026-11-26T06:08:00Z",
+   "seq": 746,
+   "code": 1009,
+   "sources": [
+    "investinglive"
+   ]
+  },
+  {
+   "id": "e-747",
+   "key": "UK regulator plans tighter DeFi rules, citing $6.3B Binance hack: Report",
+   "ts": "2026-11-26T06:08:00Z",
+   "seq": 747,
+   "code": 1010,
+   "sources": [
+    "cointelegraph"
+   ]
+  },
+  {
+   "id": "e-748",
+   "key": "Polymarket launches prediction markets for Nvidia GPU rental prices through 2028",
+   "ts": "2026-11-26T06:08:00Z",
+   "seq": 748,
+   "code": 1011,
+   "sources": [
+    "cryptonews"
+   ]
   }
  ]
 }
