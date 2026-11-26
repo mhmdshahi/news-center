@@ -1620,6 +1620,46 @@
    "sources": [
     "defiant"
    ]
+  },
+  {
+   "id": "e-768",
+   "key": "Philippine Investors Explore Stablecoins to Buy Retail Bonds - Bloomberg.com",
+   "ts": "2026-11-26T06:33:00Z",
+   "seq": 768,
+   "code": 1021,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-769",
+   "key": "Vivakor announces 1-for-15 reverse stock split to maintain Nasdaq compliance",
+   "ts": "2026-11-26T06:33:00Z",
+   "seq": 769,
+   "code": 1022,
+   "sources": [
+    "sa_currents"
+   ]
+  },
+  {
+   "id": "e-770",
+   "key": "South Korean police plan 229M won investment to track crypto funds across mixers, blockchain bridges",
+   "ts": "2026-11-26T06:33:00Z",
+   "seq": 770,
+   "code": 1023,
+   "sources": [
+    "cryptonews"
+   ]
+  },
+  {
+   "id": "e-771",
+   "key": "Europe’s only spot bitcoin ETF starts trading in Switzerland, BIT says",
+   "ts": "2026-11-26T06:33:00Z",
+   "seq": 771,
+   "code": 1024,
+   "sources": [
+    "theblock"
+   ]
   }
  ]
 }
