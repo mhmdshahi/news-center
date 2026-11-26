@@ -2104,6 +2104,16 @@
    "sources": [
     "bloomberg_gn"
    ]
+  },
+  {
+   "id": "e-910",
+   "key": "Global bond rally eases as sticky PCE locks in December Fed hike",
+   "ts": "2026-11-26T09:10:00Z",
+   "seq": 910,
+   "code": 1069,
+   "sources": [
+    "inv_forex"
+   ]
   }
  ]
 }
