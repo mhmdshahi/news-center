@@ -1445,6 +1445,26 @@
    "sources": [
     "cryptonews"
    ]
+  },
+  {
+   "id": "e-740",
+   "key": "Apple to Expand India Retail Network With New Store in Hyderabad - Bloomberg.com",
+   "ts": "2026-11-26T05:55:00Z",
+   "seq": 740,
+   "code": 1004,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-741",
+   "key": "South Korea wants banks to own more than 50% of domestic stablecoin issuers",
+   "ts": "2026-11-26T05:55:00Z",
+   "seq": 741,
+   "code": 1005,
+   "sources": [
+    "cryptoslate"
+   ]
   }
  ]
 }
