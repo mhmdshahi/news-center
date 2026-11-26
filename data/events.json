@@ -1332,6 +1332,42 @@
    "sources": [
     "bloomberg_gn"
    ]
+  },
+  {
+   "id": "e-725",
+   "key": "Carl Icahn Bets 86% of His Portfolio on Two Stocks After $21B Wealth Wipeout - Yahoo Finance",
+   "ts": "2026-11-26T05:02:00Z",
+   "seq": 725,
+   "sources": [
+    "yahoo"
+   ]
+  },
+  {
+   "id": "e-726",
+   "key": "1Password hacker stole customer names and emails, but vaults safe",
+   "ts": "2026-11-26T05:02:00Z",
+   "seq": 726,
+   "sources": [
+    "cointelegraph"
+   ]
+  },
+  {
+   "id": "e-726-u1",
+   "key": "CZ urges 1Password users to change all passwords after security breach",
+   "ts": "2026-11-26T05:02:00Z",
+   "seq": 727,
+   "sources": [
+    "cryptonews"
+   ]
+  },
+  {
+   "id": "e-711-u1",
+   "key": "Musk Says Every US Kid to Get Two SpaceX Shares, Doubling Pledge - Bloomberg",
+   "ts": "2026-11-26T05:02:00Z",
+   "seq": 728,
+   "sources": [
+    "bloomberg_gn"
+   ]
   }
  ]
 }
