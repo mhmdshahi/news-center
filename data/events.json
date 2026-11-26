@@ -961,7 +961,8 @@
    "ts": "2026-11-26T01:26:00Z",
    "seq": 608,
    "sources": [
-    "ft_markets"
+    "ft_markets",
+    "reuters_gn"
    ]
   },
   {
