@@ -1692,6 +1692,16 @@
    "sources": [
     "bloomberg_gn"
    ]
+  },
+  {
+   "id": "e-789",
+   "key": "Vishay Precision Group opens door to $200M ATM stock offering",
+   "ts": "2026-11-26T06:53:00Z",
+   "seq": 789,
+   "code": 1028,
+   "sources": [
+    "sa_currents"
+   ]
   }
  ]
 }
