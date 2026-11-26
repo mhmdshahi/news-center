@@ -1,6 +1,6 @@
 {
- "last_seq": 924,
- "updated": "2026-11-26T09:24:00Z",
+ "last_seq": 927,
+ "updated": "2026-11-26T09:30:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -665,8 +665,10 @@
   "917": "Yahoo quote page",
   "919": "duplicate of e-803-u1 (BTC $7B options expiry)",
   "923": "Bloomberg stock-movers roundup, names only",
-  "924": "Yahoo quote page"
+  "924": "Yahoo quote page",
+  "925": "Yahoo stock-pick listicle, no news",
+  "927": "Yahoo quote page"
  },
- "last_round_at": "2026-11-26T09:24:00Z",
- "next_code": 1074
+ "last_round_at": "2026-11-26T09:30:00Z",
+ "next_code": 1075
 }

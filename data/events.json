@@ -2155,6 +2155,16 @@
    "sources": [
     "sa_currents"
    ]
+  },
+  {
+   "id": "e-771-u1",
+   "key": "Switzerland’s first spot Bitcoin ETF ticks up 0.6% in opening hour",
+   "ts": "2026-11-26T09:30:00Z",
+   "seq": 926,
+   "code": 1074,
+   "sources": [
+    "cointelegraph"
+   ]
   }
  ]
 }
