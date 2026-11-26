@@ -1,6 +1,6 @@
 {
- "last_seq": 847,
- "updated": "2026-11-26T08:12:00Z",
+ "last_seq": 855,
+ "updated": "2026-11-26T08:19:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -608,8 +608,14 @@
   "843": "junk: Yahoo quote/option/news-list page",
   "845": "junk: Yahoo quote/option/news-list page",
   "846": "junk: Yahoo quote/option/news-list page",
-  "844": "duplicate of seq 815 (trading partners respond to tariffs)"
+  "844": "duplicate of seq 815 (trading partners respond to tariffs)",
+  "850": "junk: Yahoo quote/news-list page",
+  "851": "junk: Yahoo quote/news-list page",
+  "852": "junk: Yahoo quote/news-list page",
+  "853": "junk: Yahoo quote/news-list page",
+  "854": "junk: Yahoo quote/news-list page",
+  "855": "junk: Yahoo quote/news-list page"
  },
- "last_round_at": "2026-11-26T08:12:00Z",
- "next_code": 1054
+ "last_round_at": "2026-11-26T08:19:00Z",
+ "next_code": 1056
 }

@@ -1953,6 +1953,26 @@
    "sources": [
     "cnbc_top"
    ]
+  },
+  {
+   "id": "e-222-u14",
+   "key": "Trump Riles Trade Partners With Tariffs That Undercut ‘China+1’ - Bloomberg.com",
+   "ts": "2026-11-26T08:19:00Z",
+   "seq": 848,
+   "code": 1054,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-849",
+   "key": "Airline Norse Atlantic suspends flights, warns of possible bankruptcy - Reuters",
+   "ts": "2026-11-26T08:19:00Z",
+   "seq": 849,
+   "code": 1055,
+   "sources": [
+    "reuters_gn"
+   ]
   }
  ]
 }
