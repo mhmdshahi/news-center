@@ -1,6 +1,6 @@
 {
- "last_seq": 752,
- "updated": "2026-11-26T06:14:00Z",
+ "last_seq": 760,
+ "updated": "2026-11-26T06:20:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -555,8 +555,12 @@
   "742": "duplicate of e-565-u1 (BoK hike 3.25%)",
   "749": "junk: Yahoo technical-outlook aggregator, headline-only opinion",
   "750": "duplicate of seq 196 / e-2 (Moody's rating unchanged after Huang return)",
-  "752": "junk: Yahoo quote/chart page"
+  "752": "junk: Yahoo quote/chart page",
+  "753": "junk: Yahoo chart/option page",
+  "754": "junk: Yahoo chart/option page",
+  "755": "junk: Yahoo chart/option page",
+  "756": "roundup newsletter; Fidelity Chainlink ETF = e-29"
  },
- "last_round_at": "2026-11-26T06:14:00Z",
- "next_code": 1013
+ "last_round_at": "2026-11-26T06:20:00Z",
+ "next_code": 1017
 }

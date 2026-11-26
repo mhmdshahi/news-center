@@ -1537,6 +1537,46 @@
    "sources": [
     "defiant"
    ]
+  },
+  {
+   "id": "e-222-u10",
+   "key": "Asian shares rally on dip-buying as markets shrug off new U.S. tariff proposals",
+   "ts": "2026-11-26T06:20:00Z",
+   "seq": 757,
+   "code": 1013,
+   "sources": [
+    "sa_currents"
+   ]
+  },
+  {
+   "id": "e-758",
+   "key": "Blue Gold Stock Plunges 19% After Hours: What's Happening?",
+   "ts": "2026-11-26T06:20:00Z",
+   "seq": 758,
+   "code": 1014,
+   "sources": [
+    "benzinga"
+   ]
+  },
+  {
+   "id": "e-759",
+   "key": "Nvidia Sells Top AI Chips to Chinese-Owned US Firms: CBS",
+   "ts": "2026-11-26T06:20:00Z",
+   "seq": 759,
+   "code": 1015,
+   "sources": [
+    "defiant"
+   ]
+  },
+  {
+   "id": "e-760",
+   "key": "WSJ: Nvidia’s Ex-Sales Chief Dated Super Micro Executive",
+   "ts": "2026-11-26T06:20:00Z",
+   "seq": 760,
+   "code": 1016,
+   "sources": [
+    "defiant"
+   ]
   }
  ]
 }
