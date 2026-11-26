@@ -1166,6 +1166,24 @@
    "sources": [
     "reuters_gn"
    ]
+  },
+  {
+   "id": "e-685",
+   "key": "Crypto host who once promoted a $50 billion memecoin vision now tells traders to get out",
+   "ts": "2026-11-26T03:27:00Z",
+   "seq": 685,
+   "sources": [
+    "cryptoslate"
+   ]
+  },
+  {
+   "id": "e-686",
+   "key": "Pump.fun to introduce Block0 fees to curb memecoin sniping from Dec. 4",
+   "ts": "2026-11-26T03:27:00Z",
+   "seq": 686,
+   "sources": [
+    "cryptonews"
+   ]
   }
  ]
 }
