@@ -1973,6 +1973,16 @@
    "sources": [
     "reuters_gn"
    ]
+  },
+  {
+   "id": "e-849-u1",
+   "key": "Norse Suspends Flights, in Talks to Avoid Bankruptcy Filing - Bloomberg.com",
+   "ts": "2026-11-26T08:25:00Z",
+   "seq": 862,
+   "code": 1056,
+   "sources": [
+    "bloomberg_gn"
+   ]
   }
  ]
 }
