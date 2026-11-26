@@ -934,6 +934,24 @@
    "sources": [
     "investinglive"
    ]
+  },
+  {
+   "id": "e-597",
+   "key": "Norse Atlantic flights suspended after warning finances 'critical'",
+   "ts": "2026-11-26T01:13:00Z",
+   "seq": 597,
+   "sources": [
+    "cnbc_top"
+   ]
+  },
+  {
+   "id": "e-601",
+   "key": "Tempo's Native Multisig Goes Live on Testnet",
+   "ts": "2026-11-26T01:13:00Z",
+   "seq": 601,
+   "sources": [
+    "defiant"
+   ]
   }
  ]
 }
