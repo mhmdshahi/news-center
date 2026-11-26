@@ -853,6 +853,15 @@
    "sources": [
     "reuters_gn"
    ]
+  },
+  {
+   "id": "e-320",
+   "key": "Bitcoin is Vanishing into “Deep Storage” Faster than Miners Make It",
+   "ts": "2026-11-26T00:16:00Z",
+   "seq": 320,
+   "sources": [
+    "btcmag"
+   ]
   }
  ]
 }
