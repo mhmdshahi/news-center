@@ -2186,6 +2186,16 @@
    "sources": [
     "cryptonews"
    ]
+  },
+  {
+   "id": "e-939",
+   "key": "Bangchak Halts Thai Refinery as 7 Hurt in Fire; Shares Slide - Bloomberg.com",
+   "ts": "2026-11-26T09:48:00Z",
+   "seq": 939,
+   "code": 1077,
+   "sources": [
+    "bloomberg_gn"
+   ]
   }
  ]
 }

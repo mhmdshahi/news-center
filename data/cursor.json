@@ -1,6 +1,6 @@
 {
- "last_seq": 934,
- "updated": "2026-11-26T09:42:00Z",
+ "last_seq": 941,
+ "updated": "2026-11-26T09:48:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -672,8 +672,14 @@
   "931": "Yahoo quote page",
   "932": "Yahoo microcap analyst-fair-value page, no news",
   "933": "Yahoo quote page",
-  "934": "duplicate of e-169/e-720 (Switzerland 57 jurisdictions crypto tax data)"
+  "934": "duplicate of e-169/e-720 (Switzerland 57 jurisdictions crypto tax data)",
+  "935": "Yahoo quote/option page, no news",
+  "936": "Yahoo quote/option page, no news",
+  "937": "Yahoo quote/option page, no news",
+  "938": "Yahoo quote/option page, no news",
+  "940": "Yahoo quote/option page, no news",
+  "941": "microcap oil&gas Q3 revenue (Arrow), headline only"
  },
- "last_round_at": "2026-11-26T09:42:00Z",
- "next_code": 1077
+ "last_round_at": "2026-11-26T09:48:00Z",
+ "next_code": 1078
 }
