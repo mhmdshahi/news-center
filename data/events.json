@@ -1660,6 +1660,26 @@
    "sources": [
     "theblock"
    ]
+  },
+  {
+   "id": "e-772",
+   "key": "South African rand steady ahead of producer inflation data - Reuters",
+   "ts": "2026-11-26T06:40:00Z",
+   "seq": 772,
+   "code": 1025,
+   "sources": [
+    "reuters_gn"
+   ]
+  },
+  {
+   "id": "e-97-u5",
+   "key": "Watch Oil Prices Rise as Houthis Attack Two Saudi Ports on Red Sea - Bloomberg.com",
+   "ts": "2026-11-26T06:40:00Z",
+   "seq": 774,
+   "code": 1026,
+   "sources": [
+    "bloomberg_gn"
+   ]
   }
  ]
 }
