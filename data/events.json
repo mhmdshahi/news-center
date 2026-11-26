@@ -862,6 +862,15 @@
    "sources": [
     "btcmag"
    ]
+  },
+  {
+   "id": "e-415",
+   "key": "Bitcoin Lightning operators could recover stuck payments even after losing channel data",
+   "ts": "2026-11-26T00:22:00Z",
+   "seq": 415,
+   "sources": [
+    "cryptoslate"
+   ]
   }
  ]
 }
