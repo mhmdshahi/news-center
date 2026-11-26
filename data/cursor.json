@@ -1,6 +1,6 @@
 {
- "last_seq": 864,
- "updated": "2026-11-26T08:25:00Z",
+ "last_seq": 868,
+ "updated": "2026-11-26T08:31:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -622,8 +622,10 @@
   "860": "junk: Yahoo quote/option/news-list/filings page",
   "861": "junk: Yahoo quote/option/news-list/filings page",
   "863": "junk: Yahoo quote/option/news-list/filings page",
-  "864": "junk: Yahoo quote/option/news-list/filings page"
+  "864": "junk: Yahoo quote/option/news-list/filings page",
+  "865": "junk: Yahoo prediction/opinion page",
+  "867": "junk: Yahoo quote page"
  },
- "last_round_at": "2026-11-26T08:25:00Z",
- "next_code": 1057
+ "last_round_at": "2026-11-26T08:31:00Z",
+ "next_code": 1059
 }
