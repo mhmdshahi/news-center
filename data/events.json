@@ -1448,7 +1448,8 @@
    "seq": 739,
    "code": 1003,
    "sources": [
-    "cryptonews"
+    "cryptonews",
+    "coindesk"
    ]
   },
   {
@@ -1771,6 +1772,26 @@
    "code": 1035,
    "sources": [
     "defiant"
+   ]
+  },
+  {
+   "id": "e-809",
+   "key": "Wealthy Europeans are looking beyond the stock market amid the AI sell-off",
+   "ts": "2026-11-26T07:12:00Z",
+   "seq": 809,
+   "code": 1036,
+   "sources": [
+    "cnbc_top"
+   ]
+  },
+  {
+   "id": "e-222-u11",
+   "key": "Trump's new tariffs aim to prise global trade from China's grip - Reuters",
+   "ts": "2026-11-26T07:12:00Z",
+   "seq": 810,
+   "code": 1037,
+   "sources": [
+    "reuters_gn"
    ]
   }
  ]
