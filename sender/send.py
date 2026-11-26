@@ -165,7 +165,12 @@ def send(text: str, reply_to: int | None) -> int | None:
     if reply_to:
         payload["reply_parameters"] = {"message_id": reply_to, "allow_sending_without_reply": True}
     for attempt in range(5):
-        r = requests.post(f"{API}/sendMessage", json=payload, timeout=20)
+        try:
+            r = requests.post(f"{API}/sendMessage", json=payload, timeout=30)
+        except requests.RequestException as ex:  # timeouts/connection resets must not crash the run
+            print(f"send attempt {attempt + 1} network error: {ex}", file=sys.stderr)
+            time.sleep(3 * (attempt + 1))
+            continue
         data = r.json() if r.headers.get("content-type", "").startswith("application/json") else {}
         if r.status_code == 429:
             wait = int(data.get("parameters", {}).get("retry_after", 5)) + 1
