@@ -1,6 +1,6 @@
 {
- "last_seq": 601,
- "updated": "2026-11-26T01:13:00Z",
+ "last_seq": 605,
+ "updated": "2026-11-26T01:19:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -466,7 +466,11 @@
   "596": "Yahoo page",
   "598": "Yahoo page",
   "599": "Yahoo page",
-  "600": "Yahoo page"
+  "600": "Yahoo page",
+  "603": "duplicate of e-565 (Bank of Korea hike), Bloomberg headline",
+  "602": "Yahoo page",
+  "604": "Yahoo page",
+  "605": "Yahoo page"
  },
- "last_round_at": "2026-11-26T01:13:00Z"
+ "last_round_at": "2026-11-26T01:19:00Z"
 }
