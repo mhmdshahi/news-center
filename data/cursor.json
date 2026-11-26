@@ -1,6 +1,6 @@
 {
- "last_seq": 688,
- "updated": "2026-11-26T03:32:00Z",
+ "last_seq": 689,
+ "updated": "2026-11-26T03:37:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -530,5 +530,5 @@
   "687": "Yahoo option page",
   "688": "duplicate of e-425 (gold eases on inflation data)"
  },
- "last_round_at": "2026-11-26T03:32:00Z"
+ "last_round_at": "2026-11-26T03:37:00Z"
 }
