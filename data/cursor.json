@@ -1,6 +1,6 @@
 {
- "last_seq": 439,
- "updated": "2026-11-26T00:29:00Z",
+ "last_seq": 459,
+ "updated": "2026-11-26T00:36:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -312,7 +312,26 @@
   "436": "Yahoo quote/option/forecast/calendar page, no news",
   "437": "Yahoo quote/option/forecast/calendar page, no news",
   "438": "Yahoo quote/option/forecast/calendar page, no news",
-  "439": "Yahoo quote/option/forecast/calendar page, no news"
+  "439": "Yahoo quote/option/forecast/calendar page, no news",
+  "440": "Yahoo page / microcap PR (Orvana), no market-relevant news",
+  "441": "Yahoo page / microcap PR (Orvana), no market-relevant news",
+  "442": "Yahoo page / microcap PR (Orvana), no market-relevant news",
+  "443": "Yahoo page / microcap PR (Orvana), no market-relevant news",
+  "444": "Yahoo page / microcap PR (Orvana), no market-relevant news",
+  "445": "Yahoo page / microcap PR (Orvana), no market-relevant news",
+  "446": "Yahoo page / microcap PR (Orvana), no market-relevant news",
+  "447": "Yahoo page / microcap PR (Orvana), no market-relevant news",
+  "448": "Yahoo page / microcap PR (Orvana), no market-relevant news",
+  "449": "Yahoo page / microcap PR (Orvana), no market-relevant news",
+  "450": "Yahoo page / microcap PR (Orvana), no market-relevant news",
+  "451": "Yahoo page / microcap PR (Orvana), no market-relevant news",
+  "452": "Yahoo page / microcap PR (Orvana), no market-relevant news",
+  "453": "Yahoo page / microcap PR (Orvana), no market-relevant news",
+  "454": "Yahoo page / microcap PR (Orvana), no market-relevant news",
+  "455": "Yahoo page / microcap PR (Orvana), no market-relevant news",
+  "457": "Yahoo page / microcap PR (Orvana), no market-relevant news",
+  "458": "Yahoo page / microcap PR (Orvana), no market-relevant news",
+  "459": "Yahoo page / microcap PR (Orvana), no market-relevant news"
  },
- "last_round_at": "2026-11-26T00:29:00Z"
+ "last_round_at": "2026-11-26T00:36:00Z"
 }
