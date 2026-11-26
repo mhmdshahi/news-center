@@ -1368,6 +1368,15 @@
    "sources": [
     "bloomberg_gn"
    ]
+  },
+  {
+   "id": "e-565-u2",
+   "key": "Asia FX: won muted after BOK hikes rates, dollar steady",
+   "ts": "2026-11-26T05:07:00Z",
+   "seq": 730,
+   "sources": [
+    "inv_forex"
+   ]
   }
  ]
 }

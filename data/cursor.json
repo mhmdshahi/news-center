@@ -1,6 +1,6 @@
 {
- "last_seq": 728,
- "updated": "2026-11-26T05:02:00Z",
+ "last_seq": 731,
+ "updated": "2026-11-26T05:07:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -548,7 +548,9 @@
   "718": "Pakistan exchange options launch, local/irrelevant",
   "721": "Yahoo SEC filings page",
   "723": "duplicate of e-640 (AI vs Bitcoin cryptography)",
-  "724": "duplicate of e-28-u1 (Bitcoin reserve bill advances)"
+  "724": "duplicate of e-28-u1 (Bitcoin reserve bill advances)",
+  "729": "Yahoo quote comparison page",
+  "731": "UK age-of-consent opinion piece, irrelevant"
  },
- "last_round_at": "2026-11-26T05:02:00Z"
+ "last_round_at": "2026-11-26T05:07:00Z"
 }
