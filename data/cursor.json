@@ -1,6 +1,6 @@
 {
- "last_seq": 813,
- "updated": "2026-11-26T07:12:00Z",
+ "last_seq": 823,
+ "updated": "2026-11-26T07:19:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -590,8 +590,16 @@
   "808": "junk: Yahoo option chart page",
   "811": "junk: fund routine dividend declaration",
   "812": "irrelevant: sub-$1M micro financing by non-US-main-board company",
-  "813": "duplicate of e-739 Zcash Sapling thread (CoinDesk headline)"
+  "813": "duplicate of e-739 Zcash Sapling thread (CoinDesk headline)",
+  "814": "junk: Business Wire share-buyback routine headline",
+  "816": "junk: ETF routine dividend declaration",
+  "817": "junk: ETF routine dividend declaration",
+  "818": "junk: ETF routine dividend declaration",
+  "819": "junk: ETF routine dividend declaration",
+  "820": "junk: ETF routine dividend declaration",
+  "821": "junk: ETF routine dividend declaration",
+  "822": "junk: ETF routine dividend declaration"
  },
- "last_round_at": "2026-11-26T07:12:00Z",
- "next_code": 1038
+ "last_round_at": "2026-11-26T07:19:00Z",
+ "next_code": 1040
 }

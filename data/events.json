@@ -1793,6 +1793,26 @@
    "sources": [
     "reuters_gn"
    ]
+  },
+  {
+   "id": "e-222-u12",
+   "key": "US Partners Respond to Tariffs With Anger, Protest and Diplomacy - Bloomberg.com",
+   "ts": "2026-11-26T07:19:00Z",
+   "seq": 815,
+   "code": 1038,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-717-u1",
+   "key": "Inside SBI and SMBC’s plan to put Japanese finance on Solana",
+   "ts": "2026-11-26T07:19:00Z",
+   "seq": 823,
+   "code": 1039,
+   "sources": [
+    "cryptonews"
+   ]
   }
  ]
 }
