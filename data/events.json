@@ -1055,6 +1055,15 @@
    "sources": [
     "theblock"
    ]
+  },
+  {
+   "id": "e-655",
+   "key": "Rupee Hits 8-Month High as November Stock Inflows Near $15 Billion - Bloomberg",
+   "ts": "2026-11-26T02:42:00Z",
+   "seq": 655,
+   "sources": [
+    "bloomberg_gn"
+   ]
   }
  ]
 }
