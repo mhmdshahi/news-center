@@ -24,8 +24,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 from jdate import g2j, MONTHS, DIG  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
-OUTBOX = ROOT / "data" / "outbox.json"
-SENT = ROOT / "data" / "sent.json"
+DATA = Path(os.environ.get("RADAR_DATA") or ROOT / "data")
+OUTBOX = DATA / "outbox.json"
+SENT = DATA / "sent.json"
 
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "").strip()

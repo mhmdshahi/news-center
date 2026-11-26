@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Round report for the analyst. Usage: round_stats.py <since ISO UTC> <analysed> <sent>
 Sums every collector run since the previous analyst round."""
-import json, sys
+import json, os, sys
 from pathlib import Path
+DATA = Path(os.environ.get("RADAR_DATA") or Path(__file__).resolve().parent.parent / "data")
 since, analysed, sent = sys.argv[1], int(sys.argv[2]), int(sys.argv[3])
-runs = [json.loads(l) for l in Path("data/runs.jsonl").read_text().splitlines() if l.strip()]
+runs = [json.loads(l) for l in (DATA / "runs.jsonl").read_text().splitlines() if l.strip()]
 runs = [r for r in runs if r["at"] > since] or runs[-1:]
 last = runs[-1]
 fa = sorted({f for r in runs for f in r.get("failed", [])})

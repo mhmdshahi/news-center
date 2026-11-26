@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 import time
 from datetime import datetime, timedelta, timezone
@@ -63,8 +64,14 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
-    outbox = json.loads((ROOT / "data/outbox.json").read_text(encoding="utf-8")).get("messages", [])
-    sent = json.loads((ROOT / "data/sent.json").read_text(encoding="utf-8")).get("sent", {})
+    outbox = json.loads((S.DATA / "outbox.json").read_text(encoding="utf-8")).get("messages", [])
+    sent = {}
+    for name in ("sent.json", "panel_sent.json"):  # Telegram and/or panel delivery times
+        try:
+            for k, v in json.loads((S.DATA / name).read_text(encoding="utf-8")).get("sent", {}).items():
+                sent.setdefault(k, v)
+        except (FileNotFoundError, json.JSONDecodeError):
+            pass
     now = time.time()
     since = now - a.hours * 3600
 
@@ -130,6 +137,13 @@ def main() -> int:
     print(text)
     if a.dry_run:
         return 0
+    if os.environ.get("PANEL_URL"):
+        sys.path.insert(0, str(ROOT / "server"))
+        import push_panel  # noqa: E402
+        push_panel.post([{"msg_id": "r-" + datetime.now(timezone.utc).strftime("%Y%m%d%H%M"), "kind": "review",
+                          "created": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                          "html": S.to_html(text)}])
+        print("review posted to panel")
     if not S.TOKEN:
         print("no TELEGRAM_BOT_TOKEN — not sent")
         return 0

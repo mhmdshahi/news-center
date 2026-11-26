@@ -1,0 +1,64 @@
+/* Radarban panel — RTL, dark, no external fonts/CDNs (works on Iranian networks) */
+:root {
+  --bg: #0f1419; --panel: #171e26; --line: #26313d; --text: #e6edf3; --muted: #8b98a5;
+  --accent: #3fb6a8; --up: #2ea043; --down: #e5534b; --neutral: #8b98a5; --warn: #d29922;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--text); }
+body { font-family: Vazirmatn, "Vazir", Tahoma, "Segoe UI", sans-serif; font-size: 15px; line-height: 1.9; }
+a { color: var(--accent); }
+.muted { color: var(--muted); }
+.center { text-align: center; }
+button { font: inherit; cursor: pointer; border: 0; border-radius: 8px; padding: 6px 14px; background: var(--accent); color: #06221f; }
+button.ghost { background: transparent; color: var(--muted); border: 1px solid var(--line); }
+button.danger { background: #3a1d1d; color: #ff9b95; }
+input, select { font: inherit; background: var(--bg); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; }
+
+.top { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 18px; background: var(--panel); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 5; }
+.brand { font-weight: 700; font-size: 18px; }
+.top nav { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+.live { color: var(--up); font-size: 12px; vertical-align: middle; }
+.live.off { color: var(--down); }
+
+.auth { max-width: 420px; margin: 8vh auto; padding: 0 16px; }
+.auth h1 { text-align: center; }
+.box { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px; }
+.box label { display: flex; flex-direction: column; gap: 4px; }
+.err { color: #ff9b95; margin: 0; }
+.ok { color: #7ee2a8; }
+
+.tabs, .filters, .subline, .disclaimer { max-width: 860px; margin: 12px auto 0; padding: 0 14px; }
+.tabs { display: flex; gap: 8px; }
+.tab { background: var(--panel); color: var(--muted); border: 1px solid var(--line); }
+.tab.on { background: var(--accent); color: #06221f; }
+.filters { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.filters input[type=search] { flex: 1 1 220px; }
+.chk { color: var(--muted); font-size: 13px; }
+.disclaimer { font-size: 12px; color: var(--muted); }
+
+.feed { max-width: 860px; margin: 12px auto 30px; padding: 0 14px; display: flex; flex-direction: column; gap: 12px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; overflow-wrap: anywhere; }
+.card.update { border-inline-start: 4px solid var(--warn); }
+.card.new { animation: flash 2.5s ease-out; }
+@keyframes flash { from { box-shadow: 0 0 0 2px var(--accent); } to { box-shadow: none; } }
+.card:target { box-shadow: 0 0 0 2px var(--warn); }
+.meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 8px; font-size: 13px; }
+.meta span, .meta a { border-radius: 999px; padding: 1px 10px; background: #1f2933; }
+.meta .code { background: #22303c; font-weight: 700; }
+.meta .ago { margin-inline-start: auto; background: transparent; color: var(--muted); }
+.meta .parent { text-decoration: none; color: var(--warn); }
+.imp.b1 { color: var(--muted); } .imp.b2 { color: #c9d1d9; } .imp.b3 { color: #e3b341; } .imp.b4 { color: #f0883e; } .imp.b5 { color: #ff7b72; font-weight: 700; }
+.sig.up { background: #12301c; color: #56d364; } .sig.down { background: #3a1d1d; color: #ff7b72; } .sig.neutral { color: var(--neutral); }
+.body { white-space: normal; }
+.more { text-align: center; margin-bottom: 40px; }
+
+.admin { max-width: 1000px; margin: 16px auto; padding: 0 14px; }
+.stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+.stats div { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 8px 14px; }
+table { width: 100%; border-collapse: collapse; background: var(--panel); border-radius: 12px; overflow: hidden; }
+th, td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: start; vertical-align: top; font-size: 14px; }
+td.on { color: #56d364; } td.offc { color: var(--muted); }
+form.inline { display: flex; gap: 6px; flex-wrap: wrap; }
+form.inline button { padding: 3px 10px; font-size: 13px; }
+.tag { font-size: 11px; background: #22303c; border-radius: 6px; padding: 0 6px; }
+@media (max-width: 600px) { body { font-size: 14px; } .card { padding: 12px; } }

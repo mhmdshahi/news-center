@@ -9,12 +9,13 @@
 from __future__ import annotations
 
 import json
+import os
 import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DATA = ROOT / "data"
+DATA = Path(os.environ.get("RADAR_DATA") or ROOT / "data")
 FA = str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")
 DIRS = {"up": "صعودی", "down": "نزولی", "neutral": "خنثی", "none": "ندارد"}
 LABELS = [(20, "کم"), (40, "معمولی"), (60, "مهم"), (80, "بسیار مهم"), (100, "حیاتی")]
@@ -103,7 +104,7 @@ class Round:
         self.ids.add(eid)
         self.out["messages"].append({
             "id": f"m-{seq}", "code": code, "event_id": eid, "reply_to_event": reply_to,
-            "created": self.now, "seqs": seqs or [seq], "importance": imp,
+            "created": self.now, "seqs": seqs or [seq], "importance": imp, "line": line, "title": title,
             "signal": {"label": sig_label, "symbol": sig_symbol, "dir": sig_dir, "conf": conf, "at": p},
             "text": text})
         self.ev["events"].append({"id": eid, "key": self.inbox[seq]["title"][:100], "ts": self.now,
@@ -116,5 +117,7 @@ class Round:
         self.cur["last_round_at"] = self.now
         self.cur["updated"] = self.now
         for name, obj in (("outbox.json", self.out), ("events.json", self.ev), ("cursor.json", self.cur)):
-            (DATA / name).write_text(json.dumps(obj, ensure_ascii=False, indent=1), encoding="utf-8")
+            tmp = DATA / (name + ".tmp")
+            tmp.write_text(json.dumps(obj, ensure_ascii=False, indent=1), encoding="utf-8")
+            os.replace(tmp, DATA / name)
         return self.prev_round

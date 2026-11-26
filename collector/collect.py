@@ -36,7 +36,7 @@ import yaml
 from rapidfuzz import fuzz
 
 ROOT = Path(__file__).resolve().parent.parent
-DATA = ROOT / "data"
+DATA = Path(os.environ.get("RADAR_DATA") or ROOT / "data")
 CONFIG = ROOT / "config"
 
 SEEN_FILE = DATA / "seen.json"
@@ -76,8 +76,15 @@ def load_json(path: Path, default):
         return default
 
 
+def atomic_write(path: Path, text: str) -> None:
+    """Write via temp file + rename so readers (MCP server, pusher) never see a half-written file."""
+    tmp = path.with_name(path.name + ".tmp")
+    tmp.write_text(text, encoding="utf-8")
+    os.replace(tmp, path)
+
+
 def save_json(path: Path, obj) -> None:
-    path.write_text(json.dumps(obj, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+    atomic_write(path, json.dumps(obj, ensure_ascii=False, indent=1, sort_keys=True) + "\n")
 
 
 def sha(s: str) -> str:
@@ -361,7 +368,7 @@ def main() -> int:
         if INBOX_FILE.exists() else []
     cutoff = iso(t0 - memory)
     inbox = [x for x in inbox if x["first_seen"] >= cutoff] + new_items
-    INBOX_FILE.write_text("".join(json.dumps(x, ensure_ascii=False) + "\n" for x in inbox), encoding="utf-8")
+    atomic_write(INBOX_FILE, "".join(json.dumps(x, ensure_ascii=False) + "\n" for x in inbox))
 
     old_drops = [json.loads(l) for l in DROPPED_FILE.read_text(encoding="utf-8").splitlines() if l.strip()] \
         if DROPPED_FILE.exists() else []
@@ -379,7 +386,7 @@ def main() -> int:
     runs.append({**status["_last_run"], "seq_last": seen["seq"],
                  "failed": sorted(k for k, v in status.items()
                                   if not k.startswith("_") and v.get("last_checked") == iso(t0) and v.get("last_error"))})
-    runs_file.write_text("".join(json.dumps(x, ensure_ascii=False) + "\n" for x in runs), encoding="utf-8")
+    atomic_write(runs_file, "".join(json.dumps(x, ensure_ascii=False) + "\n" for x in runs))
     save_json(STATUS_FILE, status)
 
     print(json.dumps(status["_last_run"]))
