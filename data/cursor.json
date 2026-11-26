@@ -1,6 +1,6 @@
 {
- "last_seq": 681,
- "updated": "2026-11-26T03:15:00Z",
+ "last_seq": 682,
+ "updated": "2026-11-26T03:19:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -526,5 +526,5 @@
   "676": "Yahoo option page, no news",
   "680": "Korean beauty stocks / Amazon rankings, not market-relevant"
  },
- "last_round_at": "2026-11-26T03:15:00Z"
+ "last_round_at": "2026-11-26T03:19:00Z"
 }
