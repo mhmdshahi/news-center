@@ -1,6 +1,6 @@
 {
- "last_seq": 621,
- "updated": "2026-11-26T01:32:00Z",
+ "last_seq": 633,
+ "updated": "2026-11-26T01:39:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -483,7 +483,18 @@
   "617": "Yahoo page",
   "618": "Yahoo page",
   "619": "Yahoo page",
-  "620": "Yahoo page"
+  "620": "Yahoo page",
+  "622": "Yahoo page",
+  "623": "Yahoo page",
+  "624": "Yahoo page",
+  "625": "Yahoo page",
+  "626": "Yahoo page",
+  "627": "Yahoo page",
+  "628": "Yahoo page",
+  "629": "Yahoo page",
+  "630": "Yahoo page",
+  "631": "Yahoo page",
+  "632": "Yahoo page"
  },
- "last_round_at": "2026-11-26T01:32:00Z"
+ "last_round_at": "2026-11-26T01:39:00Z"
 }
