@@ -1863,6 +1863,26 @@
    "sources": [
     "reuters_gn"
    ]
+  },
+  {
+   "id": "e-834",
+   "key": "Banks Seek RBI FX Swaps After Record Inflows Into Indian Stocks - Bloomberg.com",
+   "ts": "2026-11-26T07:53:00Z",
+   "seq": 834,
+   "code": 1045,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-28-u2",
+   "key": "U.S. House Committee clears Bitcoin Reserve Bill; can Congress act in time?",
+   "ts": "2026-11-26T07:53:00Z",
+   "seq": 835,
+   "code": 1046,
+   "sources": [
+    "sa_currents"
+   ]
   }
  ]
 }

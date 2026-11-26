@@ -1,6 +1,6 @@
 {
- "last_seq": 833,
- "updated": "2026-11-26T07:46:00Z",
+ "last_seq": 835,
+ "updated": "2026-11-26T07:53:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -605,6 +605,6 @@
   "830": "duplicate/roundup: Asia stocks rise, new US tariffs (e-222 thread)",
   "831": "roundup headline: market wrap, AI trade optimism (covered by Asia rally update)"
  },
- "last_round_at": "2026-11-26T07:46:00Z",
- "next_code": 1045
+ "last_round_at": "2026-11-26T07:53:00Z",
+ "next_code": 1047
 }
