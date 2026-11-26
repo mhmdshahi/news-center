@@ -1722,6 +1722,56 @@
    "sources": [
     "sa_currents"
    ]
+  },
+  {
+   "id": "e-798",
+   "key": "FX option expiries for 26 November 10am New York cut",
+   "ts": "2026-11-26T07:06:00Z",
+   "seq": 798,
+   "code": 1031,
+   "sources": [
+    "investinglive"
+   ]
+  },
+  {
+   "id": "e-802",
+   "key": "Vitalik Buterin calls for open-source chip design to strengthen crypto wallet security",
+   "ts": "2026-11-26T07:06:00Z",
+   "seq": 802,
+   "code": 1032,
+   "sources": [
+    "cryptonews"
+   ]
+  },
+  {
+   "id": "e-803",
+   "key": "Where does Bitcoin price discovery move when Wall Street closes?",
+   "ts": "2026-11-26T07:06:00Z",
+   "seq": 803,
+   "code": 1033,
+   "sources": [
+    "cryptonews"
+   ]
+  },
+  {
+   "id": "e-804",
+   "key": "Jensen Huang's Bank of Nvidia Dilemma Is Still Looming Large - Bloomberg.com",
+   "ts": "2026-11-26T07:06:00Z",
+   "seq": 804,
+   "code": 1034,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-129-u1",
+   "key": "Venice AI Founder Defends Privacy After VVV Slide",
+   "ts": "2026-11-26T07:06:00Z",
+   "seq": 805,
+   "code": 1035,
+   "sources": [
+    "defiant"
+   ]
   }
  ]
 }
