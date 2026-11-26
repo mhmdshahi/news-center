@@ -1833,6 +1833,16 @@
    "sources": [
     "cryptoslate"
    ]
+  },
+  {
+   "id": "e-828",
+   "key": "UK regulator finds errors in motor finance compensation calculation - Reuters",
+   "ts": "2026-11-26T07:32:00Z",
+   "seq": 828,
+   "code": 1042,
+   "sources": [
+    "reuters_gn"
+   ]
   }
  ]
 }
