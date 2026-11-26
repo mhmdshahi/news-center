@@ -2003,6 +2003,26 @@
    "sources": [
     "cryptonews"
    ]
+  },
+  {
+   "id": "e-222-u16",
+   "key": "Watch Trump Aims to Keep Leverage Over Xi With 40% Tariff Threat - Bloomberg.com",
+   "ts": "2026-11-26T08:38:00Z",
+   "seq": 870,
+   "code": 1059,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-872",
+   "key": "Watch Asian Stock Markets Are Cheap Enough Now: Market Analysis - Bloomberg.com",
+   "ts": "2026-11-26T08:38:00Z",
+   "seq": 872,
+   "code": 1060,
+   "sources": [
+    "bloomberg_gn"
+   ]
   }
  ]
 }
