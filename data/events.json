@@ -2043,6 +2043,36 @@
    "sources": [
     "cryptoslate"
    ]
+  },
+  {
+   "id": "e-890",
+   "key": "Investors see rising risk of SoftBank default as pressure grows on AI bets - Reuters",
+   "ts": "2026-11-26T09:00:00Z",
+   "seq": 890,
+   "code": 1063,
+   "sources": [
+    "reuters_gn"
+   ]
+  },
+  {
+   "id": "e-893",
+   "key": "BOJ's net income shrinks on higher interest payments on reserves - Reuters",
+   "ts": "2026-11-26T09:00:00Z",
+   "seq": 893,
+   "code": 1064,
+   "sources": [
+    "reuters_gn"
+   ]
+  },
+  {
+   "id": "e-894",
+   "key": "Spot bitcoin ETFs on track for worst month on record as bear market drags on",
+   "ts": "2026-11-26T09:00:00Z",
+   "seq": 894,
+   "code": 1065,
+   "sources": [
+    "theblock"
+   ]
   }
  ]
 }

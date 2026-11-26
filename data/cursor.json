@@ -1,6 +1,6 @@
 {
- "last_seq": 889,
- "updated": "2026-11-26T08:51:00Z",
+ "last_seq": 894,
+ "updated": "2026-11-26T09:00:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -641,8 +641,10 @@
   "886": "Yahoo quote page",
   "887": "Bloomberg multi-topic roundup headline, no details",
   "888": "Yahoo quote page",
-  "889": "Yahoo quote page"
+  "889": "Yahoo quote page",
+  "891": "Yahoo quote page",
+  "892": "Yahoo quote page"
  },
- "last_round_at": "2026-11-26T08:51:00Z",
- "next_code": 1063
+ "last_round_at": "2026-11-26T09:00:00Z",
+ "next_code": 1066
 }
