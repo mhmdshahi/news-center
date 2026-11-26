@@ -1064,6 +1064,24 @@
    "sources": [
     "bloomberg_gn"
    ]
+  },
+  {
+   "id": "e-656",
+   "key": "Watch Netflix Buys Seinfeld Studio Lot After Goldman Forecloses - Bloomberg",
+   "ts": "2026-11-26T02:48:00Z",
+   "seq": 656,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-657",
+   "key": "NYC rent freeze survives court challenge; REIT stocks in focus",
+   "ts": "2026-11-26T02:48:00Z",
+   "seq": 657,
+   "sources": [
+    "sa_currents"
+   ]
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
- "last_seq": 655,
- "updated": "2026-11-26T02:42:00Z",
+ "last_seq": 658,
+ "updated": "2026-11-26T02:48:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -508,7 +508,8 @@
   "650": "duplicate of e-232 (ANZ / NY Fed list)",
   "651": "Malaysian retailer IPO, local/not market-relevant",
   "652": "Denny's / Jensen Huang lifestyle fluff, no market impact",
-  "653": "Yahoo option page, no news"
+  "653": "Yahoo option page, no news",
+  "658": "Bloomberg roundup headline (parade/tariffs), no details; tariff topic covered by e-222 updates"
  },
- "last_round_at": "2026-11-26T02:42:00Z"
+ "last_round_at": "2026-11-26T02:48:00Z"
 }
