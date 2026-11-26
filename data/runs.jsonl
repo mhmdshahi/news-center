@@ -66,3 +66,4 @@
 {"at": "2026-11-26T02:02:24Z", "duration_s": 16.6, "sources_total": 44, "sources_ok": 43, "sources_failed": 1, "entries": 670, "unseen": 46, "new": 3, "dropped": 43, "seq_last": 646, "failed": ["snb"]}
 {"at": "2026-11-26T02:08:43Z", "duration_s": 17.6, "sources_total": 44, "sources_ok": 43, "sources_failed": 1, "entries": 689, "unseen": 25, "new": 1, "dropped": 24, "seq_last": 647, "failed": ["snb"]}
 {"at": "2026-11-26T02:15:24Z", "duration_s": 16.8, "sources_total": 44, "sources_ok": 43, "sources_failed": 1, "entries": 653, "unseen": 25, "new": 3, "dropped": 22, "seq_last": 650, "failed": ["snb"]}
+{"at": "2026-11-26T02:21:36Z", "duration_s": 16.9, "sources_total": 44, "sources_ok": 42, "sources_failed": 2, "entries": 649, "unseen": 23, "new": 2, "dropped": 21, "seq_last": 652, "failed": ["fed_press", "snb"]}
