@@ -1853,6 +1853,16 @@
    "sources": [
     "cryptonews"
    ]
+  },
+  {
+   "id": "e-833",
+   "key": "Britain signs £8 billion deal to upgrade submarine facilities - Reuters",
+   "ts": "2026-11-26T07:46:00Z",
+   "seq": 833,
+   "code": 1044,
+   "sources": [
+    "reuters_gn"
+   ]
   }
  ]
 }
