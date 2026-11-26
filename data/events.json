@@ -1943,6 +1943,16 @@
    "sources": [
     "coindesk"
    ]
+  },
+  {
+   "id": "e-222-u13",
+   "key": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
+   "ts": "2026-11-26T08:12:00Z",
+   "seq": 847,
+   "code": 1053,
+   "sources": [
+    "cnbc_top"
+   ]
   }
  ]
 }
