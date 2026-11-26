@@ -2023,6 +2023,26 @@
    "sources": [
     "bloomberg_gn"
    ]
+  },
+  {
+   "id": "e-876",
+   "key": "European stocks rally as tech and banks rebound, tariff fears ease - Reuters",
+   "ts": "2026-11-26T08:44:00Z",
+   "seq": 876,
+   "code": 1061,
+   "sources": [
+    "reuters_gn"
+   ]
+  },
+  {
+   "id": "e-880",
+   "key": "Utah drops 14 criminal charges against Kalshi but threatens to bring them back if trading resumes",
+   "ts": "2026-11-26T08:44:00Z",
+   "seq": 880,
+   "code": 1062,
+   "sources": [
+    "cryptoslate"
+   ]
   }
  ]
 }

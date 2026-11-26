@@ -1,6 +1,6 @@
 {
- "last_seq": 874,
- "updated": "2026-11-26T08:38:00Z",
+ "last_seq": 880,
+ "updated": "2026-11-26T08:44:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -628,8 +628,12 @@
   "869": "junk: Yahoo option/filings/quote page",
   "871": "junk: Yahoo option/filings/quote page",
   "873": "junk: Yahoo option/filings/quote page",
-  "874": "junk: Yahoo option/filings/quote page"
+  "874": "junk: Yahoo option/filings/quote page",
+  "875": "irrelevant: Rwanda central bank (untradable for user)",
+  "877": "junk: Yahoo quote page",
+  "878": "junk: Yahoo quote page",
+  "879": "roundup headline: Bloomberg stock movers, unnamed"
  },
- "last_round_at": "2026-11-26T08:38:00Z",
- "next_code": 1061
+ "last_round_at": "2026-11-26T08:44:00Z",
+ "next_code": 1063
 }
