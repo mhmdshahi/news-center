@@ -1702,6 +1702,26 @@
    "sources": [
     "sa_currents"
    ]
+  },
+  {
+   "id": "e-795",
+   "key": "Oil equipment supplier SBO's Q3 profit falls as Middle East disruptions continue - Reuters",
+   "ts": "2026-11-26T06:59:00Z",
+   "seq": 795,
+   "code": 1029,
+   "sources": [
+    "reuters_gn"
+   ]
+  },
+  {
+   "id": "e-796",
+   "key": "Celularity gets until January to address the Nasdaq filing issue",
+   "ts": "2026-11-26T06:59:00Z",
+   "seq": 796,
+   "code": 1030,
+   "sources": [
+    "sa_currents"
+   ]
   }
  ]
 }
