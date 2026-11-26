@@ -1,6 +1,6 @@
 {
- "last_seq": 732,
- "updated": "2026-11-26T05:14:00Z",
+ "last_seq": 733,
+ "updated": "2026-11-26T05:20:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -552,5 +552,5 @@
   "729": "Yahoo quote comparison page",
   "731": "UK age-of-consent opinion piece, irrelevant"
  },
- "last_round_at": "2026-11-26T05:14:00Z"
+ "last_round_at": "2026-11-26T05:20:00Z"
 }
