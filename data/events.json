@@ -2135,6 +2135,26 @@
    "sources": [
     "sa_currents"
    ]
+  },
+  {
+   "id": "e-893-u1",
+   "key": "BOJ’s Paper Gains From ETFs Surge as Takaichi Seeks Funding - Bloomberg.com",
+   "ts": "2026-11-26T09:24:00Z",
+   "seq": 921,
+   "code": 1072,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-910-u2",
+   "key": "Hawkish Fed sentiment coincides with sharp drop in S&P 500 valuation",
+   "ts": "2026-11-26T09:24:00Z",
+   "seq": 922,
+   "code": 1073,
+   "sources": [
+    "sa_currents"
+   ]
   }
  ]
 }
