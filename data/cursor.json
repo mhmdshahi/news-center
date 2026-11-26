@@ -1,6 +1,6 @@
 {
- "last_seq": 545,
- "updated": "2026-11-26T00:55:00Z",
+ "last_seq": 565,
+ "updated": "2026-11-26T01:00:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -417,7 +417,26 @@
   "542": "Yahoo quote/option/forecast/calendar page, no news",
   "543": "Yahoo quote/option/forecast/calendar page, no news",
   "544": "Yahoo quote/option/forecast/calendar page, no news",
-  "545": "Yahoo quote/option/forecast/calendar page, no news"
+  "545": "Yahoo quote/option/forecast/calendar page, no news",
+  "546": "Yahoo quote/option/forecast/filings/calendar page, no news",
+  "547": "Yahoo quote/option/forecast/filings/calendar page, no news",
+  "548": "Yahoo quote/option/forecast/filings/calendar page, no news",
+  "549": "Yahoo quote/option/forecast/filings/calendar page, no news",
+  "550": "Yahoo quote/option/forecast/filings/calendar page, no news",
+  "551": "Yahoo quote/option/forecast/filings/calendar page, no news",
+  "552": "Yahoo quote/option/forecast/filings/calendar page, no news",
+  "553": "Yahoo quote/option/forecast/filings/calendar page, no news",
+  "554": "Yahoo quote/option/forecast/filings/calendar page, no news",
+  "555": "Yahoo quote/option/forecast/filings/calendar page, no news",
+  "556": "Yahoo quote/option/forecast/filings/calendar page, no news",
+  "557": "Yahoo quote/option/forecast/filings/calendar page, no news",
+  "558": "Yahoo quote/option/forecast/filings/calendar page, no news",
+  "559": "Yahoo quote/option/forecast/filings/calendar page, no news",
+  "560": "Yahoo quote/option/forecast/filings/calendar page, no news",
+  "561": "Yahoo quote/option/forecast/filings/calendar page, no news",
+  "562": "Yahoo quote/option/forecast/filings/calendar page, no news",
+  "563": "Yahoo quote/option/forecast/filings/calendar page, no news",
+  "564": "Yahoo quote/option/forecast/filings/calendar page, no news"
  },
- "last_round_at": "2026-11-26T00:55:00Z"
+ "last_round_at": "2026-11-26T01:00:00Z"
 }

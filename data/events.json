@@ -889,6 +889,15 @@
    "sources": [
     "bitcoincom"
    ]
+  },
+  {
+   "id": "e-565",
+   "key": "South Korea raises rates to highest in two years, as inflation remains above target",
+   "ts": "2026-11-26T01:00:00Z",
+   "seq": 565,
+   "sources": [
+    "cnbc_top"
+   ]
   }
  ]
 }
