@@ -139,11 +139,12 @@ def main() -> int:
         return 0
     if os.environ.get("PANEL_URL"):
         sys.path.insert(0, str(ROOT / "server"))
-        import push_panel  # noqa: E402
-        push_panel.post([{"msg_id": "r-" + datetime.now(timezone.utc).strftime("%Y%m%d%H%M"), "kind": "review",
-                          "created": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-                          "html": S.to_html(text)}])
-        print("review posted to panel")
+        import store  # noqa: E402  (queued like cards: delivered by push or pull, never lost)
+        stamp = datetime.now(timezone.utc)
+        with store.locked() as st:
+            store.enqueue(st, {"msg_id": "r-" + stamp.strftime("%Y%m%d%H%M"), "kind": "review",
+                               "created": stamp.strftime("%Y-%m-%dT%H:%M:%SZ"), "html": S.to_html(text)})
+        print("review queued for the panel")
     if not S.TOKEN:
         print("no TELEGRAM_BOT_TOKEN — not sent")
         return 0

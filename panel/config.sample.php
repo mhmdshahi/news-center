@@ -7,6 +7,8 @@ return [
     'db_pass'       => 'CHANGE_ME',
     // Long random string (≥ 32 chars). The same value goes into PANEL_SECRET on the VPS.
     'ingest_secret' => 'CHANGE_ME_TO_A_LONG_RANDOM_STRING',
+    // VPS relay for the backup pull route (cron/pull.php). Same host as the Claude connector.
+    'relay_url'     => 'https://mcp.radarban.com',
     'site_name'     => 'راداربان',
     // Shown to users without an active subscription (how to buy).
     'contact_text'  => 'برای خرید اشتراک با پشتیبانی تماس بگیرید.',

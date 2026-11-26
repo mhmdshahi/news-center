@@ -261,8 +261,8 @@ def get_status() -> dict:
     status = _load("sources_status.json", {})
     runs_p = DATA / "runs.jsonl"
     last_run = json.loads(runs_p.read_text().splitlines()[-1]) if runs_p.exists() and runs_p.read_text().strip() else None
-    out = _load("outbox.json", {"messages": []})["messages"]
-    delivered = _load("panel_sent.json", {"sent": {}})["sent"]
+    queue = _load("panel_store.json", {"items": []})["items"]
+    health = _load("panel_health.json", {})
     return {
         "last_round_at": cur.get("last_round_at"),
         "last_seq": cur.get("last_seq"),
@@ -270,7 +270,8 @@ def get_status() -> dict:
         "waiting_items": max(0, int(seen.get("seq", 0)) - int(cur.get("last_seq", 0))),
         "last_collector_run": last_run,
         "sources_with_errors": [k for k, v in status.items() if isinstance(v, dict) and v.get("consecutive_errors", 0) >= 3],
-        "panel_undelivered": [m["id"] for m in out if m["id"] not in delivered][:20],
+        "panel_queue_waiting": sum(1 for it in queue if not it.get("delivered_at")),
+        "panel_link": health,
         "next_code": cur.get("next_code"),
     }
 

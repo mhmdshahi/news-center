@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
-"""Push new cards from data/outbox.json to the Radarban panel (radarban.com/panel) — exactly once.
+"""VPS → panel delivery (route 1 of 2: push). Runs every 30 s from a systemd timer.
 
-* Resolves the live tokens at push time, like the Telegram sender: {{price:SYM@ts}} (price at news
-  time vs now, from Yahoo), {{age:ts}}, [[name|url]] → clickable source name.
-* Signs every request: X-Radar-Ts (unix seconds) + X-Radar-Sig = hex HMAC-SHA256(secret, "<ts>.<body>").
-  The panel rejects unsigned / old (> 5 min) requests.
-* Delivery log: data/panel_sent.json  {"sent": {msg_id: {"at": iso}}, "failed": {msg_id: n}}
+1. New cards in data/outbox.json are rendered once (live price at news time vs now, age, clickable
+   source names) and queued in data/panel_store.json with an increasing rseq (see server/store.py).
+2. Undelivered items are POSTed in order (oldest first, batches of 20) to <PANEL_URL>/api/ingest.php,
+   signed: X-Radar-Ts + X-Radar-Sig = hex HMAC-SHA256(secret, "<ts>.<body>").
+   With nothing to send, an empty signed heartbeat is posted so the panel knows the link is alive.
+3. Nothing is ever dropped: on failure the queue simply waits (route 2, the panel's pull cron via
+   server/relay.py, may deliver it meanwhile). Analysis / collection never wait on this process.
+4. If delivery has been failing for ≥ ALERT_MIN minutes, one alert (and later one recovery notice)
+   goes to the admin's Telegram (TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID), if configured.
 
-Env: PANEL_URL (e.g. https://radarban.com/panel), PANEL_SECRET (same value as INGEST_SECRET in the
-panel's config.php), RADAR_DATA (data dir).
+Env: PANEL_URL, PANEL_SECRET (= ingest_secret in the panel's inc/config.php), RADAR_DATA.
 """
 from __future__ import annotations
 
@@ -19,46 +22,42 @@ import os
 import re
 import sys
 import time
-from datetime import datetime, timezone
-from pathlib import Path
 
 import requests
 
-ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(ROOT / "sender"))
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+sys.path.insert(0, os.path.join(HERE, "..", "sender"))
 import send as S  # noqa: E402  (price / age / link helpers)
+import store  # noqa: E402
 
-DATA = S.DATA
-LOG = DATA / "panel_sent.json"
 PANEL_URL = os.environ.get("PANEL_URL", "").rstrip("/")
 SECRET = os.environ.get("PANEL_SECRET", "")
 BATCH = 20
+TIMEOUT = 20
+ALERT_MIN = 10
 
 
-def post(items: list[dict]) -> dict:
-    """POST a batch to the panel. Raises on any failure."""
+def sign(payload: bytes, ts: str) -> str:
+    return hmac.new(SECRET.encode(), ts.encode() + b"." + payload, hashlib.sha256).hexdigest()
+
+
+def post(items: list[dict], heartbeat: dict | None = None) -> dict:
+    """One signed POST to the panel. Raises on failure (caller keeps the queue)."""
     if not PANEL_URL or not SECRET:
         raise RuntimeError("PANEL_URL / PANEL_SECRET not set")
-    body = json.dumps({"items": items}, ensure_ascii=False).encode("utf-8")
+    body = json.dumps({"items": items, "heartbeat": heartbeat or {}}, ensure_ascii=False).encode("utf-8")
     ts = str(int(time.time()))
-    sig = hmac.new(SECRET.encode(), ts.encode() + b"." + body, hashlib.sha256).hexdigest()
-    last = None
-    for attempt in range(3):
-        try:
-            r = requests.post(f"{PANEL_URL}/api/ingest.php", data=body, timeout=30,
-                              headers={"Content-Type": "application/json; charset=utf-8",
-                                       "X-Radar-Ts": ts, "X-Radar-Sig": sig,
-                                       "User-Agent": "RadarbanPusher/1.0"})
-            data = r.json()
-            if r.status_code == 200 and data.get("ok"):
-                return data
-            last = f"HTTP {r.status_code}: {data}"
-            if r.status_code in (400, 401, 403):
-                break  # bad secret / bad payload — retrying won't help
-        except (requests.RequestException, ValueError) as ex:
-            last = str(ex)
-        time.sleep(3 * (attempt + 1))
-    raise RuntimeError(f"panel push failed: {last}")
+    r = requests.post(f"{PANEL_URL}/api/ingest.php", data=body, timeout=TIMEOUT,
+                      headers={"Content-Type": "application/json; charset=utf-8", "X-Radar-Ts": ts,
+                               "X-Radar-Sig": sign(body, ts), "User-Agent": "RadarbanPusher/1.1"})
+    try:
+        data = r.json()
+    except ValueError:
+        data = {}
+    if r.status_code != 200 or not data.get("ok"):
+        raise RuntimeError(f"HTTP {r.status_code}: {str(data or r.text[:200])}")
+    return data
 
 
 def render(m: dict) -> dict:
@@ -66,7 +65,7 @@ def render(m: dict) -> dict:
     text = S.AGE_RE.sub(lambda mo: S.age(mo.group(1)), text)
     sig = m.get("signal") or {}
     line = m.get("line")
-    if not line:  # cards written before line/title were stored
+    if not line:  # cards written before line/title were stored on the message
         mo = re.search(r"لاین خبری ([^\n]+)", m["text"])
         line = mo.group(1).strip() if mo else None
     title = m.get("title")
@@ -82,36 +81,70 @@ def render(m: dict) -> dict:
     }
 
 
+def queue_new_cards() -> int:
+    outbox = S.load(S.DATA / "outbox.json", {"messages": []}).get("messages", [])
+    known = {it["msg_id"] for it in store.read()["items"]}
+    legacy = S.load(S.DATA / "panel_sent.json", {"sent": {}}).get("sent", {})  # marked as already handled
+    todo = [m for m in outbox if "code" in m and m["id"] not in known and m["id"] not in legacy]
+    if not todo:
+        return 0
+    rendered = [render(m) for m in todo]  # network (Yahoo) outside the lock
+    n = 0
+    with store.locked() as st:
+        for it in rendered:
+            n += store.enqueue(st, it)
+    return n
+
+
+def alert(text: str) -> None:
+    tok, chat = os.environ.get("TELEGRAM_BOT_TOKEN", ""), os.environ.get("TELEGRAM_CHAT_ID", "")
+    if not tok or not chat:
+        return
+    try:
+        requests.post(f"https://api.telegram.org/bot{tok}/sendMessage",
+                      json={"chat_id": chat, "text": text}, timeout=15)
+    except requests.RequestException:
+        pass
+
+
+def check_alert(h: dict) -> None:
+    st_path = store.DATA / "panel_alert.json"
+    state = S.load(st_path, {"alerted": False})
+    since = h.get("fail_since")
+    if since and not state["alerted"] and time.time() - store._ts(since) >= ALERT_MIN * 60:
+        waiting = sum(1 for it in store.read()["items"] if not it.get("delivered_at"))
+        alert(f"⛔️ راداربان: ارسال به پنل از {int((time.time() - store._ts(since)) / 60)} دقیقه پیش قطع است "
+              f"({waiting} مورد در صف، چیزی از دست نمی‌رود). آخرین خطا: {h.get('last_error')}")
+        state = {"alerted": True}
+    elif not since and state["alerted"]:
+        alert("✅ راداربان: ارتباط با پنل برقرار شد؛ صف در حال ارسال است.")
+        state = {"alerted": False}
+    st_path.write_text(json.dumps(state), encoding="utf-8")
+
+
 def main() -> int:
     if not PANEL_URL or not SECRET:
         print("PANEL_URL / PANEL_SECRET not set — nothing pushed")
         return 0
-    outbox = S.load(DATA / "outbox.json", {"messages": []}).get("messages", [])
-    log = S.load(LOG, {"sent": {}, "failed": {}})
-    log.setdefault("failed", {})
-    pending = [m for m in outbox if "code" in m and m["id"] not in log["sent"]
-               and int(log["failed"].get(m["id"], 0)) < 5]
-    if not pending:
-        return 0
-    print(f"{len(pending)} pending")
-    for i in range(0, len(pending), BATCH):
-        chunk = pending[i:i + BATCH]
-        try:
-            post([render(m) for m in chunk])
-        except Exception as ex:  # noqa: BLE001
-            print(ex, file=sys.stderr)
-            for m in chunk:
-                log["failed"][m["id"]] = int(log["failed"].get(m["id"], 0)) + 1
-            break
-        now = datetime.now(timezone.utc).isoformat(timespec="seconds")
-        for m in chunk:
-            log["sent"][m["id"]] = {"at": now}
-            log["failed"].pop(m["id"], None)
-    cutoff = time.time() - 7 * 86400
-    log["sent"] = {k: v for k, v in log["sent"].items() if datetime.fromisoformat(v["at"]).timestamp() > cutoff}
-    tmp = LOG.with_name(LOG.name + ".tmp")
-    tmp.write_text(json.dumps(log, ensure_ascii=False, indent=1), encoding="utf-8")
-    os.replace(tmp, LOG)
+    added = queue_new_cards()
+    if added:
+        print(f"queued {added}")
+    pending = sorted((it for it in store.read()["items"] if not it.get("delivered_at")), key=lambda x: x["rseq"])
+    hb = {"at": store.now_iso(), "queue": len(pending)}
+    try:
+        if not pending:
+            post([], hb)
+        for i in range(0, len(pending), BATCH):
+            chunk = pending[i:i + BATCH]
+            post([store.payload_item(it) for it in chunk], hb)
+            with store.locked() as st:
+                store.mark_delivered(st, msg_ids={it["msg_id"] for it in chunk}, via="push")
+            print(f"delivered {len(chunk)} (up to rseq {chunk[-1]['rseq']})")
+        h = store.health_update(True, "push")
+    except Exception as ex:  # noqa: BLE001
+        print(f"push failed: {ex}", file=sys.stderr)
+        h = store.health_update(False, "push", str(ex))
+    check_alert(h)
     return 0
 
 

@@ -95,6 +95,24 @@ PrivateTmp=true
 [Install]
 WantedBy=multi-user.target
 EOF
+unit radar-relay.service <<EOF
+[Unit]
+Description=Radarban relay (panel pull route)
+After=network-online.target
+[Service]
+User=$USR
+EnvironmentFile=$ENVF
+WorkingDirectory=$APP
+ExecStart=$BASE/venv/bin/python server/relay.py
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+ProtectSystem=strict
+ReadWritePaths=$DATA
+PrivateTmp=true
+[Install]
+WantedBy=multi-user.target
+EOF
 oneshot() {  # name, command, OnCalendar
 unit radar-$1.service <<EOF
 [Unit]
@@ -126,7 +144,8 @@ oneshot collect "collector/collect.py" "*:0/5"
 oneshot push    "server/push_panel.py" "*:*:30"
 oneshot review  "scripts/review.py --hours 6" "*-*-* 00,06,12,18:03:00"
 systemctl daemon-reload
-systemctl enable --now radar-mcp.service radar-collect.timer radar-push.timer radar-review.timer >/dev/null
+systemctl restart radar-mcp.service radar-relay.service 2>/dev/null || true
+systemctl enable --now radar-mcp.service radar-relay.service radar-collect.timer radar-push.timer radar-review.timer >/dev/null
 
 echo "==> Caddy (HTTPS for $MCP_HOST)"
 cat > /etc/caddy/Caddyfile <<EOF
@@ -134,7 +153,12 @@ $MCP_HOST {
 	request_body {
 		max_size 5MB
 	}
-	reverse_proxy 127.0.0.1:8787
+	handle /relay/* {
+		reverse_proxy 127.0.0.1:8788
+	}
+	handle {
+		reverse_proxy 127.0.0.1:8787
+	}
 	log {
 		output discard
 	}
@@ -154,6 +178,6 @@ echo " never into a chat):"
 echo
 echo "   https://$MCP_HOST/$RADAR_MCP_SECRET/mcp"
 echo
-echo " Next: put PANEL_SECRET into $ENVF  (nano $ENVF), then: systemctl start radar-push.service"
+echo " Next: put PANEL_SECRET into $ENVF  (nano $ENVF), then: systemctl restart radar-relay; systemctl start radar-push.service"
 echo " Status: systemctl list-timers 'radar-*' ; journalctl -u radar-mcp -n 50"
 echo "============================================================"

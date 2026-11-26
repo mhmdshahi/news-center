@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require __DIR__ . '/inc/bootstrap.php';
+require __DIR__ . '/inc/ingest_lib.php';
 $u = require_login();
 if ((int)$u['is_admin'] !== 1) { http_response_code(403); exit('دسترسی ندارید.'); }
 $pdo = db();
@@ -10,7 +11,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     csrf_check();
     $id = (int)($_POST['id'] ?? 0);
     $act = (string)($_POST['act'] ?? '');
-    if ($id > 0) {
+    if ($act === 'bulk') {
+        // compensation (e.g. after an internet shutdown): add N days to every ACTIVE subscription
+        $days = min(365, max(1, (int)($_POST['days'] ?? 0)));
+        $now = utc_now();
+        $st = $pdo->prepare('SELECT id, sub_until FROM users WHERE sub_until IS NOT NULL AND sub_until > ?');
+        $st->execute([$now]);
+        $up = $pdo->prepare('UPDATE users SET sub_until = ? WHERE id = ?');
+        $n = 0;
+        foreach ($st->fetchAll() as $row) {
+            $up->execute([gmdate('Y-m-d H:i:s', strtotime($row['sub_until'] . ' UTC') + $days * 86400), $row['id']]);
+            $n++;
+        }
+        $msg = fa_digits("$days روز به $n اشتراک فعال اضافه شد.");
+    } elseif ($id > 0) {
         if (preg_match('/^add(\d{1,3})$/', $act, $m)) {
             $days = (int)$m[1];
             $st = $pdo->prepare('SELECT sub_until FROM users WHERE id = ?');
@@ -31,6 +45,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 $users = $pdo->query('SELECT id, email, name, is_admin, sub_until, created_at FROM users ORDER BY id DESC LIMIT 500')->fetchAll();
 $stats = $pdo->query("SELECT COUNT(*) AS n, MAX(received_at) AS last FROM news WHERE kind = 'card'")->fetch();
+$link = link_status();
+$linkTxt = ['ok' => '✅ برقرار', 'late' => '⏳ با تأخیر', 'down' => '⛔️ قطع'][$link['state']];
 $active = 0;
 foreach ($users as $x) if ($x['sub_until'] && $x['sub_until'] > utc_now()) $active++;
 page_head('مدیریت');
@@ -46,7 +62,16 @@ page_head('مدیریت');
     <div><b><?= e(fa_digits((string)$active)) ?></b> اشتراک فعال</div>
     <div><b><?= e(fa_digits((string)$stats['n'])) ?></b> خبر در پنل</div>
     <div>آخرین خبر: <b><?= e(jdate_teh($stats['last'], true)) ?></b></div>
+    <div>ارتباط با سرور: <b><?= e($linkTxt) ?></b>
+      <?php if ($link['last_contact_ts']): ?><span class="muted">(<?= e(jdate_teh(gmdate('Y-m-d H:i:s', $link['last_contact_ts']), true)) ?>)</span><?php endif; ?></div>
+    <div>صف سرور: <b><?= e(fa_digits((string)(meta_get('vps_queue') ?? '—'))) ?></b></div>
   </div>
+  <?php if ($e = meta_get('last_pull_error')): ?><p class="muted">آخرین خطای مسیر پشتیبان (pull): <span dir="ltr"><?= e($e) ?></span></p><?php endif; ?>
+  <form method="post" class="inline bulk">
+    <?= csrf_field() ?>
+    <label>جبران قطعی: <input type="number" name="days" min="1" max="365" value="1" style="width:5em"> روز</label>
+    <button name="act" value="bulk" onclick="return confirm('به همهٔ اشتراک‌های فعال اضافه شود؟')">افزودن به همهٔ اشتراک‌های فعال</button>
+  </form>
   <table>
     <thead><tr><th>کاربر</th><th>عضویت</th><th>اشتراک تا</th><th>عملیات</th></tr></thead>
     <tbody>

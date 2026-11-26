@@ -2,6 +2,7 @@
 // News feed for logged-in subscribers. GET ?after=<id> → newer items; ?before=<id> → older page.
 declare(strict_types=1);
 require __DIR__ . '/../inc/bootstrap.php';
+require __DIR__ . '/../inc/ingest_lib.php';
 
 $u = current_user();
 if (!$u) json_out(['ok' => false, 'error' => 'login'], 401);
@@ -31,4 +32,4 @@ foreach ($rows as &$r) {
     $r['importance'] = $r['importance'] === null ? null : (int)$r['importance'];
     $r['created_ts'] = strtotime($r['created_at'] . ' UTC');
 }
-json_out(['ok' => true, 'items' => $rows, 'server_ts' => time()]);
+json_out(['ok' => true, 'items' => $rows, 'server_ts' => time(), 'link' => link_status()]);

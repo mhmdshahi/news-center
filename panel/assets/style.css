@@ -35,6 +35,9 @@ input, select { font: inherit; background: var(--bg); color: var(--text); border
 .filters input[type=search] { flex: 1 1 220px; }
 .chk { color: var(--muted); font-size: 13px; }
 .disclaimer { font-size: 12px; color: var(--muted); }
+.linkbar { max-width: 860px; margin: 12px auto 0; padding: 10px 14px; border-radius: 10px; font-size: 14px; }
+.linkbar.late { background: #2d2410; color: #e3b341; border: 1px solid #5a4614; }
+.linkbar.down { background: #3a1d1d; color: #ffb4ae; border: 1px solid #6e2b27; }
 
 .feed { max-width: 860px; margin: 12px auto 30px; padding: 0 14px; display: flex; flex-direction: column; gap: 12px; }
 .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; overflow-wrap: anywhere; }
@@ -62,3 +65,4 @@ form.inline { display: flex; gap: 6px; flex-wrap: wrap; }
 form.inline button { padding: 3px 10px; font-size: 13px; }
 .tag { font-size: 11px; background: #22303c; border-radius: 6px; padding: 0 6px; }
 @media (max-width: 600px) { body { font-size: 14px; } .card { padding: 12px; } }
+form.bulk { margin: 0 0 14px; align-items: center; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 8px 12px; }

@@ -43,6 +43,7 @@ page_head('اخبار');
   </select>
   <label class="chk"><input type="checkbox" id="sound"> صدای خبر جدید</label>
 </div>
+<div id="linkbar" class="linkbar" hidden></div>
 <p class="disclaimer">محتوای این پنل تحلیل خودکار خبر است و توصیهٔ سرمایه‌گذاری نیست. مسئولیت هر معامله با خود شماست.</p>
 <main id="feed" class="feed" aria-live="polite"></main>
 <div class="more"><button id="older">خبرهای قدیمی‌تر</button></div>

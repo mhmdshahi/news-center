@@ -14,6 +14,7 @@ CREATE TABLE IF NOT EXISTS users (
 CREATE TABLE IF NOT EXISTS news (
   id             INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   msg_id         VARCHAR(64)  NOT NULL UNIQUE,  -- m-939 / r-202611261800
+  rseq           INT          NULL,             -- VPS delivery-queue order
   kind           VARCHAR(10)  NOT NULL DEFAULT 'card',  -- card | review
   code           INT          NULL,
   event_id       VARCHAR(64)  NULL,
@@ -36,4 +37,10 @@ CREATE TABLE IF NOT EXISTS login_attempts (
   ip  VARCHAR(45) NOT NULL,
   at  DATETIME    NOT NULL,
   KEY idx_ip_at (ip, at)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- key/value state: last_heartbeat, last_push_at, last_pull_at, last_pull_error
+CREATE TABLE IF NOT EXISTS meta (
+  k  VARCHAR(64)  NOT NULL PRIMARY KEY,
+  v  VARCHAR(500) NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

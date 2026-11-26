@@ -66,6 +66,19 @@
     return true;
   }
 
+  const linkbar = document.getElementById("linkbar");
+  function showLink(l) {
+    live.classList.toggle("off", l.state !== "ok");
+    if (l.state === "ok") { linkbar.hidden = true; return; }
+    const last = l.last_item_ts ? ago(l.last_item_ts) : "—";
+    linkbar.className = "linkbar " + l.state;
+    linkbar.textContent = l.state === "down"
+      ? "⚠️ ارتباط با سرور خبر فعلاً قطع است (احتمالاً اختلال اینترنت بین‌الملل). آخرین خبر: " + last +
+        ". خبرها در صف می‌مانند و بعد از وصل شدن، به ترتیب و خودکار اینجا می‌آیند."
+      : "⏳ دریافت خبر با تأخیر انجام می‌شود. آخرین خبر: " + last;
+    linkbar.hidden = false;
+  }
+
   function applyFilters() { feed.querySelectorAll(".card").forEach((d) => { d.hidden = !visible(d); }); }
   [q, lineSel, sigSel, impSel].forEach((x) => x.addEventListener("input", applyFilters));
 
@@ -78,6 +91,7 @@
     if (r.status === 401) { location.href = "login.php"; return null; }
     if (r.status === 403) { location.reload(); return null; }
     const j = await r.json();
+    if (j.link) showLink(j.link);
     return j.ok ? j.items : null;
   }
 
@@ -98,7 +112,7 @@
   async function poll() {
     try {
       const list = await get({ after: maxId, limit: 100 });
-      live.classList.toggle("off", !list);
+      if (!list) live.classList.add("off");
       if (list && list.length) {
         feed.querySelector(".center")?.remove();
         list.forEach((it) => { const d = el(it); d.classList.add("new"); feed.prepend(d); });
