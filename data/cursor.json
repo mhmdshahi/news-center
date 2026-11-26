@@ -1,6 +1,6 @@
 {
- "last_seq": 415,
- "updated": "2026-11-26T00:22:00Z",
+ "last_seq": 439,
+ "updated": "2026-11-26T00:29:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -289,7 +289,30 @@
   "411": "Yahoo quote/option/forecast/calendar page, no news",
   "412": "Yahoo quote/option/forecast/calendar page, no news",
   "413": "Yahoo quote/option/forecast/calendar page, no news",
-  "414": "Yahoo quote/option/forecast/calendar page, no news"
+  "414": "Yahoo quote/option/forecast/calendar page, no news",
+  "416": "Yahoo quote/option/forecast/calendar page, no news",
+  "417": "Yahoo quote/option/forecast/calendar page, no news",
+  "418": "Yahoo quote/option/forecast/calendar page, no news",
+  "419": "Yahoo quote/option/forecast/calendar page, no news",
+  "420": "Yahoo quote/option/forecast/calendar page, no news",
+  "421": "Yahoo quote/option/forecast/calendar page, no news",
+  "422": "Yahoo quote/option/forecast/calendar page, no news",
+  "423": "Yahoo quote/option/forecast/calendar page, no news",
+  "424": "Yahoo quote/option/forecast/calendar page, no news",
+  "426": "Yahoo quote/option/forecast/calendar page, no news",
+  "427": "Yahoo quote/option/forecast/calendar page, no news",
+  "428": "Yahoo quote/option/forecast/calendar page, no news",
+  "429": "Yahoo quote/option/forecast/calendar page, no news",
+  "430": "Yahoo quote/option/forecast/calendar page, no news",
+  "431": "Yahoo quote/option/forecast/calendar page, no news",
+  "432": "Yahoo quote/option/forecast/calendar page, no news",
+  "433": "Yahoo quote/option/forecast/calendar page, no news",
+  "434": "Yahoo quote/option/forecast/calendar page, no news",
+  "435": "Yahoo quote/option/forecast/calendar page, no news",
+  "436": "Yahoo quote/option/forecast/calendar page, no news",
+  "437": "Yahoo quote/option/forecast/calendar page, no news",
+  "438": "Yahoo quote/option/forecast/calendar page, no news",
+  "439": "Yahoo quote/option/forecast/calendar page, no news"
  },
- "last_round_at": "2026-11-26T00:22:00Z"
+ "last_round_at": "2026-11-26T00:29:00Z"
 }

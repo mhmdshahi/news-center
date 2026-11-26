@@ -871,6 +871,15 @@
    "sources": [
     "cryptoslate"
    ]
+  },
+  {
+   "id": "e-425",
+   "key": "Gold Edges Lower as US Inflation Data Fuels Bets for Rate Hikes - Bloomberg",
+   "ts": "2026-11-26T00:29:00Z",
+   "seq": 425,
+   "sources": [
+    "bloomberg_gn"
+   ]
   }
  ]
 }
