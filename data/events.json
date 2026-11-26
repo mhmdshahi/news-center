@@ -1003,7 +1003,8 @@
    "ts": "2026-11-26T01:57:00Z",
    "seq": 640,
    "sources": [
-    "cointelegraph"
+    "cointelegraph",
+    "cryptonews"
    ]
   },
   {
@@ -1120,7 +1121,8 @@
    "ts": "2026-11-26T03:15:00Z",
    "seq": 675,
    "sources": [
-    "theblock"
+    "theblock",
+    "coindesk"
    ]
   },
   {
@@ -1320,6 +1322,15 @@
    "seq": 720,
    "sources": [
     "bitcoinist"
+   ]
+  },
+  {
+   "id": "e-722",
+   "key": "Australia Firms See Inflation Holding Over 4% for Next 12 Months - Bloomberg",
+   "ts": "2026-11-26T04:49:00Z",
+   "seq": 722,
+   "sources": [
+    "bloomberg_gn"
    ]
   }
  ]
