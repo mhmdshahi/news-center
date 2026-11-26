@@ -53,3 +53,4 @@
 {"at": "2026-11-26T00:47:21Z", "duration_s": 17.0, "sources_total": 44, "sources_ok": 43, "sources_failed": 1, "entries": 676, "unseen": 22, "new": 9, "dropped": 13, "seq_last": 485, "failed": ["snb"]}
 {"at": "2026-11-26T00:54:06Z", "duration_s": 16.9, "sources_total": 44, "sources_ok": 43, "sources_failed": 1, "entries": 645, "unseen": 81, "new": 60, "dropped": 21, "seq_last": 545, "failed": ["snb"]}
 {"at": "2026-11-26T00:59:35Z", "duration_s": 16.5, "sources_total": 44, "sources_ok": 43, "sources_failed": 1, "entries": 613, "unseen": 25, "new": 20, "dropped": 5, "seq_last": 565, "failed": ["snb"]}
+{"at": "2026-11-26T01:06:03Z", "duration_s": 17.0, "sources_total": 44, "sources_ok": 43, "sources_failed": 1, "entries": 673, "unseen": 37, "new": 17, "dropped": 20, "seq_last": 582, "failed": ["snb"]}
