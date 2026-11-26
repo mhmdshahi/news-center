@@ -314,7 +314,8 @@
    "sources": [
     "theblock",
     "decrypt",
-    "cointelegraph"
+    "cointelegraph",
+    "coindesk"
    ]
   },
   {
@@ -413,7 +414,8 @@
    "ts": "2026-11-25T20:31:00Z",
    "seq": 93,
    "sources": [
-    "bloomberg_gn"
+    "bloomberg_gn",
+    "sa_currents"
    ]
   },
   {
@@ -1574,6 +1576,47 @@
    "ts": "2026-11-26T06:20:00Z",
    "seq": 760,
    "code": 1016,
+   "sources": [
+    "defiant"
+   ]
+  },
+  {
+   "id": "e-761",
+   "key": "Stocks and Bonds to Watch as Spain’s Voters Head to the Polls - Bloomberg.com",
+   "ts": "2026-11-26T06:27:00Z",
+   "seq": 761,
+   "code": 1017,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-747-u1",
+   "key": "UK FCA pushes for tighter DeFi rules following $6.3 billion Binance hack",
+   "ts": "2026-11-26T06:27:00Z",
+   "seq": 766,
+   "code": 1018,
+   "sources": [
+    "cryptonews",
+    "bitcoinist"
+   ]
+  },
+  {
+   "id": "e-764",
+   "key": "Nvidia Tells Partners to Halt AI Server Shipments to Four Countries: FT",
+   "ts": "2026-11-26T06:27:00Z",
+   "seq": 764,
+   "code": 1019,
+   "sources": [
+    "defiant"
+   ]
+  },
+  {
+   "id": "e-765",
+   "key": "b14g’s Recorded TVL Nearly Halved to $135M by Nov. 24",
+   "ts": "2026-11-26T06:27:00Z",
+   "seq": 765,
+   "code": 1020,
    "sources": [
     "defiant"
    ]
