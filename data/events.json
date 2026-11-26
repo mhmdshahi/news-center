@@ -938,7 +938,8 @@
    "ts": "2026-11-26T01:07:00Z",
    "seq": 578,
    "sources": [
-    "investinglive"
+    "investinglive",
+    "sa_currents"
    ]
   },
   {
@@ -1464,6 +1465,36 @@
    "code": 1005,
    "sources": [
     "cryptoslate"
+   ]
+  },
+  {
+   "id": "e-642-u1",
+   "key": "Lido Widens Operator Penalties After Slashing Exposed Gap",
+   "ts": "2026-11-26T06:01:00Z",
+   "seq": 743,
+   "code": 1006,
+   "sources": [
+    "defiant"
+   ]
+  },
+  {
+   "id": "e-739-u1",
+   "key": "Zakura Urges Zcash to Cut Off Sapling Deposits Sooner",
+   "ts": "2026-11-26T06:01:00Z",
+   "seq": 744,
+   "code": 1007,
+   "sources": [
+    "defiant"
+   ]
+  },
+  {
+   "id": "e-745",
+   "key": "Amazon’s Trainium3 Shows Cost Edge in AI Benchmark",
+   "ts": "2026-11-26T06:01:00Z",
+   "seq": 745,
+   "code": 1008,
+   "sources": [
+    "defiant"
    ]
   }
  ]
