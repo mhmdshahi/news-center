@@ -761,7 +761,8 @@
    "ts": "2026-11-25T23:44:00Z",
    "seq": 232,
    "sources": [
-    "bloomberg_gn"
+    "bloomberg_gn",
+    "reuters_gn"
    ]
   },
   {
@@ -1035,6 +1036,15 @@
    "seq": 647,
    "sources": [
     "bitcoincom"
+   ]
+  },
+  {
+   "id": "e-649",
+   "key": "Copper Rebounds From Lowest This Year as Volatility Hits Metals - Bloomberg",
+   "ts": "2026-11-26T02:16:00Z",
+   "seq": 649,
+   "sources": [
+    "bloomberg_gn"
    ]
   }
  ]
