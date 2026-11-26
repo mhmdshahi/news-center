@@ -1,6 +1,6 @@
 {
- "last_seq": 717,
- "updated": "2026-11-26T04:36:00Z",
+ "last_seq": 721,
+ "updated": "2026-11-26T04:43:00Z",
  "skipped": {
   "1": "law-firm solicitation (junk)",
   "10": "listicle (quant ratings), not news",
@@ -544,7 +544,9 @@
   "710": "Yahoo option page",
   "712": "duplicate of e-222 (Bloomberg roundup, tariffs)",
   "714": "duplicate of e-222-u6 (Singapore tariff reaction)",
-  "716": "MegazoneCloud PR (minor corporate PR)"
+  "716": "MegazoneCloud PR (minor corporate PR)",
+  "718": "Pakistan exchange options launch, local/irrelevant",
+  "721": "Yahoo SEC filings page"
  },
- "last_round_at": "2026-11-26T04:36:00Z"
+ "last_round_at": "2026-11-26T04:43:00Z"
 }

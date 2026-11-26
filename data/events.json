@@ -1303,6 +1303,24 @@
    "sources": [
     "cryptoslate"
    ]
+  },
+  {
+   "id": "e-222-u9",
+   "key": "Japan Protests New US Tariff Rate, Allegation of Excess Capacity - Bloomberg",
+   "ts": "2026-11-26T04:43:00Z",
+   "seq": 719,
+   "sources": [
+    "bloomberg_gn"
+   ]
+  },
+  {
+   "id": "e-720",
+   "key": "Switzerland’s Crypto Tax Data Deal Could Make Bitcoin Holdings Less Private",
+   "ts": "2026-11-26T04:43:00Z",
+   "seq": 720,
+   "sources": [
+    "bitcoinist"
+   ]
   }
  ]
 }
